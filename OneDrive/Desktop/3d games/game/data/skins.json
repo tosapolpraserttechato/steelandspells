@@ -1,0 +1,226 @@
+{
+ "armor": [
+  {
+   "armor_c1": "#e8e0c8",
+   "armor_c2": "#b09a60",
+   "armor_glow": "#fff0c0",
+   "glow": "",
+   "id": "ivory",
+   "name": "Ivory",
+   "tier": "common",
+   "tint": "#e8e0c8",
+   "weight": 26.0
+  },
+  {
+   "armor_c1": "#1c1c26",
+   "armor_c2": "#5a5a70",
+   "armor_glow": "#9090c0",
+   "glow": "",
+   "id": "obsidian",
+   "name": "Obsidian",
+   "tier": "common",
+   "tint": "#1c1c26",
+   "weight": 22.0
+  },
+  {
+   "armor_c1": "#8a1a22",
+   "armor_c2": "#d8c070",
+   "armor_glow": "#ff6070",
+   "glow": "",
+   "id": "crimson",
+   "name": "Crimson",
+   "tier": "uncommon",
+   "tint": "#8a1a22",
+   "weight": 16.0
+  },
+  {
+   "armor_c1": "#2a5aa0",
+   "armor_c2": "#e0e8f0",
+   "armor_glow": "#80c0ff",
+   "glow": "",
+   "id": "azure",
+   "name": "Azure",
+   "tier": "uncommon",
+   "tint": "#2a5aa0",
+   "weight": 14.0
+  },
+  {
+   "armor_c1": "#3a8a3a",
+   "armor_c2": "#d8e8a0",
+   "armor_glow": "#8aff8a",
+   "glow": "#7aff7a",
+   "id": "verdant",
+   "name": "Verdant",
+   "tier": "rare",
+   "tint": "#3a8a3a",
+   "weight": 9.0
+  },
+  {
+   "armor_c1": "#e0b030",
+   "armor_c2": "#fff0b0",
+   "armor_glow": "#ffe070",
+   "glow": "#ffd860",
+   "id": "gilded",
+   "name": "Gilded",
+   "tier": "rare",
+   "tint": "#e0b030",
+   "weight": 7.0
+  },
+  {
+   "armor_c1": "#a0d8f0",
+   "armor_c2": "#ffffff",
+   "armor_glow": "#c0f4ff",
+   "glow": "#aef0ff",
+   "id": "frostwork",
+   "name": "Frostwork",
+   "tier": "epic",
+   "tint": "#a0d8f0",
+   "weight": 4.0
+  },
+  {
+   "armor_c1": "#802010",
+   "armor_c2": "#ff9a30",
+   "armor_glow": "#ff7a20",
+   "glow": "#ff6a1a",
+   "id": "emberglass",
+   "name": "Emberglass",
+   "tier": "epic",
+   "tint": "#ff7a2a",
+   "weight": 3.0
+  },
+  {
+   "armor_c1": "#b8c4ee",
+   "armor_c2": "#6a7ac0",
+   "armor_glow": "#dce6ff",
+   "glow": "#bcd0ff",
+   "id": "moonlit",
+   "name": "Moonlit",
+   "tier": "legendary",
+   "tint": "#c8d0f0",
+   "weight": 1.5
+  },
+  {
+   "armor_c1": "#120a22",
+   "armor_c2": "#8a3aff",
+   "armor_glow": "#b070ff",
+   "glow": "#9a4aff",
+   "id": "voidtouched",
+   "name": "Voidtouched",
+   "tier": "mythic",
+   "tint": "#12081f",
+   "weight": 0.6
+  }
+ ],
+ "weapon": [
+  {
+   "armor_c1": "#e8e0c8",
+   "armor_c2": "#b09a60",
+   "armor_glow": "#fff0c0",
+   "glow": "",
+   "id": "ivory",
+   "name": "Ivory",
+   "tier": "common",
+   "tint": "#e8e0c8",
+   "weight": 26.0
+  },
+  {
+   "armor_c1": "#1c1c26",
+   "armor_c2": "#5a5a70",
+   "armor_glow": "#9090c0",
+   "glow": "",
+   "id": "obsidian",
+   "name": "Obsidian",
+   "tier": "common",
+   "tint": "#1c1c26",
+   "weight": 22.0
+  },
+  {
+   "armor_c1": "#8a1a22",
+   "armor_c2": "#d8c070",
+   "armor_glow": "#ff6070",
+   "glow": "",
+   "id": "crimson",
+   "name": "Crimson",
+   "tier": "uncommon",
+   "tint": "#8a1a22",
+   "weight": 16.0
+  },
+  {
+   "armor_c1": "#2a5aa0",
+   "armor_c2": "#e0e8f0",
+   "armor_glow": "#80c0ff",
+   "glow": "",
+   "id": "azure",
+   "name": "Azure",
+   "tier": "uncommon",
+   "tint": "#2a5aa0",
+   "weight": 14.0
+  },
+  {
+   "armor_c1": "#3a8a3a",
+   "armor_c2": "#d8e8a0",
+   "armor_glow": "#8aff8a",
+   "glow": "#7aff7a",
+   "id": "verdant",
+   "name": "Verdant",
+   "tier": "rare",
+   "tint": "#3a8a3a",
+   "weight": 9.0
+  },
+  {
+   "armor_c1": "#e0b030",
+   "armor_c2": "#fff0b0",
+   "armor_glow": "#ffe070",
+   "glow": "#ffd860",
+   "id": "gilded",
+   "name": "Gilded",
+   "tier": "rare",
+   "tint": "#e0b030",
+   "weight": 7.0
+  },
+  {
+   "armor_c1": "#a0d8f0",
+   "armor_c2": "#ffffff",
+   "armor_glow": "#c0f4ff",
+   "glow": "#aef0ff",
+   "id": "frostwork",
+   "name": "Frostwork",
+   "tier": "epic",
+   "tint": "#a0d8f0",
+   "weight": 4.0
+  },
+  {
+   "armor_c1": "#802010",
+   "armor_c2": "#ff9a30",
+   "armor_glow": "#ff7a20",
+   "glow": "#ff6a1a",
+   "id": "emberglass",
+   "name": "Emberglass",
+   "tier": "epic",
+   "tint": "#ff7a2a",
+   "weight": 3.0
+  },
+  {
+   "armor_c1": "#b8c4ee",
+   "armor_c2": "#6a7ac0",
+   "armor_glow": "#dce6ff",
+   "glow": "#bcd0ff",
+   "id": "moonlit",
+   "name": "Moonlit",
+   "tier": "legendary",
+   "tint": "#c8d0f0",
+   "weight": 1.5
+  },
+  {
+   "armor_c1": "#120a22",
+   "armor_c2": "#8a3aff",
+   "armor_glow": "#b070ff",
+   "glow": "#9a4aff",
+   "id": "voidtouched",
+   "name": "Voidtouched",
+   "tier": "mythic",
+   "tint": "#12081f",
+   "weight": 0.6
+  }
+ ]
+}

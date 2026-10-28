@@ -1,0 +1,328 @@
+[
+ {
+  "id": "burn",
+  "name": "Burn",
+  "harmful": true,
+  "max_stacks": 3,
+  "duration": 4.0,
+  "dps": 5.0,
+  "color": [
+   1.0,
+   0.45,
+   0.1
+  ],
+  "symbol": "flame",
+  "desc": "Fire damage every second."
+ },
+ {
+  "id": "chill",
+  "name": "Chill",
+  "harmful": true,
+  "max_stacks": 5,
+  "duration": 4.0,
+  "speed_per_stack": -0.1,
+  "color": [
+   0.55,
+   0.85,
+   1.0
+  ],
+  "symbol": "snow",
+  "desc": "Slows you. At 5 stacks you freeze.",
+  "freeze_at": 5
+ },
+ {
+  "id": "freeze",
+  "name": "Freeze",
+  "harmful": true,
+  "max_stacks": 1,
+  "duration": 1.6,
+  "flags": [
+   "root",
+   "no_skills"
+  ],
+  "damage_taken": 0.15,
+  "color": [
+   0.7,
+   0.95,
+   1.0
+  ],
+  "symbol": "snow",
+  "desc": "Frozen in place and takes more damage."
+ },
+ {
+  "id": "poison",
+  "name": "Poison",
+  "harmful": true,
+  "max_stacks": 5,
+  "duration": 5.0,
+  "dps": 3.0,
+  "heal_taken": -0.3,
+  "color": [
+   0.45,
+   0.85,
+   0.2
+  ],
+  "symbol": "drop",
+  "desc": "Damage over time and less healing."
+ },
+ {
+  "id": "shock",
+  "name": "Shock",
+  "harmful": true,
+  "max_stacks": 3,
+  "duration": 4.0,
+  "burst": 4.0,
+  "color": [
+   1.0,
+   0.95,
+   0.3
+  ],
+  "symbol": "bolt",
+  "desc": "Small damage. At 3 stacks you are stunned.",
+  "stun_at": 3
+ },
+ {
+  "id": "stun",
+  "name": "Stun",
+  "harmful": true,
+  "max_stacks": 1,
+  "duration": 1.0,
+  "flags": [
+   "root",
+   "no_skills",
+   "no_fire"
+  ],
+  "color": [
+   1.0,
+   0.85,
+   0.2
+  ],
+  "symbol": "stars",
+  "desc": "You cannot move or act."
+ },
+ {
+  "id": "slow",
+  "name": "Slow",
+  "harmful": true,
+  "max_stacks": 1,
+  "duration": 3.0,
+  "speed_per_stack": -0.35,
+  "color": [
+   0.7,
+   0.6,
+   0.4
+  ],
+  "symbol": "arrow_down",
+  "desc": "You move slower."
+ },
+ {
+  "id": "root",
+  "name": "Root",
+  "harmful": true,
+  "max_stacks": 1,
+  "duration": 2.0,
+  "flags": [
+   "root"
+  ],
+  "color": [
+   0.3,
+   0.7,
+   0.3
+  ],
+  "symbol": "roots",
+  "desc": "You cannot move but can still shoot and cast."
+ },
+ {
+  "id": "bleed",
+  "name": "Bleed",
+  "harmful": true,
+  "max_stacks": 3,
+  "duration": 5.0,
+  "dps": 3.0,
+  "dps_moving_mult": 2.0,
+  "color": [
+   0.8,
+   0.1,
+   0.15
+  ],
+  "symbol": "drop",
+  "desc": "Damage over time, doubled while moving."
+ },
+ {
+  "id": "weaken",
+  "name": "Weaken",
+  "harmful": true,
+  "max_stacks": 1,
+  "duration": 5.0,
+  "damage_dealt": -0.25,
+  "color": [
+   0.6,
+   0.5,
+   0.7
+  ],
+  "symbol": "arrow_down",
+  "desc": "You deal less damage."
+ },
+ {
+  "id": "vulnerable",
+  "name": "Vulnerable",
+  "harmful": true,
+  "max_stacks": 1,
+  "duration": 5.0,
+  "damage_taken": 0.2,
+  "color": [
+   0.95,
+   0.4,
+   0.55
+  ],
+  "symbol": "cross",
+  "desc": "You take extra damage."
+ },
+ {
+  "id": "silence",
+  "name": "Silence",
+  "harmful": true,
+  "max_stacks": 1,
+  "duration": 3.0,
+  "flags": [
+   "no_skills"
+  ],
+  "magic_only": true,
+  "color": [
+   0.6,
+   0.6,
+   0.9
+  ],
+  "symbol": "mute",
+  "desc": "You cannot use skills. Non-magic gear is immune."
+ },
+ {
+  "id": "blind",
+  "name": "Blind",
+  "harmful": true,
+  "max_stacks": 1,
+  "duration": 2.5,
+  "flags": [
+   "blind"
+  ],
+  "color": [
+   0.85,
+   0.8,
+   0.5
+  ],
+  "symbol": "eye",
+  "desc": "Your view is covered and your aim shakes."
+ },
+ {
+  "id": "haste",
+  "name": "Haste",
+  "harmful": false,
+  "max_stacks": 1,
+  "duration": 5.0,
+  "speed_per_stack": 0.3,
+  "color": [
+   0.4,
+   0.95,
+   0.7
+  ],
+  "symbol": "arrow_up",
+  "desc": "You move faster."
+ },
+ {
+  "id": "barrier",
+  "name": "Barrier",
+  "harmful": false,
+  "max_stacks": 1,
+  "duration": 6.0,
+  "absorb": 60.0,
+  "color": [
+   0.4,
+   0.8,
+   1.0
+  ],
+  "symbol": "shield",
+  "desc": "Absorbs damage."
+ },
+ {
+  "id": "regen",
+  "name": "Regen",
+  "harmful": false,
+  "max_stacks": 1,
+  "duration": 6.0,
+  "hps": 6.0,
+  "color": [
+   0.4,
+   0.95,
+   0.4
+  ],
+  "symbol": "plus",
+  "desc": "You heal over time."
+ },
+ {
+  "id": "empower",
+  "name": "Empower",
+  "harmful": false,
+  "max_stacks": 1,
+  "duration": 6.0,
+  "damage_dealt": 0.25,
+  "color": [
+   1.0,
+   0.6,
+   0.2
+  ],
+  "symbol": "arrow_up",
+  "desc": "You deal more damage."
+ },
+ {
+  "id": "cleanse_shield",
+  "name": "Cleansed",
+  "harmful": false,
+  "max_stacks": 1,
+  "duration": 3.0,
+  "flags": [
+   "immune_debuffs"
+  ],
+  "color": [
+   0.95,
+   0.95,
+   1.0
+  ],
+  "symbol": "sparkle",
+  "desc": "You cannot be hit by debuffs."
+ },
+ {
+  "id": "invisible",
+  "name": "Invisible",
+  "harmful": false,
+  "max_stacks": 1,
+  "duration": 3.0,
+  "flags": [
+   "invisible"
+  ],
+  "color": [
+   0.8,
+   0.8,
+   0.9
+  ],
+  "symbol": "eye",
+  "desc": "Enemies cannot see you."
+ },
+ {
+  "id": "marked",
+  "name": "Marked",
+  "harmful": true,
+  "max_stacks": 1,
+  "duration": 4.0,
+  "damage_taken": 0.1,
+  "flags": [
+   "revealed"
+  ],
+  "color": [
+   1.0,
+   0.3,
+   0.3
+  ],
+  "symbol": "eye",
+  "desc": "You are revealed and take extra damage."
+ }
+]

@@ -1,0 +1,4271 @@
+{
+ "count": 125,
+ "rarity_order": [
+  "common",
+  "uncommon",
+  "rare",
+  "epic",
+  "legendary",
+  "mythic"
+ ],
+ "offer_weight": {
+  "common": 45,
+  "uncommon": 25,
+  "rare": 15,
+  "epic": 9,
+  "legendary": 5,
+  "mythic": 1
+ },
+ "cards": [
+  {
+   "number": 1,
+   "id": "sharp_eyes",
+   "name": "Sharp Eyes",
+   "base_rarity": "common",
+   "category": "offense",
+   "effect": "+{v}% critical hit chance",
+   "values_by_stack": [
+    "3",
+    "4.5",
+    "6",
+    "7.5",
+    "9",
+    "10.5"
+   ],
+   "effect_by_stack": [
+    "+3% critical hit chance",
+    "+4.5% critical hit chance",
+    "+6% critical hit chance",
+    "+7.5% critical hit chance",
+    "+9% critical hit chance",
+    "+10.5% critical hit chance"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 2,
+   "id": "steady_hands",
+   "name": "Steady Hands",
+   "base_rarity": "common",
+   "category": "offense",
+   "effect": "-{v}% weapon spread",
+   "values_by_stack": [
+    "5",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15"
+   ],
+   "effect_by_stack": [
+    "-5% weapon spread",
+    "-7% weapon spread",
+    "-9% weapon spread",
+    "-11% weapon spread",
+    "-13% weapon spread",
+    "-15% weapon spread"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 3,
+   "id": "quick_reload",
+   "name": "Quick Reload",
+   "base_rarity": "common",
+   "category": "offense",
+   "effect": "-{v}% reload time",
+   "values_by_stack": [
+    "6",
+    "8.5",
+    "11",
+    "13.5",
+    "16",
+    "18.5"
+   ],
+   "effect_by_stack": [
+    "-6% reload time",
+    "-8.5% reload time",
+    "-11% reload time",
+    "-13.5% reload time",
+    "-16% reload time",
+    "-18.5% reload time"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 4,
+   "id": "heavy_rounds",
+   "name": "Heavy Rounds",
+   "base_rarity": "common",
+   "category": "offense",
+   "effect": "+{v}% weapon damage",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% weapon damage",
+    "+6% weapon damage",
+    "+8% weapon damage",
+    "+10% weapon damage",
+    "+12% weapon damage",
+    "+14% weapon damage"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 5,
+   "id": "rapid_trigger",
+   "name": "Rapid Trigger",
+   "base_rarity": "common",
+   "category": "offense",
+   "effect": "+{v}% fire rate",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% fire rate",
+    "+6% fire rate",
+    "+8% fire rate",
+    "+10% fire rate",
+    "+12% fire rate",
+    "+14% fire rate"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 6,
+   "id": "long_barrel",
+   "name": "Long Barrel",
+   "base_rarity": "common",
+   "category": "offense",
+   "effect": "+{v}% weapon range",
+   "values_by_stack": [
+    "6",
+    "9",
+    "12",
+    "15",
+    "18",
+    "21"
+   ],
+   "effect_by_stack": [
+    "+6% weapon range",
+    "+9% weapon range",
+    "+12% weapon range",
+    "+15% weapon range",
+    "+18% weapon range",
+    "+21% weapon range"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 7,
+   "id": "spell_edge",
+   "name": "Spell Edge",
+   "base_rarity": "common",
+   "category": "offense",
+   "effect": "+{v}% spell damage",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% spell damage",
+    "+6% spell damage",
+    "+8% spell damage",
+    "+10% spell damage",
+    "+12% spell damage",
+    "+14% spell damage"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 8,
+   "id": "keen_blade",
+   "name": "Keen Blade",
+   "base_rarity": "common",
+   "category": "offense",
+   "effect": "+{v}% melee damage",
+   "values_by_stack": [
+    "5",
+    "7.5",
+    "10",
+    "12.5",
+    "15",
+    "17.5"
+   ],
+   "effect_by_stack": [
+    "+5% melee damage",
+    "+7.5% melee damage",
+    "+10% melee damage",
+    "+12.5% melee damage",
+    "+15% melee damage",
+    "+17.5% melee damage"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 9,
+   "id": "deep_quiver",
+   "name": "Deep Quiver",
+   "base_rarity": "common",
+   "category": "offense",
+   "effect": "+{v}% maximum ammo",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "+8% maximum ammo",
+    "+12% maximum ammo",
+    "+16% maximum ammo",
+    "+20% maximum ammo",
+    "+24% maximum ammo",
+    "+28% maximum ammo"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 10,
+   "id": "dead_focus",
+   "name": "Dead Focus",
+   "base_rarity": "common",
+   "category": "offense",
+   "effect": "+{v}% headshot damage",
+   "values_by_stack": [
+    "6",
+    "9",
+    "12",
+    "15",
+    "18",
+    "21"
+   ],
+   "effect_by_stack": [
+    "+6% headshot damage",
+    "+9% headshot damage",
+    "+12% headshot damage",
+    "+15% headshot damage",
+    "+18% headshot damage",
+    "+21% headshot damage"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 11,
+   "id": "iron_skin",
+   "name": "Iron Skin",
+   "base_rarity": "common",
+   "category": "defense",
+   "effect": "+{v}% armor",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% armor",
+    "+6% armor",
+    "+8% armor",
+    "+10% armor",
+    "+12% armor",
+    "+14% armor"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 12,
+   "id": "thick_hide",
+   "name": "Thick Hide",
+   "base_rarity": "common",
+   "category": "defense",
+   "effect": "+{v}% maximum health",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% maximum health",
+    "+6% maximum health",
+    "+8% maximum health",
+    "+10% maximum health",
+    "+12% maximum health",
+    "+14% maximum health"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 13,
+   "id": "mana_ward",
+   "name": "Mana Ward",
+   "base_rarity": "common",
+   "category": "defense",
+   "effect": "+{v}% spell resistance",
+   "values_by_stack": [
+    "5",
+    "7.5",
+    "10",
+    "12.5",
+    "15",
+    "17.5"
+   ],
+   "effect_by_stack": [
+    "+5% spell resistance",
+    "+7.5% spell resistance",
+    "+10% spell resistance",
+    "+12.5% spell resistance",
+    "+15% spell resistance",
+    "+17.5% spell resistance"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 14,
+   "id": "second_wind",
+   "name": "Second Wind",
+   "base_rarity": "common",
+   "category": "defense",
+   "effect": "Regenerate {v} health per second",
+   "values_by_stack": [
+    "0.5",
+    "0.75",
+    "1",
+    "1.25",
+    "1.5",
+    "1.75"
+   ],
+   "effect_by_stack": [
+    "Regenerate 0.5 health per second",
+    "Regenerate 0.75 health per second",
+    "Regenerate 1 health per second",
+    "Regenerate 1.25 health per second",
+    "Regenerate 1.5 health per second",
+    "Regenerate 1.75 health per second"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 15,
+   "id": "quick_patch",
+   "name": "Quick Patch",
+   "base_rarity": "common",
+   "category": "defense",
+   "effect": "Healing pickups heal +{v}% more",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "Healing pickups heal +8% more",
+    "Healing pickups heal +12% more",
+    "Healing pickups heal +16% more",
+    "Healing pickups heal +20% more",
+    "Healing pickups heal +24% more",
+    "Healing pickups heal +28% more"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 16,
+   "id": "steady_stance",
+   "name": "Steady Stance",
+   "base_rarity": "common",
+   "category": "defense",
+   "effect": "-{v}% knockback taken",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "-8% knockback taken",
+    "-12% knockback taken",
+    "-16% knockback taken",
+    "-20% knockback taken",
+    "-24% knockback taken",
+    "-28% knockback taken"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 17,
+   "id": "warding_charm",
+   "name": "Warding Charm",
+   "base_rarity": "common",
+   "category": "defense",
+   "effect": "-{v}% status effect duration",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "-8% status effect duration",
+    "-12% status effect duration",
+    "-16% status effect duration",
+    "-20% status effect duration",
+    "-24% status effect duration",
+    "-28% status effect duration"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 18,
+   "id": "shield_polish",
+   "name": "Shield Polish",
+   "base_rarity": "common",
+   "category": "defense",
+   "effect": "+{v}% shield strength",
+   "values_by_stack": [
+    "6",
+    "9",
+    "12",
+    "15",
+    "18",
+    "21"
+   ],
+   "effect_by_stack": [
+    "+6% shield strength",
+    "+9% shield strength",
+    "+12% shield strength",
+    "+15% shield strength",
+    "+18% shield strength",
+    "+21% shield strength"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 19,
+   "id": "light_step",
+   "name": "Light Step",
+   "base_rarity": "common",
+   "category": "mobility",
+   "effect": "+{v}% movement speed",
+   "values_by_stack": [
+    "3",
+    "4.5",
+    "6",
+    "7.5",
+    "9",
+    "10.5"
+   ],
+   "effect_by_stack": [
+    "+3% movement speed",
+    "+4.5% movement speed",
+    "+6% movement speed",
+    "+7.5% movement speed",
+    "+9% movement speed",
+    "+10.5% movement speed"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 20,
+   "id": "spring_legs",
+   "name": "Spring Legs",
+   "base_rarity": "common",
+   "category": "mobility",
+   "effect": "+{v}% jump height",
+   "values_by_stack": [
+    "5",
+    "7.5",
+    "10",
+    "12.5",
+    "15",
+    "17.5"
+   ],
+   "effect_by_stack": [
+    "+5% jump height",
+    "+7.5% jump height",
+    "+10% jump height",
+    "+12.5% jump height",
+    "+15% jump height",
+    "+17.5% jump height"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 21,
+   "id": "slide_grease",
+   "name": "Slide Grease",
+   "base_rarity": "common",
+   "category": "mobility",
+   "effect": "+{v}% slide distance",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "+8% slide distance",
+    "+12% slide distance",
+    "+16% slide distance",
+    "+20% slide distance",
+    "+24% slide distance",
+    "+28% slide distance"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 22,
+   "id": "quick_vault",
+   "name": "Quick Vault",
+   "base_rarity": "common",
+   "category": "mobility",
+   "effect": "+{v}% vault and climb speed",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "+8% vault and climb speed",
+    "+12% vault and climb speed",
+    "+16% vault and climb speed",
+    "+20% vault and climb speed",
+    "+24% vault and climb speed",
+    "+28% vault and climb speed"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 23,
+   "id": "dash_tonic",
+   "name": "Sprinter's Tonic",
+   "base_rarity": "common",
+   "category": "mobility",
+   "effect": "+{v}% sprint speed",
+   "values_by_stack": [
+    "5",
+    "7.5",
+    "10",
+    "12.5",
+    "15",
+    "17.5"
+   ],
+   "effect_by_stack": [
+    "+5% sprint speed",
+    "+7.5% sprint speed",
+    "+10% sprint speed",
+    "+12.5% sprint speed",
+    "+15% sprint speed",
+    "+17.5% sprint speed"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 24,
+   "id": "sure_footing",
+   "name": "Sure Footing",
+   "base_rarity": "common",
+   "category": "mobility",
+   "effect": "+{v}% slow resistance",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "+8% slow resistance",
+    "+12% slow resistance",
+    "+16% slow resistance",
+    "+20% slow resistance",
+    "+24% slow resistance",
+    "+28% slow resistance"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 25,
+   "id": "fast_casting",
+   "name": "Fast Casting",
+   "base_rarity": "common",
+   "category": "skill",
+   "effect": "+{v}% cast speed",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% cast speed",
+    "+6% cast speed",
+    "+8% cast speed",
+    "+10% cast speed",
+    "+12% cast speed",
+    "+14% cast speed"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 26,
+   "id": "cooldown_tonic",
+   "name": "Cooldown Tonic",
+   "base_rarity": "common",
+   "category": "skill",
+   "effect": "-{v}% skill cooldowns",
+   "values_by_stack": [
+    "3",
+    "4.5",
+    "6",
+    "7.5",
+    "9",
+    "10.5"
+   ],
+   "effect_by_stack": [
+    "-3% skill cooldowns",
+    "-4.5% skill cooldowns",
+    "-6% skill cooldowns",
+    "-7.5% skill cooldowns",
+    "-9% skill cooldowns",
+    "-10.5% skill cooldowns"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 27,
+   "id": "wider_reach",
+   "name": "Wider Reach",
+   "base_rarity": "common",
+   "category": "skill",
+   "effect": "+{v}% area-of-effect radius",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% area-of-effect radius",
+    "+6% area-of-effect radius",
+    "+8% area-of-effect radius",
+    "+10% area-of-effect radius",
+    "+12% area-of-effect radius",
+    "+14% area-of-effect radius"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 28,
+   "id": "mana_flow",
+   "name": "Mana Flow",
+   "base_rarity": "common",
+   "category": "skill",
+   "effect": "+{v}% mana regeneration",
+   "values_by_stack": [
+    "6",
+    "9",
+    "12",
+    "15",
+    "18",
+    "21"
+   ],
+   "effect_by_stack": [
+    "+6% mana regeneration",
+    "+9% mana regeneration",
+    "+12% mana regeneration",
+    "+15% mana regeneration",
+    "+18% mana regeneration",
+    "+21% mana regeneration"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 29,
+   "id": "skill_power",
+   "name": "Skill Power",
+   "base_rarity": "common",
+   "category": "skill",
+   "effect": "+{v}% skill damage",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% skill damage",
+    "+6% skill damage",
+    "+8% skill damage",
+    "+10% skill damage",
+    "+12% skill damage",
+    "+14% skill damage"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 30,
+   "id": "bigger_blast",
+   "name": "Bigger Blast",
+   "base_rarity": "common",
+   "category": "skill",
+   "effect": "+{v}% area-of-effect damage",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% area-of-effect damage",
+    "+6% area-of-effect damage",
+    "+8% area-of-effect damage",
+    "+10% area-of-effect damage",
+    "+12% area-of-effect damage",
+    "+14% area-of-effect damage"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 31,
+   "id": "meter_spark",
+   "name": "Meter Spark",
+   "base_rarity": "common",
+   "category": "skill",
+   "effect": "+{v}% class meter charge speed",
+   "values_by_stack": [
+    "5",
+    "7.5",
+    "10",
+    "12.5",
+    "15",
+    "17.5"
+   ],
+   "effect_by_stack": [
+    "+5% class meter charge speed",
+    "+7.5% class meter charge speed",
+    "+10% class meter charge speed",
+    "+12.5% class meter charge speed",
+    "+15% class meter charge speed",
+    "+17.5% class meter charge speed"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 32,
+   "id": "passive_boost",
+   "name": "Passive Boost",
+   "base_rarity": "common",
+   "category": "skill",
+   "effect": "+{v}% class passive strength",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% class passive strength",
+    "+6% class passive strength",
+    "+8% class passive strength",
+    "+10% class passive strength",
+    "+12% class passive strength",
+    "+14% class passive strength"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 33,
+   "id": "treasure_sense",
+   "name": "Treasure Sense",
+   "base_rarity": "common",
+   "category": "economy",
+   "effect": "Loot boxes give +{v}% XP",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "Loot boxes give +8% XP",
+    "Loot boxes give +12% XP",
+    "Loot boxes give +16% XP",
+    "Loot boxes give +20% XP",
+    "Loot boxes give +24% XP",
+    "Loot boxes give +28% XP"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 34,
+   "id": "scholar",
+   "name": "Scholar",
+   "base_rarity": "common",
+   "category": "economy",
+   "effect": "+{v}% XP from kills",
+   "values_by_stack": [
+    "5",
+    "7.5",
+    "10",
+    "12.5",
+    "15",
+    "17.5"
+   ],
+   "effect_by_stack": [
+    "+5% XP from kills",
+    "+7.5% XP from kills",
+    "+10% XP from kills",
+    "+12.5% XP from kills",
+    "+15% XP from kills",
+    "+17.5% XP from kills"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 35,
+   "id": "lucky_find",
+   "name": "Lucky Find",
+   "base_rarity": "common",
+   "category": "economy",
+   "effect": "+{v}% chance for a rarer loot box drop",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "+4% chance for a rarer loot box drop",
+    "+6% chance for a rarer loot box drop",
+    "+8% chance for a rarer loot box drop",
+    "+10% chance for a rarer loot box drop",
+    "+12% chance for a rarer loot box drop",
+    "+14% chance for a rarer loot box drop"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 36,
+   "id": "scavenger",
+   "name": "Scavenger",
+   "base_rarity": "common",
+   "category": "economy",
+   "effect": "Kills refund {v}% of a magazine",
+   "values_by_stack": [
+    "6",
+    "9",
+    "12",
+    "15",
+    "18",
+    "21"
+   ],
+   "effect_by_stack": [
+    "Kills refund 6% of a magazine",
+    "Kills refund 9% of a magazine",
+    "Kills refund 12% of a magazine",
+    "Kills refund 15% of a magazine",
+    "Kills refund 18% of a magazine",
+    "Kills refund 21% of a magazine"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 37,
+   "id": "home_pride",
+   "name": "Home Pride",
+   "base_rarity": "common",
+   "category": "class",
+   "effect": "+{v}% damage with your own class's skills",
+   "values_by_stack": [
+    "3",
+    "4.5",
+    "6",
+    "7.5",
+    "9",
+    "10.5"
+   ],
+   "effect_by_stack": [
+    "+3% damage with your own class's skills",
+    "+4.5% damage with your own class's skills",
+    "+6% damage with your own class's skills",
+    "+7.5% damage with your own class's skills",
+    "+9% damage with your own class's skills",
+    "+10.5% damage with your own class's skills"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 38,
+   "id": "map_native",
+   "name": "Map Native",
+   "base_rarity": "common",
+   "category": "class",
+   "effect": "Your home-map buff is {v}% stronger",
+   "values_by_stack": [
+    "5",
+    "7.5",
+    "10",
+    "12.5",
+    "15",
+    "17.5"
+   ],
+   "effect_by_stack": [
+    "Your home-map buff is 5% stronger",
+    "Your home-map buff is 7.5% stronger",
+    "Your home-map buff is 10% stronger",
+    "Your home-map buff is 12.5% stronger",
+    "Your home-map buff is 15% stronger",
+    "Your home-map buff is 17.5% stronger"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 39,
+   "id": "rival_resistance",
+   "name": "Rival Resistance",
+   "base_rarity": "common",
+   "category": "class",
+   "effect": "Your map debuff is {v}% weaker",
+   "values_by_stack": [
+    "6",
+    "9",
+    "12",
+    "15",
+    "18",
+    "21"
+   ],
+   "effect_by_stack": [
+    "Your map debuff is 6% weaker",
+    "Your map debuff is 9% weaker",
+    "Your map debuff is 12% weaker",
+    "Your map debuff is 15% weaker",
+    "Your map debuff is 18% weaker",
+    "Your map debuff is 21% weaker"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 40,
+   "id": "set_collector",
+   "name": "Set Collector",
+   "base_rarity": "common",
+   "category": "class",
+   "effect": "Armor set passives are {v}% stronger",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "Armor set passives are 4% stronger",
+    "Armor set passives are 6% stronger",
+    "Armor set passives are 8% stronger",
+    "Armor set passives are 10% stronger",
+    "Armor set passives are 12% stronger",
+    "Armor set passives are 14% stronger"
+   ],
+   "rarity_by_stack": [
+    "common",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+   ],
+   "offer_weight": 45,
+   "max_stack": 6
+  },
+  {
+   "number": 41,
+   "id": "marksman",
+   "name": "Marksman",
+   "base_rarity": "uncommon",
+   "category": "offense",
+   "effect": "+{v}% damage beyond 25 m",
+   "values_by_stack": [
+    "6",
+    "9",
+    "12",
+    "15",
+    "18",
+    "21"
+   ],
+   "effect_by_stack": [
+    "+6% damage beyond 25 m",
+    "+9% damage beyond 25 m",
+    "+12% damage beyond 25 m",
+    "+15% damage beyond 25 m",
+    "+18% damage beyond 25 m",
+    "+21% damage beyond 25 m"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 42,
+   "id": "close_quarters",
+   "name": "Close Quarters",
+   "base_rarity": "uncommon",
+   "category": "offense",
+   "effect": "+{v}% damage within 8 m",
+   "values_by_stack": [
+    "6",
+    "9",
+    "12",
+    "15",
+    "18",
+    "21"
+   ],
+   "effect_by_stack": [
+    "+6% damage within 8 m",
+    "+9% damage within 8 m",
+    "+12% damage within 8 m",
+    "+15% damage within 8 m",
+    "+18% damage within 8 m",
+    "+21% damage within 8 m"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 43,
+   "id": "chain_shot",
+   "name": "Chain Shot",
+   "base_rarity": "uncommon",
+   "category": "offense",
+   "effect": "{v}% chance for shots to pierce an enemy",
+   "values_by_stack": [
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "effect_by_stack": [
+    "10% chance for shots to pierce an enemy",
+    "15% chance for shots to pierce an enemy",
+    "20% chance for shots to pierce an enemy",
+    "25% chance for shots to pierce an enemy",
+    "30% chance for shots to pierce an enemy",
+    "35% chance for shots to pierce an enemy"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 44,
+   "id": "overkill",
+   "name": "Overkill",
+   "base_rarity": "uncommon",
+   "category": "offense",
+   "effect": "Excess damage splashes {v}% to nearby enemies",
+   "values_by_stack": [
+    "20",
+    "28",
+    "36",
+    "44",
+    "52",
+    "60"
+   ],
+   "effect_by_stack": [
+    "Excess damage splashes 20% to nearby enemies",
+    "Excess damage splashes 28% to nearby enemies",
+    "Excess damage splashes 36% to nearby enemies",
+    "Excess damage splashes 44% to nearby enemies",
+    "Excess damage splashes 52% to nearby enemies",
+    "Excess damage splashes 60% to nearby enemies"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 45,
+   "id": "opening_strike",
+   "name": "Opening Strike",
+   "base_rarity": "uncommon",
+   "category": "offense",
+   "effect": "+{v}% damage on the first hit against a full-health enemy",
+   "values_by_stack": [
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "effect_by_stack": [
+    "+10% damage on the first hit against a full-health enemy",
+    "+15% damage on the first hit against a full-health enemy",
+    "+20% damage on the first hit against a full-health enemy",
+    "+25% damage on the first hit against a full-health enemy",
+    "+30% damage on the first hit against a full-health enemy",
+    "+35% damage on the first hit against a full-health enemy"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 46,
+   "id": "combo_counter",
+   "name": "Combo Counter",
+   "base_rarity": "uncommon",
+   "category": "offense",
+   "effect": "Each hit in a row adds +{v}% damage (max 10 hits)",
+   "values_by_stack": [
+    "0.5",
+    "0.75",
+    "1",
+    "1.25",
+    "1.5",
+    "1.75"
+   ],
+   "effect_by_stack": [
+    "Each hit in a row adds +0.5% damage (max 10 hits)",
+    "Each hit in a row adds +0.75% damage (max 10 hits)",
+    "Each hit in a row adds +1% damage (max 10 hits)",
+    "Each hit in a row adds +1.25% damage (max 10 hits)",
+    "Each hit in a row adds +1.5% damage (max 10 hits)",
+    "Each hit in a row adds +1.75% damage (max 10 hits)"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 47,
+   "id": "hunter_s_mark",
+   "name": "Hunter's Mark",
+   "base_rarity": "uncommon",
+   "category": "offense",
+   "effect": "Enemies you hit take +{v}% damage from you for 4s",
+   "values_by_stack": [
+    "6",
+    "9",
+    "12",
+    "15",
+    "18",
+    "21"
+   ],
+   "effect_by_stack": [
+    "Enemies you hit take +6% damage from you for 4s",
+    "Enemies you hit take +9% damage from you for 4s",
+    "Enemies you hit take +12% damage from you for 4s",
+    "Enemies you hit take +15% damage from you for 4s",
+    "Enemies you hit take +18% damage from you for 4s",
+    "Enemies you hit take +21% damage from you for 4s"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 48,
+   "id": "elemental_edge",
+   "name": "Elemental Edge",
+   "base_rarity": "uncommon",
+   "category": "offense",
+   "effect": "Hits have a {v}% chance to burn or chill",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "Hits have a 8% chance to burn or chill",
+    "Hits have a 12% chance to burn or chill",
+    "Hits have a 16% chance to burn or chill",
+    "Hits have a 20% chance to burn or chill",
+    "Hits have a 24% chance to burn or chill",
+    "Hits have a 28% chance to burn or chill"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 49,
+   "id": "hit_and_run",
+   "name": "Hit and Run",
+   "base_rarity": "uncommon",
+   "category": "mobility",
+   "effect": "+{v}% speed for 2s after dealing damage",
+   "values_by_stack": [
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "effect_by_stack": [
+    "+10% speed for 2s after dealing damage",
+    "+15% speed for 2s after dealing damage",
+    "+20% speed for 2s after dealing damage",
+    "+25% speed for 2s after dealing damage",
+    "+30% speed for 2s after dealing damage",
+    "+35% speed for 2s after dealing damage"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 50,
+   "id": "thorns",
+   "name": "Thorns",
+   "base_rarity": "uncommon",
+   "category": "defense",
+   "effect": "Reflect {v}% of melee damage back",
+   "values_by_stack": [
+    "15",
+    "22",
+    "29",
+    "36",
+    "43",
+    "50"
+   ],
+   "effect_by_stack": [
+    "Reflect 15% of melee damage back",
+    "Reflect 22% of melee damage back",
+    "Reflect 29% of melee damage back",
+    "Reflect 36% of melee damage back",
+    "Reflect 43% of melee damage back",
+    "Reflect 50% of melee damage back"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 51,
+   "id": "bulwark",
+   "name": "Bulwark",
+   "base_rarity": "uncommon",
+   "category": "defense",
+   "effect": "Your shield blocks {v}% more damage",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "Your shield blocks 8% more damage",
+    "Your shield blocks 12% more damage",
+    "Your shield blocks 16% more damage",
+    "Your shield blocks 20% more damage",
+    "Your shield blocks 24% more damage",
+    "Your shield blocks 28% more damage"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 52,
+   "id": "adrenaline",
+   "name": "Adrenaline",
+   "base_rarity": "uncommon",
+   "category": "defense",
+   "effect": "+{v}% speed below 30% health",
+   "values_by_stack": [
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "effect_by_stack": [
+    "+10% speed below 30% health",
+    "+15% speed below 30% health",
+    "+20% speed below 30% health",
+    "+25% speed below 30% health",
+    "+30% speed below 30% health",
+    "+35% speed below 30% health"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 53,
+   "id": "life_steal",
+   "name": "Life Steal",
+   "base_rarity": "uncommon",
+   "category": "defense",
+   "effect": "Heal {v}% of damage dealt",
+   "values_by_stack": [
+    "3",
+    "4.5",
+    "6",
+    "7.5",
+    "9",
+    "10.5"
+   ],
+   "effect_by_stack": [
+    "Heal 3% of damage dealt",
+    "Heal 4.5% of damage dealt",
+    "Heal 6% of damage dealt",
+    "Heal 7.5% of damage dealt",
+    "Heal 9% of damage dealt",
+    "Heal 10.5% of damage dealt"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 54,
+   "id": "barrier_pop",
+   "name": "Barrier Pop",
+   "base_rarity": "uncommon",
+   "category": "defense",
+   "effect": "Kills grant a shield worth {v}% of max health",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "Kills grant a shield worth 8% of max health",
+    "Kills grant a shield worth 12% of max health",
+    "Kills grant a shield worth 16% of max health",
+    "Kills grant a shield worth 20% of max health",
+    "Kills grant a shield worth 24% of max health",
+    "Kills grant a shield worth 28% of max health"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 55,
+   "id": "cleanse",
+   "name": "Cleanse",
+   "base_rarity": "uncommon",
+   "category": "defense",
+   "effect": "Healing has a {v}% chance to remove a debuff",
+   "values_by_stack": [
+    "20",
+    "30",
+    "40",
+    "50",
+    "60",
+    "70"
+   ],
+   "effect_by_stack": [
+    "Healing has a 20% chance to remove a debuff",
+    "Healing has a 30% chance to remove a debuff",
+    "Healing has a 40% chance to remove a debuff",
+    "Healing has a 50% chance to remove a debuff",
+    "Healing has a 60% chance to remove a debuff",
+    "Healing has a 70% chance to remove a debuff"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 56,
+   "id": "stone_stance",
+   "name": "Stone Stance",
+   "base_rarity": "uncommon",
+   "category": "defense",
+   "effect": "Standing still for 2s gives +{v}% armor",
+   "values_by_stack": [
+    "12",
+    "18",
+    "24",
+    "30",
+    "36",
+    "42"
+   ],
+   "effect_by_stack": [
+    "Standing still for 2s gives +12% armor",
+    "Standing still for 2s gives +18% armor",
+    "Standing still for 2s gives +24% armor",
+    "Standing still for 2s gives +30% armor",
+    "Standing still for 2s gives +36% armor",
+    "Standing still for 2s gives +42% armor"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 57,
+   "id": "patch_job",
+   "name": "Patch Job",
+   "base_rarity": "uncommon",
+   "category": "defense",
+   "effect": "Armor repairs {v}% per second out of combat",
+   "values_by_stack": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "effect_by_stack": [
+    "Armor repairs 2% per second out of combat",
+    "Armor repairs 3% per second out of combat",
+    "Armor repairs 4% per second out of combat",
+    "Armor repairs 5% per second out of combat",
+    "Armor repairs 6% per second out of combat",
+    "Armor repairs 7% per second out of combat"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 58,
+   "id": "echo_cast",
+   "name": "Echo Cast",
+   "base_rarity": "uncommon",
+   "category": "skill",
+   "effect": "{v}% chance to cast a skill twice",
+   "values_by_stack": [
+    "5",
+    "7.5",
+    "10",
+    "12.5",
+    "15",
+    "17.5"
+   ],
+   "effect_by_stack": [
+    "5% chance to cast a skill twice",
+    "7.5% chance to cast a skill twice",
+    "10% chance to cast a skill twice",
+    "12.5% chance to cast a skill twice",
+    "15% chance to cast a skill twice",
+    "17.5% chance to cast a skill twice"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 59,
+   "id": "quick_recharge",
+   "name": "Quick Recharge",
+   "base_rarity": "uncommon",
+   "category": "skill",
+   "effect": "Kills reduce skill cooldowns by {v}%",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "Kills reduce skill cooldowns by 8%",
+    "Kills reduce skill cooldowns by 12%",
+    "Kills reduce skill cooldowns by 16%",
+    "Kills reduce skill cooldowns by 20%",
+    "Kills reduce skill cooldowns by 24%",
+    "Kills reduce skill cooldowns by 28%"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 60,
+   "id": "overflow",
+   "name": "Overflow",
+   "base_rarity": "uncommon",
+   "category": "skill",
+   "effect": "Excess mana becomes {v}% shield",
+   "values_by_stack": [
+    "20",
+    "30",
+    "40",
+    "50",
+    "60",
+    "70"
+   ],
+   "effect_by_stack": [
+    "Excess mana becomes 20% shield",
+    "Excess mana becomes 30% shield",
+    "Excess mana becomes 40% shield",
+    "Excess mana becomes 50% shield",
+    "Excess mana becomes 60% shield",
+    "Excess mana becomes 70% shield"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 61,
+   "id": "arcane_surge",
+   "name": "Arcane Surge",
+   "base_rarity": "uncommon",
+   "category": "skill",
+   "effect": "+{v}% skill damage at full mana",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "+8% skill damage at full mana",
+    "+12% skill damage at full mana",
+    "+16% skill damage at full mana",
+    "+20% skill damage at full mana",
+    "+24% skill damage at full mana",
+    "+28% skill damage at full mana"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 62,
+   "id": "zone_control",
+   "name": "Zone Control",
+   "base_rarity": "uncommon",
+   "category": "skill",
+   "effect": "Area effects last {v}% longer",
+   "values_by_stack": [
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "effect_by_stack": [
+    "Area effects last 10% longer",
+    "Area effects last 15% longer",
+    "Area effects last 20% longer",
+    "Area effects last 25% longer",
+    "Area effects last 30% longer",
+    "Area effects last 35% longer"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 63,
+   "id": "opening_spell",
+   "name": "Opening Spell",
+   "base_rarity": "uncommon",
+   "category": "skill",
+   "effect": "+{v}% skill damage on your first cast each life",
+   "values_by_stack": [
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "effect_by_stack": [
+    "+10% skill damage on your first cast each life",
+    "+15% skill damage on your first cast each life",
+    "+20% skill damage on your first cast each life",
+    "+25% skill damage on your first cast each life",
+    "+30% skill damage on your first cast each life",
+    "+35% skill damage on your first cast each life"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 64,
+   "id": "charge_siphon",
+   "name": "Charge Siphon",
+   "base_rarity": "uncommon",
+   "category": "meter",
+   "effect": "Damage dealt charges your meter {v}% faster",
+   "values_by_stack": [
+    "6",
+    "9",
+    "12",
+    "15",
+    "18",
+    "21"
+   ],
+   "effect_by_stack": [
+    "Damage dealt charges your meter 6% faster",
+    "Damage dealt charges your meter 9% faster",
+    "Damage dealt charges your meter 12% faster",
+    "Damage dealt charges your meter 15% faster",
+    "Damage dealt charges your meter 18% faster",
+    "Damage dealt charges your meter 21% faster"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 65,
+   "id": "meter_memory",
+   "name": "Meter Memory",
+   "base_rarity": "uncommon",
+   "category": "meter",
+   "effect": "Keep {v}% of your meter when you die",
+   "values_by_stack": [
+    "15",
+    "22",
+    "29",
+    "36",
+    "43",
+    "50"
+   ],
+   "effect_by_stack": [
+    "Keep 15% of your meter when you die",
+    "Keep 22% of your meter when you die",
+    "Keep 29% of your meter when you die",
+    "Keep 36% of your meter when you die",
+    "Keep 43% of your meter when you die",
+    "Keep 50% of your meter when you die"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 66,
+   "id": "overcharge",
+   "name": "Overcharge",
+   "base_rarity": "uncommon",
+   "category": "meter",
+   "effect": "Your meter can fill {v}% past full",
+   "values_by_stack": [
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "effect_by_stack": [
+    "Your meter can fill 10% past full",
+    "Your meter can fill 15% past full",
+    "Your meter can fill 20% past full",
+    "Your meter can fill 25% past full",
+    "Your meter can fill 30% past full",
+    "Your meter can fill 35% past full"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 67,
+   "id": "steady_flow",
+   "name": "Steady Flow",
+   "base_rarity": "uncommon",
+   "category": "meter",
+   "effect": "Your meter decays {v}% slower",
+   "values_by_stack": [
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "effect_by_stack": [
+    "Your meter decays 10% slower",
+    "Your meter decays 15% slower",
+    "Your meter decays 20% slower",
+    "Your meter decays 25% slower",
+    "Your meter decays 30% slower",
+    "Your meter decays 35% slower"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 68,
+   "id": "air_strafe",
+   "name": "Air Strafe",
+   "base_rarity": "uncommon",
+   "category": "mobility",
+   "effect": "+{v}% air control",
+   "values_by_stack": [
+    "15",
+    "22",
+    "29",
+    "36",
+    "43",
+    "50"
+   ],
+   "effect_by_stack": [
+    "+15% air control",
+    "+22% air control",
+    "+29% air control",
+    "+36% air control",
+    "+43% air control",
+    "+50% air control"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 69,
+   "id": "dodge_roll",
+   "name": "Long Stride",
+   "base_rarity": "uncommon",
+   "category": "mobility",
+   "effect": "+{v}% sprint stamina",
+   "values_by_stack": [
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "effect_by_stack": [
+    "+10% sprint stamina",
+    "+15% sprint stamina",
+    "+20% sprint stamina",
+    "+25% sprint stamina",
+    "+30% sprint stamina",
+    "+35% sprint stamina"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 70,
+   "id": "rooftop_runner",
+   "name": "Rooftop Runner",
+   "base_rarity": "uncommon",
+   "category": "mobility",
+   "effect": "+{v}% speed on high ground",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "+8% speed on high ground",
+    "+12% speed on high ground",
+    "+16% speed on high ground",
+    "+20% speed on high ground",
+    "+24% speed on high ground",
+    "+28% speed on high ground"
+   ],
+   "rarity_by_stack": [
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 25,
+   "max_stack": 6
+  },
+  {
+   "number": 71,
+   "id": "executioner",
+   "name": "Executioner",
+   "base_rarity": "rare",
+   "category": "offense",
+   "effect": "+{v}% damage to enemies below 30% health",
+   "values_by_stack": [
+    "15",
+    "22",
+    "29",
+    "36",
+    "43",
+    "50"
+   ],
+   "effect_by_stack": [
+    "+15% damage to enemies below 30% health",
+    "+22% damage to enemies below 30% health",
+    "+29% damage to enemies below 30% health",
+    "+36% damage to enemies below 30% health",
+    "+43% damage to enemies below 30% health",
+    "+50% damage to enemies below 30% health"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 72,
+   "id": "ricochet_rounds",
+   "name": "Ricochet Rounds",
+   "base_rarity": "rare",
+   "category": "offense",
+   "effect": "Bullets bounce to a second target for {v}% damage",
+   "values_by_stack": [
+    "25",
+    "35",
+    "45",
+    "55",
+    "65",
+    "75"
+   ],
+   "effect_by_stack": [
+    "Bullets bounce to a second target for 25% damage",
+    "Bullets bounce to a second target for 35% damage",
+    "Bullets bounce to a second target for 45% damage",
+    "Bullets bounce to a second target for 55% damage",
+    "Bullets bounce to a second target for 65% damage",
+    "Bullets bounce to a second target for 75% damage"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 73,
+   "id": "piercing_gaze",
+   "name": "Piercing Gaze",
+   "base_rarity": "rare",
+   "category": "utility",
+   "effect": "Enemies you hit are revealed to your team for {v}s",
+   "values_by_stack": [
+    "1.5",
+    "2",
+    "2.5",
+    "3",
+    "3.5",
+    "4"
+   ],
+   "effect_by_stack": [
+    "Enemies you hit are revealed to your team for 1.5s",
+    "Enemies you hit are revealed to your team for 2s",
+    "Enemies you hit are revealed to your team for 2.5s",
+    "Enemies you hit are revealed to your team for 3s",
+    "Enemies you hit are revealed to your team for 3.5s",
+    "Enemies you hit are revealed to your team for 4s"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 74,
+   "id": "vampiric_aura",
+   "name": "Vampiric Aura",
+   "base_rarity": "rare",
+   "category": "defense",
+   "effect": "Heal {v}% of the damage your nearby allies deal",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "Heal 4% of the damage your nearby allies deal",
+    "Heal 6% of the damage your nearby allies deal",
+    "Heal 8% of the damage your nearby allies deal",
+    "Heal 10% of the damage your nearby allies deal",
+    "Heal 12% of the damage your nearby allies deal",
+    "Heal 14% of the damage your nearby allies deal"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 75,
+   "id": "frostbite_touch",
+   "name": "Frostbite Touch",
+   "base_rarity": "rare",
+   "category": "offense",
+   "effect": "Your hits slow enemies by {v}%",
+   "values_by_stack": [
+    "8",
+    "11",
+    "14",
+    "17",
+    "20",
+    "23"
+   ],
+   "effect_by_stack": [
+    "Your hits slow enemies by 8%",
+    "Your hits slow enemies by 11%",
+    "Your hits slow enemies by 14%",
+    "Your hits slow enemies by 17%",
+    "Your hits slow enemies by 20%",
+    "Your hits slow enemies by 23%"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 76,
+   "id": "blazing_trail",
+   "name": "Blazing Trail",
+   "base_rarity": "rare",
+   "category": "mobility",
+   "effect": "Sprinting leaves fire dealing {v} damage per second",
+   "values_by_stack": [
+    "10",
+    "15",
+    "20",
+    "25",
+    "30",
+    "35"
+   ],
+   "effect_by_stack": [
+    "Sprinting leaves fire dealing 10 damage per second",
+    "Sprinting leaves fire dealing 15 damage per second",
+    "Sprinting leaves fire dealing 20 damage per second",
+    "Sprinting leaves fire dealing 25 damage per second",
+    "Sprinting leaves fire dealing 30 damage per second",
+    "Sprinting leaves fire dealing 35 damage per second"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 77,
+   "id": "static_shock",
+   "name": "Static Shock",
+   "base_rarity": "rare",
+   "category": "offense",
+   "effect": "Every 6th shot chains lightning for {v}% damage",
+   "values_by_stack": [
+    "40",
+    "55",
+    "70",
+    "85",
+    "100",
+    "115"
+   ],
+   "effect_by_stack": [
+    "Every 6th shot chains lightning for 40% damage",
+    "Every 6th shot chains lightning for 55% damage",
+    "Every 6th shot chains lightning for 70% damage",
+    "Every 6th shot chains lightning for 85% damage",
+    "Every 6th shot chains lightning for 100% damage",
+    "Every 6th shot chains lightning for 115% damage"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 78,
+   "id": "poison_tip",
+   "name": "Poison Tip",
+   "base_rarity": "rare",
+   "category": "offense",
+   "effect": "Hits poison for {v} damage per second for 4s",
+   "values_by_stack": [
+    "4",
+    "6",
+    "8",
+    "10",
+    "12",
+    "14"
+   ],
+   "effect_by_stack": [
+    "Hits poison for 4 damage per second for 4s",
+    "Hits poison for 6 damage per second for 4s",
+    "Hits poison for 8 damage per second for 4s",
+    "Hits poison for 10 damage per second for 4s",
+    "Hits poison for 12 damage per second for 4s",
+    "Hits poison for 14 damage per second for 4s"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 79,
+   "id": "shield_bash",
+   "name": "Shield Bash",
+   "base_rarity": "rare",
+   "category": "defense",
+   "effect": "Shield bashes stun for {v}s",
+   "values_by_stack": [
+    "0.3",
+    "0.4",
+    "0.5",
+    "0.6",
+    "0.7",
+    "0.8"
+   ],
+   "effect_by_stack": [
+    "Shield bashes stun for 0.3s",
+    "Shield bashes stun for 0.4s",
+    "Shield bashes stun for 0.5s",
+    "Shield bashes stun for 0.6s",
+    "Shield bashes stun for 0.7s",
+    "Shield bashes stun for 0.8s"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 80,
+   "id": "deflector",
+   "name": "Deflector",
+   "base_rarity": "rare",
+   "category": "defense",
+   "effect": "Reflect the first projectile every 8s for {v}% damage",
+   "values_by_stack": [
+    "40",
+    "55",
+    "70",
+    "85",
+    "100",
+    "115"
+   ],
+   "effect_by_stack": [
+    "Reflect the first projectile every 8s for 40% damage",
+    "Reflect the first projectile every 8s for 55% damage",
+    "Reflect the first projectile every 8s for 70% damage",
+    "Reflect the first projectile every 8s for 85% damage",
+    "Reflect the first projectile every 8s for 100% damage",
+    "Reflect the first projectile every 8s for 115% damage"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 81,
+   "id": "second_skin",
+   "name": "Second Skin",
+   "base_rarity": "rare",
+   "category": "defense",
+   "effect": "After taking damage gain +{v}% armor for 3s",
+   "values_by_stack": [
+    "10",
+    "14",
+    "18",
+    "22",
+    "26",
+    "30"
+   ],
+   "effect_by_stack": [
+    "After taking damage gain +10% armor for 3s",
+    "After taking damage gain +14% armor for 3s",
+    "After taking damage gain +18% armor for 3s",
+    "After taking damage gain +22% armor for 3s",
+    "After taking damage gain +26% armor for 3s",
+    "After taking damage gain +30% armor for 3s"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 82,
+   "id": "phase_step",
+   "name": "Phase Step",
+   "base_rarity": "rare",
+   "category": "mobility",
+   "effect": "Sprint skills recharge {v}% faster",
+   "values_by_stack": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "24",
+    "28"
+   ],
+   "effect_by_stack": [
+    "Sprint skills recharge 8% faster",
+    "Sprint skills recharge 12% faster",
+    "Sprint skills recharge 16% faster",
+    "Sprint skills recharge 20% faster",
+    "Sprint skills recharge 24% faster",
+    "Sprint skills recharge 28% faster"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 83,
+   "id": "mana_battery",
+   "name": "Mana Battery",
+   "base_rarity": "rare",
+   "category": "skill",
+   "effect": "Kills restore {v}% mana",
+   "values_by_stack": [
+    "15",
+    "21",
+    "27",
+    "33",
+    "39",
+    "45"
+   ],
+   "effect_by_stack": [
+    "Kills restore 15% mana",
+    "Kills restore 21% mana",
+    "Kills restore 27% mana",
+    "Kills restore 33% mana",
+    "Kills restore 39% mana",
+    "Kills restore 45% mana"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 84,
+   "id": "spell_weaver",
+   "name": "Spell Weaver",
+   "base_rarity": "rare",
+   "category": "skill",
+   "effect": "Casting a skill boosts your next shot by {v}%",
+   "values_by_stack": [
+    "25",
+    "35",
+    "45",
+    "55",
+    "65",
+    "75"
+   ],
+   "effect_by_stack": [
+    "Casting a skill boosts your next shot by 25%",
+    "Casting a skill boosts your next shot by 35%",
+    "Casting a skill boosts your next shot by 45%",
+    "Casting a skill boosts your next shot by 55%",
+    "Casting a skill boosts your next shot by 65%",
+    "Casting a skill boosts your next shot by 75%"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 85,
+   "id": "siphon_soul",
+   "name": "Siphon Soul",
+   "base_rarity": "rare",
+   "category": "defense",
+   "effect": "Kills give {v}% of max health as temporary health",
+   "values_by_stack": [
+    "8",
+    "11",
+    "14",
+    "17",
+    "20",
+    "23"
+   ],
+   "effect_by_stack": [
+    "Kills give 8% of max health as temporary health",
+    "Kills give 11% of max health as temporary health",
+    "Kills give 14% of max health as temporary health",
+    "Kills give 17% of max health as temporary health",
+    "Kills give 20% of max health as temporary health",
+    "Kills give 23% of max health as temporary health"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 86,
+   "id": "gale_boots",
+   "name": "Gale Boots",
+   "base_rarity": "rare",
+   "category": "mobility",
+   "effect": "+{v}% movement speed, doubled in the air",
+   "values_by_stack": [
+    "5",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15"
+   ],
+   "effect_by_stack": [
+    "+5% movement speed, doubled in the air",
+    "+7% movement speed, doubled in the air",
+    "+9% movement speed, doubled in the air",
+    "+11% movement speed, doubled in the air",
+    "+13% movement speed, doubled in the air",
+    "+15% movement speed, doubled in the air"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 87,
+   "id": "treasure_hunter",
+   "name": "Treasure Hunter",
+   "base_rarity": "rare",
+   "category": "economy",
+   "effect": "Loot boxes show on the map and drop {v}% more gear",
+   "values_by_stack": [
+    "10",
+    "14",
+    "18",
+    "22",
+    "26",
+    "30"
+   ],
+   "effect_by_stack": [
+    "Loot boxes show on the map and drop 10% more gear",
+    "Loot boxes show on the map and drop 14% more gear",
+    "Loot boxes show on the map and drop 18% more gear",
+    "Loot boxes show on the map and drop 22% more gear",
+    "Loot boxes show on the map and drop 26% more gear",
+    "Loot boxes show on the map and drop 30% more gear"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 88,
+   "id": "guardian_spirit",
+   "name": "Guardian Spirit",
+   "base_rarity": "rare",
+   "category": "defense",
+   "effect": "An ally near you takes {v}% less damage",
+   "values_by_stack": [
+    "5",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15"
+   ],
+   "effect_by_stack": [
+    "An ally near you takes 5% less damage",
+    "An ally near you takes 7% less damage",
+    "An ally near you takes 9% less damage",
+    "An ally near you takes 11% less damage",
+    "An ally near you takes 13% less damage",
+    "An ally near you takes 15% less damage"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 89,
+   "id": "rune_etcher",
+   "name": "Rune Etcher",
+   "base_rarity": "rare",
+   "category": "class",
+   "effect": "Armor piece passives are {v}% stronger",
+   "values_by_stack": [
+    "10",
+    "14",
+    "18",
+    "22",
+    "26",
+    "30"
+   ],
+   "effect_by_stack": [
+    "Armor piece passives are 10% stronger",
+    "Armor piece passives are 14% stronger",
+    "Armor piece passives are 18% stronger",
+    "Armor piece passives are 22% stronger",
+    "Armor piece passives are 26% stronger",
+    "Armor piece passives are 30% stronger"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 90,
+   "id": "meter_burst",
+   "name": "Meter Burst",
+   "base_rarity": "rare",
+   "category": "meter",
+   "effect": "Kills fill {v}% of your meter",
+   "values_by_stack": [
+    "10",
+    "14",
+    "18",
+    "22",
+    "26",
+    "30"
+   ],
+   "effect_by_stack": [
+    "Kills fill 10% of your meter",
+    "Kills fill 14% of your meter",
+    "Kills fill 18% of your meter",
+    "Kills fill 22% of your meter",
+    "Kills fill 26% of your meter",
+    "Kills fill 30% of your meter"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 91,
+   "id": "pack_leader",
+   "name": "Pack Leader",
+   "base_rarity": "rare",
+   "category": "utility",
+   "effect": "Nearby allies deal +{v}% damage",
+   "values_by_stack": [
+    "3",
+    "4.5",
+    "6",
+    "7.5",
+    "9",
+    "10.5"
+   ],
+   "effect_by_stack": [
+    "Nearby allies deal +3% damage",
+    "Nearby allies deal +4.5% damage",
+    "Nearby allies deal +6% damage",
+    "Nearby allies deal +7.5% damage",
+    "Nearby allies deal +9% damage",
+    "Nearby allies deal +10.5% damage"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 92,
+   "id": "silent_step",
+   "name": "Silent Step",
+   "base_rarity": "rare",
+   "category": "mobility",
+   "effect": "Crouch-walking is silent and {v}% faster",
+   "values_by_stack": [
+    "15",
+    "21",
+    "27",
+    "33",
+    "39",
+    "45"
+   ],
+   "effect_by_stack": [
+    "Crouch-walking is silent and 15% faster",
+    "Crouch-walking is silent and 21% faster",
+    "Crouch-walking is silent and 27% faster",
+    "Crouch-walking is silent and 33% faster",
+    "Crouch-walking is silent and 39% faster",
+    "Crouch-walking is silent and 45% faster"
+   ],
+   "rarity_by_stack": [
+    "rare",
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 15,
+   "max_stack": 6
+  },
+  {
+   "number": 93,
+   "id": "tide_caller",
+   "name": "Tide Caller",
+   "base_rarity": "epic",
+   "category": "skill",
+   "effect": "Skills leave a puddle that heals allies {v} health per second",
+   "values_by_stack": [
+    "5",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15"
+   ],
+   "effect_by_stack": [
+    "Skills leave a puddle that heals allies 5 health per second",
+    "Skills leave a puddle that heals allies 7 health per second",
+    "Skills leave a puddle that heals allies 9 health per second",
+    "Skills leave a puddle that heals allies 11 health per second",
+    "Skills leave a puddle that heals allies 13 health per second",
+    "Skills leave a puddle that heals allies 15 health per second"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 94,
+   "id": "thunderstep",
+   "name": "Thunderstep",
+   "base_rarity": "epic",
+   "category": "mobility",
+   "effect": "Sprinting releases a lightning arc for {v} damage",
+   "values_by_stack": [
+    "40",
+    "55",
+    "70",
+    "85",
+    "100",
+    "115"
+   ],
+   "effect_by_stack": [
+    "Sprinting releases a lightning arc for 40 damage",
+    "Sprinting releases a lightning arc for 55 damage",
+    "Sprinting releases a lightning arc for 70 damage",
+    "Sprinting releases a lightning arc for 85 damage",
+    "Sprinting releases a lightning arc for 100 damage",
+    "Sprinting releases a lightning arc for 115 damage"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 95,
+   "id": "echoing_blade",
+   "name": "Echoing Blade",
+   "base_rarity": "epic",
+   "category": "offense",
+   "effect": "Melee attacks create a shockwave for {v}% damage",
+   "values_by_stack": [
+    "30",
+    "40",
+    "50",
+    "60",
+    "70",
+    "80"
+   ],
+   "effect_by_stack": [
+    "Melee attacks create a shockwave for 30% damage",
+    "Melee attacks create a shockwave for 40% damage",
+    "Melee attacks create a shockwave for 50% damage",
+    "Melee attacks create a shockwave for 60% damage",
+    "Melee attacks create a shockwave for 70% damage",
+    "Melee attacks create a shockwave for 80% damage"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 96,
+   "id": "blood_pact",
+   "name": "Blood Pact",
+   "base_rarity": "epic",
+   "category": "skill",
+   "effect": "Spend 10% health to refill {v}% of your mana",
+   "values_by_stack": [
+    "40",
+    "55",
+    "70",
+    "85",
+    "100",
+    "115"
+   ],
+   "effect_by_stack": [
+    "Spend 10% health to refill 40% of your mana",
+    "Spend 10% health to refill 55% of your mana",
+    "Spend 10% health to refill 70% of your mana",
+    "Spend 10% health to refill 85% of your mana",
+    "Spend 10% health to refill 100% of your mana",
+    "Spend 10% health to refill 115% of your mana"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 97,
+   "id": "grave_chill",
+   "name": "Grave Chill",
+   "base_rarity": "epic",
+   "category": "offense",
+   "effect": "Killed enemies leave a frost field that slows for {v}s",
+   "values_by_stack": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "effect_by_stack": [
+    "Killed enemies leave a frost field that slows for 3s",
+    "Killed enemies leave a frost field that slows for 4s",
+    "Killed enemies leave a frost field that slows for 5s",
+    "Killed enemies leave a frost field that slows for 6s",
+    "Killed enemies leave a frost field that slows for 7s",
+    "Killed enemies leave a frost field that slows for 8s"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 98,
+   "id": "hunter_s_instinct",
+   "name": "Hunter's Instinct",
+   "base_rarity": "epic",
+   "category": "utility",
+   "effect": "Enemies below 40% health show through walls for {v}s",
+   "values_by_stack": [
+    "1.5",
+    "2",
+    "2.5",
+    "3",
+    "3.5",
+    "4"
+   ],
+   "effect_by_stack": [
+    "Enemies below 40% health show through walls for 1.5s",
+    "Enemies below 40% health show through walls for 2s",
+    "Enemies below 40% health show through walls for 2.5s",
+    "Enemies below 40% health show through walls for 3s",
+    "Enemies below 40% health show through walls for 3.5s",
+    "Enemies below 40% health show through walls for 4s"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 99,
+   "id": "spell_mirror",
+   "name": "Spell Mirror",
+   "base_rarity": "epic",
+   "category": "defense",
+   "effect": "Reflect the first skill cast at you every {v}s",
+   "values_by_stack": [
+    "20",
+    "18",
+    "16",
+    "14",
+    "12",
+    "10"
+   ],
+   "effect_by_stack": [
+    "Reflect the first skill cast at you every 20s",
+    "Reflect the first skill cast at you every 18s",
+    "Reflect the first skill cast at you every 16s",
+    "Reflect the first skill cast at you every 14s",
+    "Reflect the first skill cast at you every 12s",
+    "Reflect the first skill cast at you every 10s"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 100,
+   "id": "overload_core",
+   "name": "Overload Core",
+   "base_rarity": "epic",
+   "category": "meter",
+   "effect": "At full meter, deal +{v}% damage for 6s",
+   "values_by_stack": [
+    "25",
+    "35",
+    "45",
+    "55",
+    "65",
+    "75"
+   ],
+   "effect_by_stack": [
+    "At full meter, deal +25% damage for 6s",
+    "At full meter, deal +35% damage for 6s",
+    "At full meter, deal +45% damage for 6s",
+    "At full meter, deal +55% damage for 6s",
+    "At full meter, deal +65% damage for 6s",
+    "At full meter, deal +75% damage for 6s"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 101,
+   "id": "twin_souls",
+   "name": "Twin Souls",
+   "base_rarity": "epic",
+   "category": "class",
+   "effect": "Gain a second copy of your passive at {v}% strength",
+   "values_by_stack": [
+    "40",
+    "52",
+    "64",
+    "76",
+    "88",
+    "100"
+   ],
+   "effect_by_stack": [
+    "Gain a second copy of your passive at 40% strength",
+    "Gain a second copy of your passive at 52% strength",
+    "Gain a second copy of your passive at 64% strength",
+    "Gain a second copy of your passive at 76% strength",
+    "Gain a second copy of your passive at 88% strength",
+    "Gain a second copy of your passive at 100% strength"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 102,
+   "id": "fortress_mode",
+   "name": "Fortress Mode",
+   "base_rarity": "epic",
+   "category": "defense",
+   "effect": "Standing still for 3s gives {v}% damage reduction",
+   "values_by_stack": [
+    "20",
+    "26",
+    "32",
+    "38",
+    "44",
+    "50"
+   ],
+   "effect_by_stack": [
+    "Standing still for 3s gives 20% damage reduction",
+    "Standing still for 3s gives 26% damage reduction",
+    "Standing still for 3s gives 32% damage reduction",
+    "Standing still for 3s gives 38% damage reduction",
+    "Standing still for 3s gives 44% damage reduction",
+    "Standing still for 3s gives 50% damage reduction"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 103,
+   "id": "ember_heart",
+   "name": "Ember Heart",
+   "base_rarity": "epic",
+   "category": "defense",
+   "effect": "Below 25% health, explode for {v} damage once per life",
+   "values_by_stack": [
+    "120",
+    "160",
+    "200",
+    "240",
+    "280",
+    "320"
+   ],
+   "effect_by_stack": [
+    "Below 25% health, explode for 120 damage once per life",
+    "Below 25% health, explode for 160 damage once per life",
+    "Below 25% health, explode for 200 damage once per life",
+    "Below 25% health, explode for 240 damage once per life",
+    "Below 25% health, explode for 280 damage once per life",
+    "Below 25% health, explode for 320 damage once per life"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 104,
+   "id": "void_anchor",
+   "name": "Void Anchor",
+   "base_rarity": "epic",
+   "category": "skill",
+   "effect": "Your signature skill pulls enemies {v} m toward you",
+   "values_by_stack": [
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "effect_by_stack": [
+    "Your signature skill pulls enemies 3 m toward you",
+    "Your signature skill pulls enemies 4 m toward you",
+    "Your signature skill pulls enemies 5 m toward you",
+    "Your signature skill pulls enemies 6 m toward you",
+    "Your signature skill pulls enemies 7 m toward you",
+    "Your signature skill pulls enemies 8 m toward you"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 105,
+   "id": "mercy_mark",
+   "name": "Mercy Mark",
+   "base_rarity": "epic",
+   "category": "utility",
+   "effect": "Allies you heal deal +{v}% damage for 5s",
+   "values_by_stack": [
+    "10",
+    "14",
+    "18",
+    "22",
+    "26",
+    "30"
+   ],
+   "effect_by_stack": [
+    "Allies you heal deal +10% damage for 5s",
+    "Allies you heal deal +14% damage for 5s",
+    "Allies you heal deal +18% damage for 5s",
+    "Allies you heal deal +22% damage for 5s",
+    "Allies you heal deal +26% damage for 5s",
+    "Allies you heal deal +30% damage for 5s"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 106,
+   "id": "loot_magnet",
+   "name": "Loot Magnet",
+   "base_rarity": "epic",
+   "category": "economy",
+   "effect": "Pickups and loot boxes come to you from {v} m",
+   "values_by_stack": [
+    "6",
+    "8",
+    "10",
+    "12",
+    "14",
+    "16"
+   ],
+   "effect_by_stack": [
+    "Pickups and loot boxes come to you from 6 m",
+    "Pickups and loot boxes come to you from 8 m",
+    "Pickups and loot boxes come to you from 10 m",
+    "Pickups and loot boxes come to you from 12 m",
+    "Pickups and loot boxes come to you from 14 m",
+    "Pickups and loot boxes come to you from 16 m"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 107,
+   "id": "spellblade",
+   "name": "Spellblade",
+   "base_rarity": "epic",
+   "category": "skill",
+   "effect": "Each melee hit reduces skill cooldowns by {v}s",
+   "values_by_stack": [
+    "0.5",
+    "0.7",
+    "0.9",
+    "1.1",
+    "1.3",
+    "1.5"
+   ],
+   "effect_by_stack": [
+    "Each melee hit reduces skill cooldowns by 0.5s",
+    "Each melee hit reduces skill cooldowns by 0.7s",
+    "Each melee hit reduces skill cooldowns by 0.9s",
+    "Each melee hit reduces skill cooldowns by 1.1s",
+    "Each melee hit reduces skill cooldowns by 1.3s",
+    "Each melee hit reduces skill cooldowns by 1.5s"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 108,
+   "id": "arcane_armor",
+   "name": "Arcane Armor",
+   "base_rarity": "epic",
+   "category": "defense",
+   "effect": "{v}% of damage taken drains mana instead of health",
+   "values_by_stack": [
+    "20",
+    "26",
+    "32",
+    "38",
+    "44",
+    "50"
+   ],
+   "effect_by_stack": [
+    "20% of damage taken drains mana instead of health",
+    "26% of damage taken drains mana instead of health",
+    "32% of damage taken drains mana instead of health",
+    "38% of damage taken drains mana instead of health",
+    "44% of damage taken drains mana instead of health",
+    "50% of damage taken drains mana instead of health"
+   ],
+   "rarity_by_stack": [
+    "epic",
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 9,
+   "max_stack": 6
+  },
+  {
+   "number": 109,
+   "id": "dragon_s_pact",
+   "name": "Dragon's Pact",
+   "base_rarity": "legendary",
+   "category": "skill",
+   "effect": "Your signature skill burns enemies for {v}% of its damage over 5s",
+   "values_by_stack": [
+    "30",
+    "40",
+    "50",
+    "60",
+    "70",
+    "80"
+   ],
+   "effect_by_stack": [
+    "Your signature skill burns enemies for 30% of its damage over 5s",
+    "Your signature skill burns enemies for 40% of its damage over 5s",
+    "Your signature skill burns enemies for 50% of its damage over 5s",
+    "Your signature skill burns enemies for 60% of its damage over 5s",
+    "Your signature skill burns enemies for 70% of its damage over 5s",
+    "Your signature skill burns enemies for 80% of its damage over 5s"
+   ],
+   "rarity_by_stack": [
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 5,
+   "max_stack": 6
+  },
+  {
+   "number": 110,
+   "id": "archmage_mantle",
+   "name": "Archmage Mantle",
+   "base_rarity": "legendary",
+   "category": "skill",
+   "effect": "The first {v} casts each life have no cooldown",
+   "values_by_stack": [
+    "1",
+    "1",
+    "2",
+    "2",
+    "3",
+    "3"
+   ],
+   "effect_by_stack": [
+    "The first 1 casts each life have no cooldown",
+    "The first 1 casts each life have no cooldown",
+    "The first 2 casts each life have no cooldown",
+    "The first 2 casts each life have no cooldown",
+    "The first 3 casts each life have no cooldown",
+    "The first 3 casts each life have no cooldown"
+   ],
+   "rarity_by_stack": [
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 5,
+   "max_stack": 6
+  },
+  {
+   "number": 111,
+   "id": "thousand_cuts",
+   "name": "Thousand Cuts",
+   "base_rarity": "legendary",
+   "category": "offense",
+   "effect": "Gain +{v}% damage for every 10 hits in a row",
+   "values_by_stack": [
+    "5",
+    "7",
+    "9",
+    "11",
+    "13",
+    "15"
+   ],
+   "effect_by_stack": [
+    "Gain +5% damage for every 10 hits in a row",
+    "Gain +7% damage for every 10 hits in a row",
+    "Gain +9% damage for every 10 hits in a row",
+    "Gain +11% damage for every 10 hits in a row",
+    "Gain +13% damage for every 10 hits in a row",
+    "Gain +15% damage for every 10 hits in a row"
+   ],
+   "rarity_by_stack": [
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 5,
+   "max_stack": 6
+  },
+  {
+   "number": 112,
+   "id": "bastion",
+   "name": "Bastion",
+   "base_rarity": "legendary",
+   "category": "defense",
+   "effect": "Your shield blocks {v}% of ranged damage",
+   "values_by_stack": [
+    "50",
+    "58",
+    "66",
+    "74",
+    "82",
+    "90"
+   ],
+   "effect_by_stack": [
+    "Your shield blocks 50% of ranged damage",
+    "Your shield blocks 58% of ranged damage",
+    "Your shield blocks 66% of ranged damage",
+    "Your shield blocks 74% of ranged damage",
+    "Your shield blocks 82% of ranged damage",
+    "Your shield blocks 90% of ranged damage"
+   ],
+   "rarity_by_stack": [
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 5,
+   "max_stack": 6
+  },
+  {
+   "number": 113,
+   "id": "ghost_walk",
+   "name": "Ghost Walk",
+   "base_rarity": "legendary",
+   "category": "utility",
+   "effect": "After a kill you turn invisible for {v}s",
+   "values_by_stack": [
+    "2",
+    "2.6",
+    "3.2",
+    "3.8",
+    "4.4",
+    "5"
+   ],
+   "effect_by_stack": [
+    "After a kill you turn invisible for 2s",
+    "After a kill you turn invisible for 2.6s",
+    "After a kill you turn invisible for 3.2s",
+    "After a kill you turn invisible for 3.8s",
+    "After a kill you turn invisible for 4.4s",
+    "After a kill you turn invisible for 5s"
+   ],
+   "rarity_by_stack": [
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 5,
+   "max_stack": 6
+  },
+  {
+   "number": 114,
+   "id": "tidebound",
+   "name": "Tidebound",
+   "base_rarity": "legendary",
+   "category": "skill",
+   "effect": "Area skills gain +{v}% radius and pull enemies in",
+   "values_by_stack": [
+    "20",
+    "26",
+    "32",
+    "38",
+    "44",
+    "50"
+   ],
+   "effect_by_stack": [
+    "Area skills gain +20% radius and pull enemies in",
+    "Area skills gain +26% radius and pull enemies in",
+    "Area skills gain +32% radius and pull enemies in",
+    "Area skills gain +38% radius and pull enemies in",
+    "Area skills gain +44% radius and pull enemies in",
+    "Area skills gain +50% radius and pull enemies in"
+   ],
+   "rarity_by_stack": [
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 5,
+   "max_stack": 6
+  },
+  {
+   "number": 115,
+   "id": "stormcaller_s_gift",
+   "name": "Stormcaller's Gift",
+   "base_rarity": "legendary",
+   "category": "skill",
+   "effect": "Each ultimate cast chains lightning for {v} damage",
+   "values_by_stack": [
+    "150",
+    "200",
+    "250",
+    "300",
+    "350",
+    "400"
+   ],
+   "effect_by_stack": [
+    "Each ultimate cast chains lightning for 150 damage",
+    "Each ultimate cast chains lightning for 200 damage",
+    "Each ultimate cast chains lightning for 250 damage",
+    "Each ultimate cast chains lightning for 300 damage",
+    "Each ultimate cast chains lightning for 350 damage",
+    "Each ultimate cast chains lightning for 400 damage"
+   ],
+   "rarity_by_stack": [
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 5,
+   "max_stack": 6
+  },
+  {
+   "number": 116,
+   "id": "grave_whisper",
+   "name": "Grave Whisper",
+   "base_rarity": "legendary",
+   "category": "utility",
+   "effect": "Enemies you kill fight for you for {v}s",
+   "values_by_stack": [
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "effect_by_stack": [
+    "Enemies you kill fight for you for 4s",
+    "Enemies you kill fight for you for 5s",
+    "Enemies you kill fight for you for 6s",
+    "Enemies you kill fight for you for 7s",
+    "Enemies you kill fight for you for 8s",
+    "Enemies you kill fight for you for 9s"
+   ],
+   "rarity_by_stack": [
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 5,
+   "max_stack": 6
+  },
+  {
+   "number": 117,
+   "id": "rune_of_plenty",
+   "name": "Rune of Plenty",
+   "base_rarity": "legendary",
+   "category": "economy",
+   "effect": "An extra card choice every {v} levels",
+   "values_by_stack": [
+    "6",
+    "5",
+    "4",
+    "3",
+    "2",
+    "2"
+   ],
+   "effect_by_stack": [
+    "An extra card choice every 6 levels",
+    "An extra card choice every 5 levels",
+    "An extra card choice every 4 levels",
+    "An extra card choice every 3 levels",
+    "An extra card choice every 2 levels",
+    "An extra card choice every 2 levels"
+   ],
+   "rarity_by_stack": [
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 5,
+   "max_stack": 6
+  },
+  {
+   "number": 118,
+   "id": "soul_forge",
+   "name": "Soul Forge",
+   "base_rarity": "legendary",
+   "category": "economy",
+   "effect": "Kills have a {v}% chance to drop a gear piece",
+   "values_by_stack": [
+    "6",
+    "8",
+    "10",
+    "12",
+    "14",
+    "16"
+   ],
+   "effect_by_stack": [
+    "Kills have a 6% chance to drop a gear piece",
+    "Kills have a 8% chance to drop a gear piece",
+    "Kills have a 10% chance to drop a gear piece",
+    "Kills have a 12% chance to drop a gear piece",
+    "Kills have a 14% chance to drop a gear piece",
+    "Kills have a 16% chance to drop a gear piece"
+   ],
+   "rarity_by_stack": [
+    "legendary",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 5,
+   "max_stack": 6
+  },
+  {
+   "number": 119,
+   "id": "phoenix_heart",
+   "name": "Phoenix Heart",
+   "base_rarity": "mythic",
+   "category": "defense",
+   "effect": "Once per match, revive with {v}% health",
+   "values_by_stack": [
+    "40",
+    "50",
+    "60",
+    "70",
+    "80",
+    "90"
+   ],
+   "effect_by_stack": [
+    "Once per match, revive with 40% health",
+    "Once per match, revive with 50% health",
+    "Once per match, revive with 60% health",
+    "Once per match, revive with 70% health",
+    "Once per match, revive with 80% health",
+    "Once per match, revive with 90% health"
+   ],
+   "rarity_by_stack": [
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 1,
+   "max_stack": 6
+  },
+  {
+   "number": 120,
+   "id": "time_fracture",
+   "name": "Time Fracture",
+   "base_rarity": "mythic",
+   "category": "meter",
+   "effect": "Killing with an ultimate refunds {v}% of your meter",
+   "values_by_stack": [
+    "40",
+    "52",
+    "64",
+    "76",
+    "88",
+    "100"
+   ],
+   "effect_by_stack": [
+    "Killing with an ultimate refunds 40% of your meter",
+    "Killing with an ultimate refunds 52% of your meter",
+    "Killing with an ultimate refunds 64% of your meter",
+    "Killing with an ultimate refunds 76% of your meter",
+    "Killing with an ultimate refunds 88% of your meter",
+    "Killing with an ultimate refunds 100% of your meter"
+   ],
+   "rarity_by_stack": [
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 1,
+   "max_stack": 6
+  },
+  {
+   "number": 121,
+   "id": "omnimancer",
+   "name": "Omnimancer",
+   "base_rarity": "mythic",
+   "category": "class",
+   "effect": "Skills from other classes get {v}% of your class mastery buff",
+   "values_by_stack": [
+    "40",
+    "52",
+    "64",
+    "76",
+    "88",
+    "100"
+   ],
+   "effect_by_stack": [
+    "Skills from other classes get 40% of your class mastery buff",
+    "Skills from other classes get 52% of your class mastery buff",
+    "Skills from other classes get 64% of your class mastery buff",
+    "Skills from other classes get 76% of your class mastery buff",
+    "Skills from other classes get 88% of your class mastery buff",
+    "Skills from other classes get 100% of your class mastery buff"
+   ],
+   "rarity_by_stack": [
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 1,
+   "max_stack": 6
+  },
+  {
+   "number": 122,
+   "id": "worldbreaker",
+   "name": "Worldbreaker",
+   "base_rarity": "mythic",
+   "category": "skill",
+   "effect": "Area skills hit twice; the second hit deals {v}% damage",
+   "values_by_stack": [
+    "40",
+    "52",
+    "64",
+    "76",
+    "88",
+    "100"
+   ],
+   "effect_by_stack": [
+    "Area skills hit twice; the second hit deals 40% damage",
+    "Area skills hit twice; the second hit deals 52% damage",
+    "Area skills hit twice; the second hit deals 64% damage",
+    "Area skills hit twice; the second hit deals 76% damage",
+    "Area skills hit twice; the second hit deals 88% damage",
+    "Area skills hit twice; the second hit deals 100% damage"
+   ],
+   "rarity_by_stack": [
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 1,
+   "max_stack": 6
+  },
+  {
+   "number": 123,
+   "id": "mythic_echo",
+   "name": "Mythic Echo",
+   "base_rarity": "mythic",
+   "category": "meter",
+   "effect": "Your ultimate is cast again after {v}s",
+   "values_by_stack": [
+    "4",
+    "3.5",
+    "3",
+    "2.5",
+    "2",
+    "1.5"
+   ],
+   "effect_by_stack": [
+    "Your ultimate is cast again after 4s",
+    "Your ultimate is cast again after 3.5s",
+    "Your ultimate is cast again after 3s",
+    "Your ultimate is cast again after 2.5s",
+    "Your ultimate is cast again after 2s",
+    "Your ultimate is cast again after 1.5s"
+   ],
+   "rarity_by_stack": [
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 1,
+   "max_stack": 6
+  },
+  {
+   "number": 124,
+   "id": "crown_of_kings",
+   "name": "Crown of Kings",
+   "base_rarity": "mythic",
+   "category": "utility",
+   "effect": "Allies near you gain {v}% of your damage bonuses",
+   "values_by_stack": [
+    "20",
+    "28",
+    "36",
+    "44",
+    "52",
+    "60"
+   ],
+   "effect_by_stack": [
+    "Allies near you gain 20% of your damage bonuses",
+    "Allies near you gain 28% of your damage bonuses",
+    "Allies near you gain 36% of your damage bonuses",
+    "Allies near you gain 44% of your damage bonuses",
+    "Allies near you gain 52% of your damage bonuses",
+    "Allies near you gain 60% of your damage bonuses"
+   ],
+   "rarity_by_stack": [
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 1,
+   "max_stack": 6
+  },
+  {
+   "number": 125,
+   "id": "fate_weaver",
+   "name": "Fate Weaver",
+   "base_rarity": "mythic",
+   "category": "economy",
+   "effect": "See {v} cards on every level-up",
+   "values_by_stack": [
+    "4",
+    "4",
+    "4",
+    "5",
+    "5",
+    "6"
+   ],
+   "effect_by_stack": [
+    "See 4 cards on every level-up",
+    "See 4 cards on every level-up",
+    "See 4 cards on every level-up",
+    "See 5 cards on every level-up",
+    "See 5 cards on every level-up",
+    "See 6 cards on every level-up"
+   ],
+   "rarity_by_stack": [
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic",
+    "mythic"
+   ],
+   "offer_weight": 1,
+   "max_stack": 6
+  }
+ ]
+}

@@ -1,0 +1,405 @@
+{
+  "arcanist": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.62,
+    "arms": [
+      32,
+      28
+    ],
+    "centre": "head",
+    "cloth": [
+      {
+        "name": "cape",
+        "kind": "ring",
+        "anchor": "DEF-spine.003",
+        "z_top": 0.8,
+        "z_fade": 0.03,
+        "arc": [
+          -80,
+          80
+        ],
+        "cols": 5,
+        "segs": 6,
+        "leg_clear": null,
+        "z_min": 0.06
+      },
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.5,
+        "cols": 8,
+        "segs": 5,
+        "leg_clear": null,
+        "z_min": 0.06
+      }
+    ]
+  },
+  "celestial_mage": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.5,
+    "arms": [
+      12,
+      10
+    ],
+    "centre": "head",
+    "cloth": [
+      {
+        "name": "wing_l",
+        "kind": "limb",
+        "anchor": "DEF-spine.003",
+        "root": [
+          0.1,
+          0.1,
+          1.18
+        ],
+        "dir": [
+          0.9,
+          0.3,
+          0.35
+        ],
+        "length": 0.55,
+        "segs": 3,
+        "box": [
+          0.14,
+          0.9,
+          0.03,
+          0.7
+        ],
+        "exclude": [
+          [
+            -9,
+            9,
+            -9,
+            9,
+            -1,
+            0.85
+          ]
+        ],
+        "arm_clear": null
+      },
+      {
+        "name": "wing_r",
+        "kind": "limb",
+        "anchor": "DEF-spine.003",
+        "root": [
+          -0.1,
+          0.1,
+          1.18
+        ],
+        "dir": [
+          -0.9,
+          0.3,
+          0.35
+        ],
+        "length": 0.55,
+        "segs": 3,
+        "box": [
+          -0.9,
+          -0.14,
+          0.03,
+          0.7
+        ],
+        "exclude": [
+          [
+            -9,
+            9,
+            -9,
+            9,
+            -1,
+            0.85
+          ]
+        ],
+        "arm_clear": null
+      },
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.52,
+        "cols": 8,
+        "segs": 5,
+        "leg_clear": null,
+        "z_min": 0.07
+      }
+    ]
+  },
+  "desert_assassin": {
+    "yaw": -35,
+    "yaw_range": 55,
+    "H": 1.55,
+    "arms": [
+      30,
+      40
+    ],
+    "stance": [
+      0.05,
+      0.12,
+      0.17
+    ],
+    "knee_fwd": 0.05,
+    "straighten": true,
+    "centre": [
+      -0.01,
+      0.3
+    ],
+    "cloth": [
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.6,
+        "cols": 8,
+        "segs": 4,
+        "leg_clear": [
+          3.2,
+          5
+        ]
+      }
+    ]
+  },
+  "flame_lord": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.8,
+    "arms": [
+      10,
+      8
+    ],
+    "centre": "head",
+    "cloth": [
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.52,
+        "cols": 8,
+        "segs": 4
+      }
+    ]
+  },
+  "frost_mage": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.68,
+    "arms": [
+      14,
+      12
+    ],
+    "hair": {
+      "length": 0.23,
+      "width": 0.3
+    },
+    "centre": "head",
+    "cloth": [
+      {
+        "name": "cape",
+        "kind": "ring",
+        "anchor": "DEF-spine.003",
+        "z_top": 0.8,
+        "z_fade": 0.03,
+        "arc": [
+          -80,
+          80
+        ],
+        "cols": 5,
+        "segs": 5,
+        "leg_clear": null,
+        "z_min": 0.06
+      },
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.5,
+        "cols": 8,
+        "segs": 4
+      }
+    ]
+  },
+  "gm_ravn": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.78,
+    "arms": [
+      22,
+      18
+    ],
+    "centre": "head"
+  },
+  "necromancer": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.9,
+    "arms": [
+      66,
+      62
+    ],
+    "arm_fwd": [
+      18,
+      50
+    ],
+    "shoulder_half": 0.095,
+    "arm_len": [
+      0.1,
+      0.105,
+      0.05
+    ],
+    "centre": "head",
+    "cloth": [],
+    "hang_arms": 40,
+    "hang_fwd": [
+      6,
+      18
+    ],
+    "arm_smooth": 90,
+    "leg_sides": 0.015
+  },
+  "pirate_captain": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.58,
+    "arms": [
+      10,
+      10
+    ],
+    "centre": [
+      0.3,
+      0.06
+    ],
+    "cloth": [
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.56,
+        "cols": 8,
+        "segs": 4,
+        "leg_clear": [
+          3.5,
+          5.5
+        ],
+        "exclude": [
+          [
+            -0.55,
+            -0.15,
+            -0.5,
+            0.35,
+            0.12,
+            0.9
+          ]
+        ]
+      }
+    ]
+  },
+  "poison_brewer": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.7,
+    "arms": [
+      30,
+      25
+    ],
+    "hair": {
+      "length": 0.23,
+      "width": 0.22
+    },
+    "centre": "head",
+    "cloth": [
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.52,
+        "cols": 8,
+        "segs": 4
+      }
+    ]
+  },
+  "sea_king": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.9,
+    "arms": [
+      12,
+      10
+    ],
+    "centre": "head",
+    "cloth": [
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.52,
+        "cols": 10,
+        "segs": 5
+      }
+    ]
+  },
+  "thunder_god": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.69,
+    "floor_z": 0.07,
+    "arms": [
+      10,
+      8
+    ],
+    "centre": "head",
+    "cloth": [
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.52,
+        "cols": 8,
+        "segs": 4
+      }
+    ]
+  },
+  "time_mage": {
+    "yaw": 0,
+    "yaw_range": 0,
+    "H": 1.8,
+    "arms": [
+      12,
+      10
+    ],
+    "centre": "head",
+    "cloth": [
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.52,
+        "cols": 8,
+        "segs": 4
+      }
+    ]
+  },
+  "druid": {
+    "yaw": 27,
+    "H": 1.71,
+    "arms": [
+      6,
+      4
+    ],
+    "cloth": [
+      {
+        "name": "skirt",
+        "kind": "ring",
+        "anchor": "DEF-hips",
+        "z_top": 0.52,
+        "cols": 8,
+        "segs": 4,
+        "leg_clear": [
+          1.2,
+          2.4
+        ]
+      }
+    ],
+    "manual": true
+  }
+}

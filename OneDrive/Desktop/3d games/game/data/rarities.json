@@ -1,0 +1,80 @@
+[
+ {
+  "name": "Common",
+  "color": [
+   0.62,
+   0.64,
+   0.68
+  ],
+  "shape": "square",
+  "weight": 45,
+  "glow": 0.0,
+  "factor": 1.0,
+  "id": "common"
+ },
+ {
+  "name": "Uncommon",
+  "color": [
+   0.3,
+   0.78,
+   0.38
+  ],
+  "shape": "leaf",
+  "weight": 25,
+  "glow": 0.1,
+  "factor": 1.35,
+  "id": "uncommon"
+ },
+ {
+  "name": "Rare",
+  "color": [
+   0.28,
+   0.55,
+   0.95
+  ],
+  "shape": "diamond",
+  "weight": 15,
+  "glow": 0.25,
+  "factor": 1.8,
+  "id": "rare"
+ },
+ {
+  "name": "Epic",
+  "color": [
+   0.66,
+   0.36,
+   0.92
+  ],
+  "shape": "hexagon",
+  "weight": 9,
+  "glow": 0.45,
+  "factor": 2.4,
+  "id": "epic"
+ },
+ {
+  "name": "Legendary",
+  "color": [
+   1.0,
+   0.76,
+   0.2
+  ],
+  "shape": "star",
+  "weight": 5,
+  "glow": 0.7,
+  "factor": 3.2,
+  "id": "legendary"
+ },
+ {
+  "name": "Mythic",
+  "color": [
+   0.95,
+   0.15,
+   0.22
+  ],
+  "shape": "crown",
+  "weight": 1,
+  "glow": 1.0,
+  "factor": 4.2,
+  "id": "mythic"
+ }
+]

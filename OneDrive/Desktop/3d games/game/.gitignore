@@ -1,0 +1,9 @@
+# Godot caches and generated files
+.godot/
+*.import
+# test screenshots
+shots/
+# big art assets (maps are ~860 MB, models ~440 MB): kept on the machine, not in this repository
+maps/
+models/
+__pycache__/

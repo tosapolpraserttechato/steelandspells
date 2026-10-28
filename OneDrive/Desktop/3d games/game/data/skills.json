@@ -1,0 +1,5162 @@
+[
+ {
+  "id": "druid_vine_whip",
+  "name": "Vine Whip",
+  "class": "druid",
+  "slot": "skill",
+  "cooldown": 6,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 38,
+   "dmg": 28,
+   "radius": 0,
+   "life": 1.2,
+   "sts": [
+    {
+     "id": "root",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    }
+   ],
+   "pull": 4
+  },
+  "desc": "Lash out with a vine that damages, roots and pulls an enemy closer.",
+  "color": [
+   0.3,
+   0.8,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_spore_cloud",
+  "name": "Spore Cloud",
+  "class": "druid",
+  "slot": "skill",
+  "cooldown": 12,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 6,
+   "dur": 6,
+   "tick": 1.0,
+   "dmg": 6,
+   "sts": [
+    {
+     "id": "poison",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    },
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "A cloud of spores that poisons and slows everyone in it.",
+  "color": [
+   0.6,
+   0.8,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_thorn_skin",
+  "name": "Thorn Skin",
+  "class": "druid",
+  "slot": "skill",
+  "cooldown": 16,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "mods": {
+    "armor": {
+     "add": 0.25
+    }
+   },
+   "reflect": 0.35,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    }
+   ]
+  },
+  "desc": "Grow thorns: gain armor and a barrier, and reflect part of the damage you take.",
+  "color": [
+   0.4,
+   0.6,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_regrowth",
+  "name": "Regrowth",
+  "class": "druid",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "heal",
+   "amount": 40,
+   "radius": 8,
+   "allies": true,
+   "regen": 6
+  },
+  "desc": "Heal yourself and nearby allies, then keep healing for a few seconds.",
+  "color": [
+   0.4,
+   0.9,
+   0.4
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_wild_dash",
+  "name": "Wild Sprint",
+  "class": "druid",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "sprint",
+   "dur": 3.0,
+   "speed": 0.5,
+   "dmg": 20,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "Sprint as a rush of leaves, slowing enemies you run through.",
+  "color": [
+   0.5,
+   0.85,
+   0.35
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_bloom",
+  "name": "Healing Bloom",
+  "class": "druid",
+  "slot": "skill",
+  "cooldown": 18,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 6,
+   "dur": 8,
+   "tick": 1.0,
+   "heal": 8,
+   "sts": []
+  },
+  "desc": "A flower that heals allies standing near it.",
+  "color": [
+   0.95,
+   0.6,
+   0.8
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_wild_bloom",
+  "name": "Wild Bloom",
+  "class": "druid",
+  "slot": "signature",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 8,
+   "dmg": 60,
+   "delay": 0.6,
+   "sts": [
+    {
+     "id": "root",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    }
+   ]
+  },
+  "desc": "Giant roots burst from the ground, damaging and rooting every enemy in the area.",
+  "color": [
+   0.35,
+   0.85,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_forests_wrath",
+  "name": "Forest's Wrath",
+  "class": "druid",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 12,
+   "dur": 6,
+   "tick": 0.75,
+   "dmg": 28,
+   "heal": 10,
+   "sts": [
+    {
+     "id": "root",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.0
+    }
+   ],
+   "pull": 6
+  },
+  "desc": "The forest wakes: a huge area roots and tears enemies while healing your team.",
+  "color": [
+   0.2,
+   0.8,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_tidal_wave",
+  "name": "Tidal Wave",
+  "class": "sea_king",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 26,
+   "dmg": 30,
+   "radius": 3.5,
+   "life": 1.8,
+   "knock": 14,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "Send a wave that knocks enemies back and slows them.",
+  "color": [
+   0.2,
+   0.6,
+   0.95
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_water_jet",
+  "name": "Water Jet",
+  "class": "sea_king",
+  "slot": "skill",
+  "cooldown": 7,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 32,
+   "dmg": 34,
+   "width": 0.4,
+   "knock": 8,
+   "sts": []
+  },
+  "desc": "A high-pressure jet that hits instantly and pushes the target.",
+  "color": [
+   0.3,
+   0.75,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_bubble_shield",
+  "name": "Bubble Shield",
+  "class": "sea_king",
+  "slot": "skill",
+  "cooldown": 16,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 5,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 5
+    }
+   ],
+   "mods": {
+    "move_speed": {
+     "mult": 0.05
+    }
+   }
+  },
+  "desc": "Wrap yourself in a bubble that absorbs damage.",
+  "color": [
+   0.5,
+   0.85,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_riptide",
+  "name": "Riptide",
+  "class": "sea_king",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "sprint",
+   "dur": 3.0,
+   "speed": 0.55,
+   "dmg": 18,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    }
+   ],
+   "trail": {
+    "radius": 1.6,
+    "dur": 2.5,
+    "dmg": 0,
+    "sts": [
+     {
+      "id": "slow",
+      "n": 1,
+      "p": 1.0,
+      "dur": 1.5
+     }
+    ]
+   }
+  },
+  "desc": "Sprint on a riptide, leaving slowing water behind you.",
+  "color": [
+   0.2,
+   0.7,
+   0.9
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_coral_spikes",
+  "name": "Coral Spikes",
+  "class": "sea_king",
+  "slot": "skill",
+  "cooldown": 13,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 5,
+   "dur": 7,
+   "tick": 0.8,
+   "dmg": 8,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    },
+    {
+     "id": "bleed",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A patch of sharp coral that slows and cuts anyone in it.",
+  "color": [
+   1.0,
+   0.5,
+   0.45
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_healing_tide",
+  "name": "Healing Tide",
+  "class": "sea_king",
+  "slot": "skill",
+  "cooldown": 15,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "heal",
+   "amount": 45,
+   "radius": 9,
+   "allies": true,
+   "cleanse": true
+  },
+  "desc": "A calm wave that heals nearby allies and washes away debuffs.",
+  "color": [
+   0.4,
+   0.9,
+   0.95
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_maelstrom",
+  "name": "Maelstrom",
+  "class": "sea_king",
+  "slot": "signature",
+  "cooldown": 15,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 9,
+   "dmg": 55,
+   "delay": 0.3,
+   "pull": 9,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2.5
+    }
+   ]
+  },
+  "desc": "A whirlpool pulls every nearby enemy toward you and hurts them.",
+  "color": [
+   0.15,
+   0.55,
+   0.9
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_tsunami",
+  "name": "Tsunami",
+  "class": "sea_king",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "cone",
+   "range": 30,
+   "angle": 70,
+   "dmg": 190,
+   "knock": 26,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    },
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 0.8
+    }
+   ]
+  },
+  "desc": "A towering wave smashes through everything in front of you.",
+  "color": [
+   0.1,
+   0.5,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_fireball",
+  "name": "Fireball",
+  "class": "flame_lord",
+  "slot": "skill",
+  "cooldown": 6,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 34,
+   "dmg": 45,
+   "radius": 3.5,
+   "life": 2.5,
+   "sts": [
+    {
+     "id": "burn",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "A fireball that explodes on impact and sets enemies on fire.",
+  "color": [
+   1.0,
+   0.45,
+   0.1
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_flame_cone",
+  "name": "Flame Breath",
+  "class": "flame_lord",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "cone",
+   "range": 11,
+   "angle": 55,
+   "dmg": 50,
+   "sts": [
+    {
+     "id": "burn",
+     "n": 2,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "A short burst of flame in front of you.",
+  "color": [
+   1.0,
+   0.55,
+   0.1
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_fire_dash",
+  "name": "Fire Sprint",
+  "class": "flame_lord",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "sprint",
+   "dur": 3.0,
+   "speed": 0.5,
+   "dmg": 25,
+   "sts": [
+    {
+     "id": "burn",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ],
+   "trail": {
+    "radius": 2.0,
+    "dur": 3,
+    "dmg": 6,
+    "fire": true,
+    "sts": [
+     {
+      "id": "burn",
+      "n": 1,
+      "p": 1.0,
+      "dur": 2
+     }
+    ]
+   }
+  },
+  "desc": "Sprint leaving a trail of fire.",
+  "color": [
+   1.0,
+   0.4,
+   0.1
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_ember_shield",
+  "name": "Ember Shield",
+  "class": "flame_lord",
+  "slot": "skill",
+  "cooldown": 16,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    }
+   ],
+   "reflect": 0.3,
+   "mods": {
+    "armor": {
+     "add": 0.1
+    }
+   }
+  },
+  "desc": "Wrap yourself in embers: a barrier that burns attackers.",
+  "color": [
+   1.0,
+   0.6,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_magma_pool",
+  "name": "Magma Pool",
+  "class": "flame_lord",
+  "slot": "skill",
+  "cooldown": 13,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 5,
+   "dur": 7,
+   "tick": 0.8,
+   "dmg": 10,
+   "sts": [
+    {
+     "id": "burn",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A pool of molten rock that burns anyone standing in it.",
+  "color": [
+   1.0,
+   0.35,
+   0.05
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_heat_wave",
+  "name": "Heat Wave",
+  "class": "flame_lord",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 7,
+   "dmg": 30,
+   "delay": 0.2,
+   "sts": [
+    {
+     "id": "burn",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    },
+    {
+     "id": "blind",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    }
+   ]
+  },
+  "desc": "A wave of heat that scorches and blinds nearby enemies.",
+  "color": [
+   1.0,
+   0.7,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_inferno_ring",
+  "name": "Inferno Ring",
+  "class": "flame_lord",
+  "slot": "signature",
+  "cooldown": 15,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 8,
+   "dmg": 70,
+   "delay": 0.4,
+   "sts": [
+    {
+     "id": "burn",
+     "n": 2,
+     "p": 1.0,
+     "dur": 5
+    }
+   ]
+  },
+  "desc": "A ring of fire erupts around you and sets everything it touches alight.",
+  "color": [
+   1.0,
+   0.4,
+   0.05
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_supernova",
+  "name": "Supernova",
+  "class": "flame_lord",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 14,
+   "dmg": 210,
+   "delay": 1.4,
+   "sts": [
+    {
+     "id": "burn",
+     "n": 3,
+     "p": 1.0,
+     "dur": 6
+    }
+   ],
+   "knock": 10
+  },
+  "desc": "A marked area detonates in a huge fiery blast.",
+  "color": [
+   1.0,
+   0.55,
+   0.1
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_ice_shard",
+  "name": "Ice Shard",
+  "class": "frost_mage",
+  "slot": "skill",
+  "cooldown": 4,
+  "mana": 12,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 55,
+   "dmg": 28,
+   "radius": 0,
+   "life": 1.5,
+   "sts": [
+    {
+     "id": "chill",
+     "n": 2,
+     "p": 1.0,
+     "dur": 4
+    }
+   ],
+   "count": 3,
+   "spread": 6
+  },
+  "desc": "Three icy shards that chill whatever they hit.",
+  "color": [
+   0.6,
+   0.9,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_frost_nova",
+  "name": "Frost Nova",
+  "class": "frost_mage",
+  "slot": "skill",
+  "cooldown": 12,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 7,
+   "dmg": 30,
+   "delay": 0.25,
+   "sts": [
+    {
+     "id": "chill",
+     "n": 3,
+     "p": 1.0,
+     "dur": 4
+    },
+    {
+     "id": "root",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.2
+    }
+   ]
+  },
+  "desc": "A burst of cold that damages, chills and holds enemies close to you.",
+  "color": [
+   0.5,
+   0.85,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_ice_wall",
+  "name": "Ice Wall",
+  "class": "frost_mage",
+  "slot": "skill",
+  "cooldown": 15,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "wall",
+   "len": 9,
+   "height": 3.4,
+   "dur": 6
+  },
+  "desc": "Raise a wall of ice that blocks shots and movement.",
+  "color": [
+   0.7,
+   0.95,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_blink",
+  "name": "Frost Blink",
+  "class": "frost_mage",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "teleport",
+   "dist": 14,
+   "sts_self": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "Blink forward and gain a short burst of speed.",
+  "color": [
+   0.65,
+   0.9,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_blizzard",
+  "name": "Blizzard",
+  "class": "frost_mage",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 7,
+   "dur": 6,
+   "tick": 0.7,
+   "dmg": 7,
+   "sts": [
+    {
+     "id": "chill",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    },
+    {
+     "id": "blind",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.0
+    }
+   ]
+  },
+  "desc": "A storm of snow that chills and blinds anyone inside.",
+  "color": [
+   0.85,
+   0.95,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_glacial_armor",
+  "name": "Glacial Armor",
+  "class": "frost_mage",
+  "slot": "skill",
+  "cooldown": 16,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    }
+   ],
+   "aura": {
+    "radius": 5,
+    "sts": [
+     {
+      "id": "chill",
+      "n": 1,
+      "p": 1.0,
+      "dur": 2
+     }
+    ]
+   }
+  },
+  "desc": "A shell of ice that absorbs damage and chills enemies who get close.",
+  "color": [
+   0.5,
+   0.8,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_avalanche_strike",
+  "name": "Avalanche Strike",
+  "class": "frost_mage",
+  "slot": "signature",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 9,
+   "dmg": 65,
+   "delay": 0.7,
+   "sts": [
+    {
+     "id": "chill",
+     "n": 3,
+     "p": 1.0,
+     "dur": 4
+    }
+   ],
+   "knock": 6
+  },
+  "desc": "Snow and ice crash down on a large area.",
+  "color": [
+   0.8,
+   0.95,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_absolute_zero",
+  "name": "Absolute Zero",
+  "class": "frost_mage",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 16,
+   "dmg": 120,
+   "delay": 0.8,
+   "sts": [
+    {
+     "id": "freeze",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    },
+    {
+     "id": "chill",
+     "n": 5,
+     "p": 1.0,
+     "dur": 5
+    }
+   ]
+  },
+  "desc": "Everything around you freezes solid.",
+  "color": [
+   0.7,
+   0.95,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_lightning_bolt",
+  "name": "Lightning Bolt",
+  "class": "thunder_god",
+  "slot": "skill",
+  "cooldown": 5,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 55,
+   "dmg": 42,
+   "width": 0.3,
+   "sts": [
+    {
+     "id": "shock",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "An instant bolt of lightning.",
+  "color": [
+   1.0,
+   0.95,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_thunder_clap",
+  "name": "Thunder Clap",
+  "class": "thunder_god",
+  "slot": "skill",
+  "cooldown": 11,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 7,
+   "dmg": 35,
+   "delay": 0.2,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 0.9
+    }
+   ],
+   "knock": 7
+  },
+  "desc": "A thunderclap that stuns and shoves everyone near you.",
+  "color": [
+   1.0,
+   0.9,
+   0.4
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_storm_dash",
+  "name": "Storm Sprint",
+  "class": "thunder_god",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "sprint",
+   "dur": 2.8,
+   "speed": 0.7,
+   "dmg": 22,
+   "sts": [
+    {
+     "id": "shock",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "Sprint as lightning, shocking everything you run through.",
+  "color": [
+   1.0,
+   0.95,
+   0.5
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_chain_lightning",
+  "name": "Chain Lightning",
+  "class": "thunder_god",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 38,
+   "dmg": 34,
+   "width": 0.3,
+   "chain": {
+    "n": 3,
+    "range": 9,
+    "falloff": 0.8
+   },
+   "sts": [
+    {
+     "id": "shock",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "Lightning that jumps to nearby enemies.",
+  "color": [
+   0.9,
+   0.95,
+   0.4
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_static_field",
+  "name": "Static Field",
+  "class": "thunder_god",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 6,
+   "dur": 6,
+   "tick": 0.6,
+   "dmg": 9,
+   "sts": [
+    {
+     "id": "shock",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A crackling field that shocks anyone inside.",
+  "color": [
+   1.0,
+   0.9,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_sky_hammer",
+  "name": "Sky Hammer",
+  "class": "thunder_god",
+  "slot": "skill",
+  "cooldown": 12,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "leap",
+   "up": 11,
+   "fwd": 10,
+   "slam": {
+    "radius": 6,
+    "dmg": 55,
+    "sts": [
+     {
+      "id": "stun",
+      "n": 1,
+      "p": 1.0,
+      "dur": 0.7
+     }
+    ]
+   }
+  },
+  "desc": "Leap into the air and slam down with the force of thunder.",
+  "color": [
+   1.0,
+   0.85,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_thunderstorm",
+  "name": "Thunderstorm",
+  "class": "thunder_god",
+  "slot": "signature",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 10,
+   "dmg": 70,
+   "delay": 0.7,
+   "sts": [
+    {
+     "id": "shock",
+     "n": 2,
+     "p": 1.0,
+     "dur": 5
+    }
+   ]
+  },
+  "desc": "Lightning rains over a wide area.",
+  "color": [
+   1.0,
+   0.95,
+   0.35
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_wrath_of_the_heavens",
+  "name": "Wrath of the Heavens",
+  "class": "thunder_god",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "strikes",
+   "count": 6,
+   "radius": 5,
+   "dmg": 120,
+   "range": 45,
+   "sts": [
+    {
+     "id": "shock",
+     "n": 3,
+     "p": 1.0,
+     "dur": 5
+    },
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 0.8
+    }
+   ]
+  },
+  "desc": "Six lightning strikes hammer the nearest enemies.",
+  "color": [
+   1.0,
+   0.95,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_soul_bolt",
+  "name": "Soul Bolt",
+  "class": "necromancer",
+  "slot": "skill",
+  "cooldown": 5,
+  "mana": 18,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 36,
+   "dmg": 34,
+   "radius": 0,
+   "life": 1.6,
+   "sts": [
+    {
+     "id": "weaken",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ],
+   "lifesteal": 0.4
+  },
+  "desc": "A bolt of spirit energy that heals you for part of the damage.",
+  "color": [
+   0.55,
+   0.9,
+   0.75
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_bone_spear",
+  "name": "Bone Spear",
+  "class": "necromancer",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 22,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 40,
+   "dmg": 40,
+   "width": 0.5,
+   "pierce": true,
+   "sts": [
+    {
+     "id": "bleed",
+     "n": 2,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "A spear of bone that pierces everything in a line.",
+  "color": [
+   0.9,
+   0.9,
+   0.8
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_raise_skeleton",
+  "name": "Raise Skeleton",
+  "class": "necromancer",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "summon",
+   "kind": "skeleton",
+   "count": 2,
+   "hp": 60,
+   "dmg": 8,
+   "rate": 0.6,
+   "dur": 15,
+   "range": 24
+  },
+  "desc": "Raise two skeletons that shoot nearby enemies.",
+  "color": [
+   0.85,
+   0.85,
+   0.75
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_death_coil",
+  "name": "Death Coil",
+  "class": "necromancer",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 32,
+   "dmg": 45,
+   "radius": 0,
+   "life": 1.6,
+   "sts": [],
+   "lifesteal": 1.0
+  },
+  "desc": "A coil of dark magic that drains life.",
+  "color": [
+   0.5,
+   0.2,
+   0.6
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_wither",
+  "name": "Wither",
+  "class": "necromancer",
+  "slot": "skill",
+  "cooldown": 11,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 38,
+   "dmg": 18,
+   "width": 0.4,
+   "sts": [
+    {
+     "id": "weaken",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    },
+    {
+     "id": "poison",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "A curse that withers the target.",
+  "color": [
+   0.45,
+   0.5,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_grave_step",
+  "name": "Grave Step",
+  "class": "necromancer",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "teleport",
+   "dist": 15,
+   "sts_self": [
+    {
+     "id": "invisible",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    }
+   ]
+  },
+  "desc": "Slip through the grave and reappear ahead, briefly unseen.",
+  "color": [
+   0.4,
+   0.4,
+   0.5
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_grave_eruption",
+  "name": "Grave Eruption",
+  "class": "necromancer",
+  "slot": "signature",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 8,
+   "dmg": 70,
+   "delay": 0.7,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ],
+   "knock": 6
+  },
+  "desc": "Bone hands tear out of the ground and hurl enemies.",
+  "color": [
+   0.7,
+   0.75,
+   0.6
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_army_of_the_dead",
+  "name": "Army of the Dead",
+  "class": "necromancer",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "summon",
+   "kind": "skeleton",
+   "count": 5,
+   "hp": 120,
+   "dmg": 14,
+   "rate": 0.5,
+   "dur": 18,
+   "range": 28,
+   "burst": {
+    "radius": 9,
+    "dmg": 80,
+    "sts": [
+     {
+      "id": "slow",
+      "n": 1,
+      "p": 1.0,
+      "dur": 2
+     }
+    ]
+   }
+  },
+  "desc": "Five armoured skeletons rise and fight for you.",
+  "color": [
+   0.7,
+   0.9,
+   0.7
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_arcane_missiles",
+  "name": "Arcane Missiles",
+  "class": "arcanist",
+  "slot": "skill",
+  "cooldown": 6,
+  "mana": 28,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 40,
+   "dmg": 18,
+   "radius": 0,
+   "life": 2.0,
+   "count": 5,
+   "spread": 8,
+   "homing": 5,
+   "sts": []
+  },
+  "desc": "Five homing missiles of pure arcane energy.",
+  "color": [
+   0.8,
+   0.5,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_mana_shield",
+  "name": "Mana Shield",
+  "class": "arcanist",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    }
+   ],
+   "mods": {
+    "mana_regen": {
+     "mult": 0.3
+    }
+   }
+  },
+  "desc": "A shield of mana that absorbs damage and speeds mana recovery.",
+  "color": [
+   0.6,
+   0.5,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_blink",
+  "name": "Arcane Blink",
+  "class": "arcanist",
+  "slot": "skill",
+  "cooldown": 7,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "teleport",
+   "dist": 16
+  },
+  "desc": "Blink forward.",
+  "color": [
+   0.75,
+   0.55,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_silence_ray",
+  "name": "Silence Ray",
+  "class": "arcanist",
+  "slot": "skill",
+  "cooldown": 11,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 40,
+   "dmg": 18,
+   "width": 0.35,
+   "sts": [
+    {
+     "id": "silence",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A ray that stops the target from casting.",
+  "color": [
+   0.6,
+   0.6,
+   0.95
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_arcane_orb",
+  "name": "Arcane Orb",
+  "class": "arcanist",
+  "slot": "skill",
+  "cooldown": 10,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 14,
+   "dmg": 80,
+   "radius": 4.5,
+   "life": 3.5,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "A slow orb that bursts in a wide blast.",
+  "color": [
+   0.85,
+   0.4,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_rune_trap",
+  "name": "Rune Trap",
+  "class": "arcanist",
+  "slot": "skill",
+  "cooldown": 10,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "trap",
+   "radius": 3.5,
+   "dmg": 70,
+   "dur": 25,
+   "sts": [
+    {
+     "id": "root",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.8
+    },
+    {
+     "id": "silence",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "Place a rune that springs on the first enemy who steps on it.",
+  "color": [
+   0.7,
+   0.5,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_arcane_explosion",
+  "name": "Arcane Explosion",
+  "class": "arcanist",
+  "slot": "signature",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 8,
+   "dmg": 65,
+   "delay": 0.4,
+   "sts": [
+    {
+     "id": "silence",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2.5
+    }
+   ],
+   "knock": 6
+  },
+  "desc": "A burst of raw magic that hurts and silences enemies around you.",
+  "color": [
+   0.8,
+   0.5,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_arcane_cataclysm",
+  "name": "Arcane Cataclysm",
+  "class": "arcanist",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 13,
+   "dmg": 220,
+   "delay": 1.3,
+   "sts": [
+    {
+     "id": "silence",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    },
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 0.8
+    }
+   ]
+  },
+  "desc": "A cataclysmic blast that silences everyone caught in it.",
+  "color": [
+   0.85,
+   0.45,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_poison_flask",
+  "name": "Poison Flask",
+  "class": "poison_brewer",
+  "slot": "skill",
+  "cooldown": 7,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 26,
+   "dmg": 25,
+   "radius": 3.5,
+   "life": 2.0,
+   "grav": 9,
+   "sts": [
+    {
+     "id": "poison",
+     "n": 2,
+     "p": 1.0,
+     "dur": 5
+    }
+   ]
+  },
+  "desc": "A flask that shatters in a cloud of poison.",
+  "color": [
+   0.5,
+   0.9,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_toxic_gas",
+  "name": "Toxic Gas",
+  "class": "poison_brewer",
+  "slot": "skill",
+  "cooldown": 13,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 6.5,
+   "dur": 7,
+   "tick": 0.8,
+   "dmg": 7,
+   "sts": [
+    {
+     "id": "poison",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "A lingering cloud of toxic gas.",
+  "color": [
+   0.6,
+   0.85,
+   0.15
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_antidote",
+  "name": "Antidote",
+  "class": "poison_brewer",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "heal",
+   "amount": 35,
+   "radius": 8,
+   "allies": true,
+   "cleanse": true
+  },
+  "desc": "Heal and cleanse yourself and nearby allies.",
+  "color": [
+   0.7,
+   1.0,
+   0.7
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_acid_spit",
+  "name": "Acid Spit",
+  "class": "poison_brewer",
+  "slot": "skill",
+  "cooldown": 6,
+  "mana": 18,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 24,
+   "dmg": 30,
+   "width": 0.4,
+   "sts": [
+    {
+     "id": "poison",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    },
+    {
+     "id": "vulnerable",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "Acid that eats armour and burns.",
+  "color": [
+   0.75,
+   1.0,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_sticky_brew",
+  "name": "Sticky Brew",
+  "class": "poison_brewer",
+  "slot": "skill",
+  "cooldown": 11,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 5.5,
+   "dur": 6,
+   "tick": 1.0,
+   "dmg": 3,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.2
+    },
+    {
+     "id": "root",
+     "n": 1,
+     "p": 0.25,
+     "dur": 0.5
+    }
+   ]
+  },
+  "desc": "A puddle of goo that slows and sometimes sticks enemies.",
+  "color": [
+   0.55,
+   0.45,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_elixir",
+  "name": "Swift Elixir",
+  "class": "poison_brewer",
+  "slot": "skill",
+  "cooldown": 16,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 7,
+   "sts_self": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 7
+    },
+    {
+     "id": "empower",
+     "n": 1,
+     "p": 1.0,
+     "dur": 7
+    }
+   ],
+   "mods": {}
+  },
+  "desc": "Drink a potion for speed and extra damage.",
+  "color": [
+   1.0,
+   0.7,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_cauldron_burst",
+  "name": "Cauldron Burst",
+  "class": "poison_brewer",
+  "slot": "signature",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 8,
+   "dmg": 55,
+   "delay": 0.6,
+   "sts": [
+    {
+     "id": "poison",
+     "n": 3,
+     "p": 1.0,
+     "dur": 6
+    }
+   ]
+  },
+  "desc": "A giant cauldron bursts and drenches the area in poison.",
+  "color": [
+   0.45,
+   0.9,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_plague_cloud",
+  "name": "Plague Cloud",
+  "class": "poison_brewer",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 13,
+   "dur": 8,
+   "tick": 0.7,
+   "dmg": 20,
+   "sts": [
+    {
+     "id": "poison",
+     "n": 3,
+     "p": 1.0,
+     "dur": 5
+    },
+    {
+     "id": "weaken",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A vast cloud of plague that poisons and weakens everyone inside.",
+  "color": [
+   0.35,
+   0.85,
+   0.15
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_cannon_shot",
+  "name": "Cannon Shot",
+  "class": "pirate_captain",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 45,
+   "dmg": 80,
+   "radius": 4.0,
+   "life": 2.5,
+   "grav": 4,
+   "knock": 8,
+   "sts": []
+  },
+  "desc": "Fire a small cannon: a heavy shell with a wide blast.",
+  "color": [
+   0.3,
+   0.3,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_grapple_dash",
+  "name": "Grapple Sprint",
+  "class": "pirate_captain",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "sprint",
+   "dur": 2.5,
+   "speed": 0.6,
+   "dmg": 10,
+   "sts": []
+  },
+  "desc": "Haul yourself along with a grappling hook for a long, fast sprint.",
+  "color": [
+   0.6,
+   0.5,
+   0.35
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_flintlock_volley",
+  "name": "Crossbow Volley",
+  "class": "pirate_captain",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 90,
+   "dmg": 22,
+   "radius": 0,
+   "life": 0.8,
+   "count": 6,
+   "spread": 7,
+   "sts": []
+  },
+  "desc": "Fire a volley of six bolts in an arc.",
+  "color": [
+   0.7,
+   0.6,
+   0.4
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_smoke_bomb",
+  "name": "Smoke Bomb",
+  "class": "pirate_captain",
+  "slot": "skill",
+  "cooldown": 13,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 6,
+   "dur": 7,
+   "tick": 1.0,
+   "dmg": 0,
+   "sts": [
+    {
+     "id": "blind",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    }
+   ]
+  },
+  "desc": "A cloud of smoke that blinds enemies inside.",
+  "color": [
+   0.55,
+   0.55,
+   0.55
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_rum_heal",
+  "name": "Rum Ration",
+  "class": "pirate_captain",
+  "slot": "skill",
+  "cooldown": 15,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "sts_self": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    },
+    {
+     "id": "regen",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    }
+   ],
+   "heal": 25
+  },
+  "desc": "A swig of rum: heal, regenerate and run.",
+  "color": [
+   0.8,
+   0.5,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_sabre_rush",
+  "name": "Sabre Rush",
+  "class": "pirate_captain",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "sprint",
+   "dur": 2.5,
+   "speed": 0.7,
+   "dmg": 55,
+   "sts": [
+    {
+     "id": "bleed",
+     "n": 2,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "Sprint with a cutlass out, slashing everyone you run through.",
+  "color": [
+   0.8,
+   0.8,
+   0.85
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_broadside",
+  "name": "Broadside",
+  "class": "pirate_captain",
+  "slot": "signature",
+  "cooldown": 14,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 9,
+   "dmg": 70,
+   "delay": 0.8,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 0.6
+    }
+   ],
+   "knock": 10
+  },
+  "desc": "Call a broadside: cannonballs smash down on the target area.",
+  "color": [
+   0.35,
+   0.35,
+   0.4
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_ghost_ship",
+  "name": "Ghost Ship",
+  "class": "pirate_captain",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 12,
+   "dur": 8,
+   "tick": 0.5,
+   "dmg": 32,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.0
+    }
+   ],
+   "blast": true
+  },
+  "desc": "A phantom ship rakes the area with cannon fire for several seconds.",
+  "color": [
+   0.4,
+   0.8,
+   0.8
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_time_slow",
+  "name": "Time Slow",
+  "class": "time_mage",
+  "slot": "skill",
+  "cooldown": 13,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 7,
+   "dur": 6,
+   "tick": 0.5,
+   "dmg": 0,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.0,
+     "strength": 0.6
+    }
+   ]
+  },
+  "desc": "A bubble where time crawls: enemies inside are heavily slowed.",
+  "color": [
+   0.5,
+   0.7,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_rewind",
+  "name": "Rewind",
+  "class": "time_mage",
+  "slot": "skill",
+  "cooldown": 16,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "teleport",
+   "back": true,
+   "heal": 40,
+   "dist": 0
+  },
+  "desc": "Rewind yourself to where you stood a few seconds ago and heal.",
+  "color": [
+   0.7,
+   0.8,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_quicken",
+  "name": "Quicken",
+  "class": "time_mage",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "sts_self": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    }
+   ],
+   "mods": {
+    "fire_rate": {
+     "mult": 0.2
+    },
+    "cast_speed": {
+     "mult": 0.2
+    }
+   }
+  },
+  "desc": "Speed up your own time: move, shoot and cast faster.",
+  "color": [
+   0.4,
+   0.9,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_stasis_bolt",
+  "name": "Stasis Bolt",
+  "class": "time_mage",
+  "slot": "skill",
+  "cooldown": 11,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 40,
+   "dmg": 20,
+   "radius": 0,
+   "life": 1.6,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.4
+    }
+   ]
+  },
+  "desc": "A bolt that freezes the target in time for a moment.",
+  "color": [
+   0.6,
+   0.8,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_temporal_echo",
+  "name": "Temporal Echo",
+  "class": "time_mage",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "sprint",
+   "dur": 3.0,
+   "speed": 0.5,
+   "dmg": 25,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    }
+   ],
+   "trail": {
+    "radius": 2.5,
+    "dur": 3,
+    "dmg": 4,
+    "sts": [
+     {
+      "id": "slow",
+      "n": 1,
+      "p": 1.0,
+      "dur": 1.5
+     }
+    ]
+   }
+  },
+  "desc": "Sprint through time, leaving an echo behind that slows enemies.",
+  "color": [
+   0.55,
+   0.65,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_age",
+  "name": "Age",
+  "class": "time_mage",
+  "slot": "skill",
+  "cooldown": 10,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 38,
+   "dmg": 25,
+   "width": 0.4,
+   "sts": [
+    {
+     "id": "vulnerable",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    },
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "Age the target: they take extra damage and move slowly.",
+  "color": [
+   0.7,
+   0.6,
+   0.5
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_chrono_burst",
+  "name": "Chrono Burst",
+  "class": "time_mage",
+  "slot": "signature",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 9,
+   "dmg": 55,
+   "delay": 0.3,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3,
+     "strength": 0.5
+    }
+   ],
+   "knock": 5
+  },
+  "desc": "A burst of time energy that damages and slows everything near you.",
+  "color": [
+   0.55,
+   0.75,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_stop_time",
+  "name": "Stop Time",
+  "class": "time_mage",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 22,
+   "dmg": 60,
+   "delay": 0.4,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3.0
+    },
+    {
+     "id": "vulnerable",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ],
+   "self_sts": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "Time stops for your enemies. You do not.",
+  "color": [
+   0.5,
+   0.8,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_moon_beam",
+  "name": "Moonbeam",
+  "class": "celestial_mage",
+  "slot": "skill",
+  "cooldown": 6,
+  "mana": 22,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 50,
+   "dmg": 40,
+   "width": 0.4,
+   "sts": [
+    {
+     "id": "marked",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "A beam of moonlight that reveals and marks the target.",
+  "color": [
+   0.75,
+   0.85,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_starfall",
+  "name": "Starfall",
+  "class": "celestial_mage",
+  "slot": "skill",
+  "cooldown": 11,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 5.5,
+   "dmg": 55,
+   "delay": 0.9,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 0.5
+    }
+   ]
+  },
+  "desc": "A star falls from the sky onto the marked spot.",
+  "color": [
+   0.9,
+   0.9,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_lunar_shield",
+  "name": "Lunar Shield",
+  "class": "celestial_mage",
+  "slot": "skill",
+  "cooldown": 15,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    },
+    {
+     "id": "cleanse_shield",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A shield of moonlight that absorbs damage and blocks debuffs.",
+  "color": [
+   0.8,
+   0.85,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_gravity_well",
+  "name": "Gravity Well",
+  "class": "celestial_mage",
+  "slot": "skill",
+  "cooldown": 13,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 6,
+   "dur": 5,
+   "tick": 0.5,
+   "dmg": 6,
+   "pull": 7,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.0
+    }
+   ]
+  },
+  "desc": "A well of gravity that drags enemies into its centre.",
+  "color": [
+   0.5,
+   0.4,
+   0.9
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_phase_blink",
+  "name": "Phase Blink",
+  "class": "celestial_mage",
+  "slot": "skill",
+  "cooldown": 7,
+  "mana": 18,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "teleport",
+   "dist": 14,
+   "sts_self": [
+    {
+     "id": "invisible",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.0
+    }
+   ]
+  },
+  "desc": "Phase forward through space.",
+  "color": [
+   0.85,
+   0.85,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_blessing",
+  "name": "Blessing",
+  "class": "celestial_mage",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "heal",
+   "amount": 35,
+   "radius": 9,
+   "allies": true,
+   "cleanse": true,
+   "regen": 6
+  },
+  "desc": "A blessing that heals, regenerates and cleanses allies.",
+  "color": [
+   1.0,
+   0.95,
+   0.7
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_eclipse_pulse",
+  "name": "Eclipse Pulse",
+  "class": "celestial_mage",
+  "slot": "signature",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 9,
+   "dmg": 55,
+   "delay": 0.4,
+   "sts": [
+    {
+     "id": "blind",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2.5
+    },
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "A pulse of darkness that blinds and slows nearby enemies.",
+  "color": [
+   0.6,
+   0.6,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_moonfall",
+  "name": "Moonfall",
+  "class": "celestial_mage",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 15,
+   "dmg": 230,
+   "delay": 1.5,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    },
+    {
+     "id": "marked",
+     "n": 1,
+     "p": 1.0,
+     "dur": 5
+    }
+   ]
+  },
+  "desc": "A piece of the moon falls onto the battlefield.",
+  "color": [
+   0.85,
+   0.9,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_pawn_push",
+  "name": "Pawn Push",
+  "class": "gm_ravn",
+  "slot": "skill",
+  "cooldown": 6,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 34,
+   "dmg": 28,
+   "radius": 2.0,
+   "life": 1.4,
+   "knock": 12,
+   "sts": []
+  },
+  "desc": "Push a pawn that shoves enemies back.",
+  "color": [
+   0.9,
+   0.9,
+   0.9
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_knight_leap",
+  "name": "Knight Leap",
+  "class": "gm_ravn",
+  "slot": "skill",
+  "cooldown": 10,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "leap",
+   "up": 9,
+   "fwd": 13,
+   "slam": {
+    "radius": 5.5,
+    "dmg": 50,
+    "sts": [
+     {
+      "id": "stun",
+      "n": 1,
+      "p": 1.0,
+      "dur": 0.5
+     }
+    ]
+   }
+  },
+  "desc": "Jump in an L-shaped arc and crush enemies where you land.",
+  "color": [
+   0.8,
+   0.8,
+   0.85
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_bishop_beam",
+  "name": "Bishop's Beam",
+  "class": "gm_ravn",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 48,
+   "dmg": 45,
+   "width": 0.4,
+   "pierce": true,
+   "sts": []
+  },
+  "desc": "A diagonal beam that pierces everything in a line.",
+  "color": [
+   0.95,
+   0.95,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_rook_charge",
+  "name": "Rook Charge",
+  "class": "gm_ravn",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "sprint",
+   "dur": 2.5,
+   "speed": 0.75,
+   "dmg": 35,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 0.5
+    }
+   ]
+  },
+  "desc": "Charge in a straight line like a rook.",
+  "color": [
+   0.7,
+   0.7,
+   0.75
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_queens_gambit",
+  "name": "Queen's Gambit",
+  "class": "gm_ravn",
+  "slot": "skill",
+  "cooldown": 12,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "cone",
+   "range": 14,
+   "angle": 90,
+   "dmg": 55,
+   "sts": [
+    {
+     "id": "vulnerable",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ],
+   "knock": 6
+  },
+  "desc": "A sweeping attack in a wide arc that leaves enemies exposed.",
+  "color": [
+   1.0,
+   0.8,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_castling",
+  "name": "Castling",
+  "class": "gm_ravn",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "teleport",
+   "dist": 18,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "Swap position across the board and gain a small barrier.",
+  "color": [
+   0.85,
+   0.85,
+   0.9
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_fork",
+  "name": "Fork",
+  "class": "gm_ravn",
+  "slot": "signature",
+  "cooldown": 13,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 8,
+   "dmg": 65,
+   "delay": 0.6,
+   "sts": [
+    {
+     "id": "root",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.8
+    },
+    {
+     "id": "marked",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "Attack two places at once: everything in the area is hit and held.",
+  "color": [
+   1.0,
+   0.85,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_queen_sacrifice",
+  "name": "Queen Sacrifice",
+  "class": "gm_ravn",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 16,
+   "dmg": 260,
+   "delay": 1.6,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    }
+   ],
+   "knock": 14,
+   "finisher": true,
+   "queen": true
+  },
+  "desc": "Spawn a huge queen and sacrifice it: she sweeps across the board and shatters. A kill with an ultimate ends in checkmate.",
+  "color": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_shadow_step",
+  "name": "Shadow Step",
+  "class": "desert_assassin",
+  "slot": "skill",
+  "cooldown": 7,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "teleport",
+   "dist": 10,
+   "behind": true,
+   "sts_self": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "Step through the dust to the back of the nearest enemy and gain speed.",
+  "color": [
+   0.55,
+   0.45,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_sand_veil",
+  "name": "Sand Veil",
+  "class": "desert_assassin",
+  "slot": "skill",
+  "cooldown": 20,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 5,
+   "sts_self": [
+    {
+     "id": "invisible",
+     "n": 1,
+     "p": 1.0,
+     "dur": 5
+    }
+   ]
+  },
+  "desc": "Vanish in a veil of sand until you strike.",
+  "color": [
+   0.9,
+   0.75,
+   0.45
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_venom_blade",
+  "name": "Venom Blade",
+  "class": "desert_assassin",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 8,
+   "mods": {
+    "weapon_damage": {
+     "mult": 0.15
+    }
+   },
+   "on_hit": [
+    {
+     "id": "poison",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "Coat your blades: every hit poisons and hurts more.",
+  "color": [
+   0.5,
+   0.8,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_smoke_bomb",
+  "name": "Smoke Bomb",
+  "class": "desert_assassin",
+  "slot": "skill",
+  "cooldown": 13,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 6,
+   "dmg": 5,
+   "delay": 0.1,
+   "sts": [
+    {
+     "id": "blind",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    },
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    }
+   ]
+  },
+  "desc": "A cloud of smoke that blinds and slows nearby enemies.",
+  "color": [
+   0.6,
+   0.6,
+   0.6
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_dagger_fan",
+  "name": "Dagger Fan",
+  "class": "desert_assassin",
+  "slot": "skill",
+  "cooldown": 6,
+  "mana": 18,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 50,
+   "dmg": 16,
+   "radius": 0,
+   "life": 0.9,
+   "count": 5,
+   "spread": 24,
+   "sts": [
+    {
+     "id": "bleed",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "Throw a fan of daggers that make enemies bleed.",
+  "color": [
+   0.85,
+   0.85,
+   0.9
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_mirage",
+  "name": "Mirage",
+  "class": "desert_assassin",
+  "slot": "skill",
+  "cooldown": 16,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "summon",
+   "what": "decoy",
+   "count": 2,
+   "dur": 6
+  },
+  "desc": "Two mirages of you run in different directions while you slip away.",
+  "color": [
+   0.95,
+   0.85,
+   0.55
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_sand_dash",
+  "name": "Sand Sprint",
+  "class": "desert_assassin",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "sprint",
+   "dur": 3.0,
+   "speed": 0.5,
+   "dmg": 22,
+   "sts": [
+    {
+     "id": "bleed",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "Sprint through enemies and cut them as you pass.",
+  "color": [
+   0.9,
+   0.7,
+   0.35
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_quick_slash",
+  "name": "Quick Slash",
+  "class": "desert_assassin",
+  "slot": "skill",
+  "cooldown": 6,
+  "mana": 12,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "cone",
+   "range": 5,
+   "angle": 100,
+   "dmg": 48,
+   "sts": [
+    {
+     "id": "bleed",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "A fast sweeping cut in front of you.",
+  "color": [
+   0.9,
+   0.9,
+   0.95
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_sirocco_gust",
+  "name": "Sirocco Gust",
+  "class": "desert_assassin",
+  "slot": "skill",
+  "cooldown": 12,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 8,
+   "dmg": 25,
+   "delay": 0.2,
+   "knock": 10,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    },
+    {
+     "id": "blind",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1
+    }
+   ]
+  },
+  "desc": "A hot gust that shoves enemies away and fills their eyes with sand.",
+  "color": [
+   0.95,
+   0.8,
+   0.4
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_mark_for_death",
+  "name": "Mark for Death",
+  "class": "desert_assassin",
+  "slot": "skill",
+  "cooldown": 15,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 40,
+   "dmg": 10,
+   "width": 0.4,
+   "sts": [
+    {
+     "id": "marked",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    },
+    {
+     "id": "vulnerable",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "Mark a target: everyone sees it and it takes extra damage.",
+  "color": [
+   0.9,
+   0.2,
+   0.25
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_dust_devil_flurry",
+  "name": "Dust Devil Flurry",
+  "class": "desert_assassin",
+  "slot": "signature",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 7,
+   "dmg": 62,
+   "delay": 0.2,
+   "sts": [
+    {
+     "id": "bleed",
+     "n": 2,
+     "p": 1.0,
+     "dur": 4
+    },
+    {
+     "id": "blind",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    }
+   ]
+  },
+  "desc": "You spin into a dust devil of blades that cuts everything around you.",
+  "color": [
+   0.95,
+   0.75,
+   0.35
+  ],
+  "tags": []
+ },
+ {
+  "id": "desert_assassin_vanishing_slaughter",
+  "name": "Vanishing Slaughter",
+  "class": "desert_assassin",
+  "slot": "ultimate",
+  "cooldown": 0,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 10,
+   "dmg": 210,
+   "delay": 0.9,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 0.6
+    },
+    {
+     "id": "bleed",
+     "n": 3,
+     "p": 1.0,
+     "dur": 5
+    }
+   ],
+   "sts_self": [
+    {
+     "id": "invisible",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "You vanish, then every enemy nearby is cut to ribbons at once.",
+  "color": [
+   1.0,
+   0.8,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_thorn_volley",
+  "name": "Thorn Volley",
+  "class": "druid",
+  "slot": "skill",
+  "cooldown": 7,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 45,
+   "dmg": 14,
+   "radius": 0,
+   "life": 1.0,
+   "count": 5,
+   "spread": 10,
+   "sts": [
+    {
+     "id": "bleed",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A spray of thorns that make enemies bleed.",
+  "color": [
+   0.35,
+   0.7,
+   0.25
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_leaf_storm",
+  "name": "Leaf Storm",
+  "class": "druid",
+  "slot": "skill",
+  "cooldown": 13,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 6,
+   "dmg": 36,
+   "delay": 0.2,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    },
+    {
+     "id": "bleed",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A whirl of razor leaves around you.",
+  "color": [
+   0.4,
+   0.85,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_wild_growth",
+  "name": "Wild Growth",
+  "class": "druid",
+  "slot": "skill",
+  "cooldown": 18,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "sts_self": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    },
+    {
+     "id": "regen",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    }
+   ]
+  },
+  "desc": "Plants lift you: faster and healing.",
+  "color": [
+   0.5,
+   0.9,
+   0.4
+  ],
+  "tags": []
+ },
+ {
+  "id": "druid_stinging_swarm",
+  "name": "Stinging Swarm",
+  "class": "druid",
+  "slot": "skill",
+  "cooldown": 10,
+  "mana": 22,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 24,
+   "dmg": 18,
+   "radius": 2.0,
+   "life": 2.5,
+   "homing": 4,
+   "sts": [
+    {
+     "id": "poison",
+     "n": 2,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "Wasps chase the target and poison it.",
+  "color": [
+   0.9,
+   0.8,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_trident_throw",
+  "name": "Trident Throw",
+  "class": "sea_king",
+  "slot": "skill",
+  "cooldown": 7,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 60,
+   "dmg": 52,
+   "radius": 0,
+   "life": 1.2,
+   "pierce": true,
+   "sts": []
+  },
+  "desc": "Hurl your trident through everything in a line.",
+  "color": [
+   0.3,
+   0.75,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_ink_cloud",
+  "name": "Ink Cloud",
+  "class": "sea_king",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 6,
+   "dur": 6,
+   "tick": 1.0,
+   "dmg": 3,
+   "sts": [
+    {
+     "id": "blind",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.5
+    },
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.0
+    }
+   ]
+  },
+  "desc": "A cloud of dark ink that blinds and slows.",
+  "color": [
+   0.15,
+   0.15,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_undertow",
+  "name": "Undertow",
+  "class": "sea_king",
+  "slot": "skill",
+  "cooldown": 11,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 30,
+   "dmg": 14,
+   "width": 0.5,
+   "pull": 14,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "A current that drags one enemy to you.",
+  "color": [
+   0.2,
+   0.65,
+   0.9
+  ],
+  "tags": []
+ },
+ {
+  "id": "sea_king_pearl_barrier",
+  "name": "Pearl Barrier",
+  "class": "sea_king",
+  "slot": "skill",
+  "cooldown": 17,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 5,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 5
+    },
+    {
+     "id": "regen",
+     "n": 1,
+     "p": 1.0,
+     "dur": 5
+    }
+   ]
+  },
+  "desc": "A pearl shell absorbs damage and heals you.",
+  "color": [
+   0.9,
+   0.95,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_flame_wall",
+  "name": "Flame Wall",
+  "class": "flame_lord",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "wall",
+   "len": 10,
+   "height": 3.0,
+   "dur": 6,
+   "dmg": 8,
+   "tick": 0.5,
+   "sts": [
+    {
+     "id": "burn",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A wall of fire that burns whoever crosses it.",
+  "color": [
+   1.0,
+   0.5,
+   0.1
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_ember_barrage",
+  "name": "Ember Barrage",
+  "class": "flame_lord",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 40,
+   "dmg": 14,
+   "radius": 1.2,
+   "life": 1.4,
+   "count": 6,
+   "spread": 14,
+   "sts": [
+    {
+     "id": "burn",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "A burst of embers in a wide spread.",
+  "color": [
+   1.0,
+   0.6,
+   0.15
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_phoenix_rise",
+  "name": "Phoenix Rise",
+  "class": "flame_lord",
+  "slot": "skill",
+  "cooldown": 20,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "heal",
+   "amount": 40,
+   "radius": 0,
+   "allies": false,
+   "regen": 6,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "Rise from the ashes: heal, regenerate and gain a barrier.",
+  "color": [
+   1.0,
+   0.7,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "flame_lord_lava_whip",
+  "name": "Lava Whip",
+  "class": "flame_lord",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 16,
+   "dmg": 40,
+   "width": 1.0,
+   "pull": 5,
+   "sts": [
+    {
+     "id": "burn",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A whip of lava that burns and pulls.",
+  "color": [
+   1.0,
+   0.35,
+   0.05
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_ice_lance",
+  "name": "Ice Lance",
+  "class": "frost_mage",
+  "slot": "skill",
+  "cooldown": 6,
+  "mana": 18,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 80,
+   "dmg": 55,
+   "radius": 0,
+   "life": 1.2,
+   "pierce": true,
+   "sts": [
+    {
+     "id": "chill",
+     "n": 2,
+     "p": 1.0,
+     "dur": 4
+    }
+   ]
+  },
+  "desc": "A fast lance of ice that pierces.",
+  "color": [
+   0.7,
+   0.95,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_frozen_ground",
+  "name": "Frozen Ground",
+  "class": "frost_mage",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "self",
+   "radius": 8,
+   "dur": 7,
+   "tick": 0.8,
+   "dmg": 4,
+   "sts": [
+    {
+     "id": "chill",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    },
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "The ground around you freezes and slows enemies.",
+  "color": [
+   0.6,
+   0.85,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_icicle_rain",
+  "name": "Icicle Rain",
+  "class": "frost_mage",
+  "slot": "skill",
+  "cooldown": 13,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "strikes",
+   "at": "target",
+   "radius": 8,
+   "count": 7,
+   "dmg": 26,
+   "delay": 0.6,
+   "sts": [
+    {
+     "id": "chill",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "Icicles fall from the sky over an area.",
+  "color": [
+   0.8,
+   0.95,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "frost_mage_permafrost",
+  "name": "Permafrost",
+  "class": "frost_mage",
+  "slot": "skill",
+  "cooldown": 16,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "mods": {
+    "armor": {
+     "add": 0.2
+    },
+    "slow_resist": {
+     "add": 0.4
+    }
+   }
+  },
+  "desc": "Skin like ice: much tougher and hard to slow.",
+  "color": [
+   0.7,
+   0.9,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_storm_call",
+  "name": "Storm Call",
+  "class": "thunder_god",
+  "slot": "skill",
+  "cooldown": 12,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "strikes",
+   "at": "target",
+   "radius": 9,
+   "count": 5,
+   "dmg": 32,
+   "delay": 0.7,
+   "sts": [
+    {
+     "id": "shock",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "Call down lightning on an area.",
+  "color": [
+   1.0,
+   0.95,
+   0.4
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_overcharge",
+  "name": "Overcharge",
+  "class": "thunder_god",
+  "slot": "skill",
+  "cooldown": 18,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "mods": {
+    "fire_rate": {
+     "mult": 0.2
+    },
+    "move_speed": {
+     "mult": 0.1
+    }
+   },
+   "sts_self": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    }
+   ]
+  },
+  "desc": "Crackle with power: faster hands and feet.",
+  "color": [
+   1.0,
+   0.95,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_thunder_javelin",
+  "name": "Thunder Javelin",
+  "class": "thunder_god",
+  "slot": "skill",
+  "cooldown": 7,
+  "mana": 22,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 70,
+   "dmg": 58,
+   "radius": 0,
+   "life": 1.3,
+   "pierce": true,
+   "sts": [
+    {
+     "id": "shock",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A javelin of lightning that pierces.",
+  "color": [
+   1.0,
+   0.95,
+   0.5
+  ],
+  "tags": []
+ },
+ {
+  "id": "thunder_god_lightning_step",
+  "name": "Lightning Step",
+  "class": "thunder_god",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 18,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "teleport",
+   "dist": 12,
+   "sts_self": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ],
+   "leave_zone": {
+    "radius": 2.0,
+    "dur": 2,
+    "dmg": 5,
+    "sts": [
+     {
+      "id": "shock",
+      "n": 1,
+      "p": 1.0,
+      "dur": 2
+     }
+    ]
+   }
+  },
+  "desc": "Vanish in a flash and leave a shocking spot behind.",
+  "color": [
+   1.0,
+   1.0,
+   0.6
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_bone_armor",
+  "name": "Bone Armor",
+  "class": "necromancer",
+  "slot": "skill",
+  "cooldown": 16,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 7,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 7
+    }
+   ],
+   "mods": {
+    "armor": {
+     "add": 0.15
+    }
+   }
+  },
+  "desc": "A shell of bones absorbs damage.",
+  "color": [
+   0.85,
+   0.85,
+   0.75
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_curse_of_decay",
+  "name": "Curse of Decay",
+  "class": "necromancer",
+  "slot": "skill",
+  "cooldown": 13,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 6,
+   "dur": 7,
+   "tick": 1.0,
+   "dmg": 6,
+   "sts": [
+    {
+     "id": "weaken",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    },
+    {
+     "id": "vulnerable",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "An area of rot that weakens everyone in it.",
+  "color": [
+   0.45,
+   0.6,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_soul_drain",
+  "name": "Soul Drain",
+  "class": "necromancer",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 22,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 22,
+   "dmg": 30,
+   "width": 0.5,
+   "lifesteal": 0.8,
+   "sts": []
+  },
+  "desc": "Drain life from an enemy and heal.",
+  "color": [
+   0.6,
+   0.9,
+   0.6
+  ],
+  "tags": []
+ },
+ {
+  "id": "necromancer_bone_prison",
+  "name": "Bone Prison",
+  "class": "necromancer",
+  "slot": "skill",
+  "cooldown": 12,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 4,
+   "dur": 3,
+   "tick": 0.5,
+   "dmg": 4,
+   "sts": [
+    {
+     "id": "root",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1.2
+    }
+   ]
+  },
+  "desc": "Bones close around enemies and hold them.",
+  "color": [
+   0.9,
+   0.9,
+   0.8
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_mana_surge",
+  "name": "Mana Surge",
+  "class": "arcanist",
+  "slot": "skill",
+  "cooldown": 20,
+  "mana": 0,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 4,
+   "mana": 40,
+   "mods": {
+    "cooldown_reduction": {
+     "add": 0.3
+    }
+   }
+  },
+  "desc": "Surge of mana: refill some and cast faster for a short time.",
+  "color": [
+   0.55,
+   0.45,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_prism_beam",
+  "name": "Prism Beam",
+  "class": "arcanist",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "beam",
+   "range": 40,
+   "dmg": 38,
+   "width": 0.5,
+   "pierce": true,
+   "sts": []
+  },
+  "desc": "A beam of light that pierces everything.",
+  "color": [
+   0.8,
+   0.6,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_gravity_rune",
+  "name": "Gravity Rune",
+  "class": "arcanist",
+  "slot": "skill",
+  "cooldown": 15,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "trap",
+   "dur": 20,
+   "radius": 5,
+   "dmg": 20,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    },
+    {
+     "id": "root",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1
+    }
+   ]
+  },
+  "desc": "A hidden rune that slows and holds whoever steps on it.",
+  "color": [
+   0.6,
+   0.4,
+   0.95
+  ],
+  "tags": []
+ },
+ {
+  "id": "arcanist_arcane_barrage",
+  "name": "Arcane Barrage",
+  "class": "arcanist",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 50,
+   "dmg": 12,
+   "radius": 0,
+   "life": 1.2,
+   "count": 7,
+   "spread": 10,
+   "sts": []
+  },
+  "desc": "A flurry of bolts.",
+  "color": [
+   0.7,
+   0.5,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_plague_vial",
+  "name": "Plague Vial",
+  "class": "poison_brewer",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 30,
+   "dmg": 20,
+   "radius": 3.0,
+   "life": 1.6,
+   "sts": [
+    {
+     "id": "poison",
+     "n": 2,
+     "p": 1.0,
+     "dur": 5
+    }
+   ]
+  },
+  "desc": "A vial that shatters into a poison splash.",
+  "color": [
+   0.5,
+   0.9,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_bubbling_cauldron",
+  "name": "Bubbling Cauldron",
+  "class": "poison_brewer",
+  "slot": "skill",
+  "cooldown": 15,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 5,
+   "dur": 8,
+   "tick": 1.0,
+   "dmg": 6,
+   "sts": [
+    {
+     "id": "poison",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A cauldron that bubbles poison onto the ground.",
+  "color": [
+   0.4,
+   0.8,
+   0.25
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_panacea",
+  "name": "Panacea",
+  "class": "poison_brewer",
+  "slot": "skill",
+  "cooldown": 16,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "heal",
+   "amount": 30,
+   "radius": 8,
+   "allies": true,
+   "cleanse": true
+  },
+  "desc": "A cure-all that heals allies and cleanses debuffs.",
+  "color": [
+   0.6,
+   1.0,
+   0.7
+  ],
+  "tags": []
+ },
+ {
+  "id": "poison_brewer_caustic_mist",
+  "name": "Caustic Mist",
+  "class": "poison_brewer",
+  "slot": "skill",
+  "cooldown": 10,
+  "mana": 22,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "cone",
+   "range": 10,
+   "angle": 80,
+   "dmg": 20,
+   "sts": [
+    {
+     "id": "poison",
+     "n": 1,
+     "p": 1.0,
+     "dur": 4
+    },
+    {
+     "id": "blind",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1
+    }
+   ]
+  },
+  "desc": "A spray of caustic mist.",
+  "color": [
+   0.6,
+   0.85,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_powder_keg",
+  "name": "Powder Keg",
+  "class": "pirate_captain",
+  "slot": "skill",
+  "cooldown": 15,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "trap",
+   "dur": 20,
+   "radius": 5,
+   "dmg": 70,
+   "knock": 10,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 0.5
+    }
+   ]
+  },
+  "desc": "A hidden keg that explodes when an enemy steps close.",
+  "color": [
+   0.55,
+   0.35,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_boarding_axe",
+  "name": "Boarding Axe",
+  "class": "pirate_captain",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 40,
+   "dmg": 45,
+   "radius": 0,
+   "life": 1.0,
+   "sts": [
+    {
+     "id": "bleed",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    },
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 1
+    }
+   ]
+  },
+  "desc": "Throw an axe that bites deep and slows.",
+  "color": [
+   0.8,
+   0.8,
+   0.85
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_parrot_scout",
+  "name": "Parrot Scout",
+  "class": "pirate_captain",
+  "slot": "skill",
+  "cooldown": 18,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "reveal": 30,
+   "sts_self": []
+  },
+  "desc": "Your parrot circles overhead and shows nearby enemies.",
+  "color": [
+   0.9,
+   0.2,
+   0.2
+  ],
+  "tags": []
+ },
+ {
+  "id": "pirate_captain_anchor_slam",
+  "name": "Anchor Slam",
+  "class": "pirate_captain",
+  "slot": "skill",
+  "cooldown": 12,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "leap",
+   "up": 7,
+   "fwd": 9,
+   "slam": {
+    "radius": 6,
+    "dmg": 55,
+    "sts": [
+     {
+      "id": "stun",
+      "n": 1,
+      "p": 1.0,
+      "dur": 0.6
+     }
+    ]
+   }
+  },
+  "desc": "Leap and slam an anchor into the ground.",
+  "color": [
+   0.5,
+   0.55,
+   0.6
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_hourglass",
+  "name": "Hourglass",
+  "class": "time_mage",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 6,
+   "dur": 6,
+   "tick": 1.0,
+   "dmg": 4,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    },
+    {
+     "id": "vulnerable",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "A bubble where time crawls.",
+  "color": [
+   0.95,
+   0.8,
+   0.4
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_time_skip",
+  "name": "Time Skip",
+  "class": "time_mage",
+  "slot": "skill",
+  "cooldown": 10,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "teleport",
+   "dist": 16,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "Skip forward a few moments and gain a small barrier.",
+  "color": [
+   0.9,
+   0.75,
+   0.4
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_overclock",
+  "name": "Overclock",
+  "class": "time_mage",
+  "slot": "skill",
+  "cooldown": 18,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 6,
+   "mods": {
+    "fire_rate": {
+     "mult": 0.25
+    },
+    "cast_speed": {
+     "mult": 0.25
+    }
+   },
+   "sts_self": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 6
+    }
+   ]
+  },
+  "desc": "Everything about you runs faster.",
+  "color": [
+   1.0,
+   0.8,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "time_mage_paradox_bolt",
+  "name": "Paradox Bolt",
+  "class": "time_mage",
+  "slot": "skill",
+  "cooldown": 9,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "projectile",
+   "speed": 45,
+   "dmg": 35,
+   "radius": 0,
+   "life": 1.5,
+   "sts": [
+    {
+     "id": "stun",
+     "n": 1,
+     "p": 1.0,
+     "dur": 0.8
+    },
+    {
+     "id": "weaken",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "A bolt that is hit before it is thrown.",
+  "color": [
+   0.8,
+   0.65,
+   0.95
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_crescent_slash",
+  "name": "Crescent Slash",
+  "class": "celestial_mage",
+  "slot": "skill",
+  "cooldown": 8,
+  "mana": 20,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "cone",
+   "range": 10,
+   "angle": 120,
+   "dmg": 42,
+   "sts": [
+    {
+     "id": "silence",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2
+    }
+   ]
+  },
+  "desc": "A wide slash of moonlight that silences magic users.",
+  "color": [
+   0.8,
+   0.85,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_star_shower",
+  "name": "Star Shower",
+  "class": "celestial_mage",
+  "slot": "skill",
+  "cooldown": 14,
+  "mana": 35,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "strikes",
+   "at": "target",
+   "radius": 10,
+   "count": 8,
+   "dmg": 22,
+   "delay": 0.7,
+   "sts": []
+  },
+  "desc": "Stars fall over a wide area.",
+  "color": [
+   1.0,
+   0.95,
+   0.6
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_moon_mend",
+  "name": "Moon Mend",
+  "class": "celestial_mage",
+  "slot": "skill",
+  "cooldown": 15,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "heal",
+   "amount": 35,
+   "radius": 8,
+   "allies": true,
+   "regen": 5
+  },
+  "desc": "Moonlight heals nearby allies.",
+  "color": [
+   0.85,
+   0.9,
+   1.0
+  ],
+  "tags": []
+ },
+ {
+  "id": "celestial_mage_night_veil",
+  "name": "Night Veil",
+  "class": "celestial_mage",
+  "slot": "skill",
+  "cooldown": 17,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 5,
+   "sts_self": [
+    {
+     "id": "barrier",
+     "n": 1,
+     "p": 1.0,
+     "dur": 5
+    },
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 5
+    }
+   ]
+  },
+  "desc": "A veil of night protects and quickens you.",
+  "color": [
+   0.3,
+   0.35,
+   0.8
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_en_passant",
+  "name": "En Passant",
+  "class": "gm_ravn",
+  "slot": "skill",
+  "cooldown": 7,
+  "mana": 15,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "sprint",
+   "dur": 2.5,
+   "speed": 0.6,
+   "dmg": 30,
+   "sts": [
+    {
+     "id": "vulnerable",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "Capture in passing: sprint through an enemy and leave it exposed.",
+  "color": [
+   0.9,
+   0.9,
+   0.95
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_zugzwang",
+  "name": "Zugzwang",
+  "class": "gm_ravn",
+  "slot": "skill",
+  "cooldown": 15,
+  "mana": 30,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "zone",
+   "at": "target",
+   "radius": 7,
+   "dur": 3,
+   "tick": 0.5,
+   "dmg": 4,
+   "sts": [
+    {
+     "id": "slow",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    },
+    {
+     "id": "weaken",
+     "n": 1,
+     "p": 1.0,
+     "dur": 3
+    }
+   ]
+  },
+  "desc": "Every move makes it worse: enemies in the area are slowed and weakened.",
+  "color": [
+   0.8,
+   0.8,
+   0.9
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_promotion",
+  "name": "Promotion",
+  "class": "gm_ravn",
+  "slot": "skill",
+  "cooldown": 18,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "buff",
+   "dur": 8,
+   "mods": {
+    "skill_damage": {
+     "mult": 0.25
+    }
+   },
+   "sts_self": [
+    {
+     "id": "haste",
+     "n": 1,
+     "p": 1.0,
+     "dur": 8
+    }
+   ]
+  },
+  "desc": "A pawn becomes a queen: stronger skills and more speed.",
+  "color": [
+   1.0,
+   0.85,
+   0.3
+  ],
+  "tags": []
+ },
+ {
+  "id": "gm_ravn_stalemate",
+  "name": "Stalemate",
+  "class": "gm_ravn",
+  "slot": "skill",
+  "cooldown": 12,
+  "mana": 25,
+  "cast": 0.0,
+  "range": 45.0,
+  "fx": {
+   "t": "aoe",
+   "at": "target",
+   "radius": 6,
+   "dmg": 20,
+   "delay": 0.4,
+   "sts": [
+    {
+     "id": "root",
+     "n": 1,
+     "p": 1.0,
+     "dur": 2.5
+    }
+   ]
+  },
+  "desc": "Enemies in the area cannot move.",
+  "color": [
+   0.85,
+   0.85,
+   0.9
+  ],
+  "tags": []
+ }
+]

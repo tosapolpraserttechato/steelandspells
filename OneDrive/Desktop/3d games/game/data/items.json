@@ -1,0 +1,72 @@
+[
+ {
+  "id": "item_bomb",
+  "name": "Throwing Bomb",
+  "desc": "Throw a bomb: 80 damage in a small area.",
+  "fx": {
+   "t": "projectile",
+   "speed": 24,
+   "dmg": 80,
+   "radius": 4,
+   "life": 2.0,
+   "arc": true
+  }
+ },
+ {
+  "id": "item_trap",
+  "name": "Snare Trap",
+  "desc": "A hidden trap that roots whoever steps on it.",
+  "fx": {
+   "t": "trap",
+   "dur": 30,
+   "radius": 3,
+   "dmg": 10,
+   "sts": [
+    {
+     "id": "root",
+     "dur": 2.5
+    }
+   ]
+  }
+ },
+ {
+  "id": "item_scroll",
+  "name": "Scroll",
+  "desc": "One use of a random skill from your class.",
+  "fx": {
+   "scroll": true
+  }
+ },
+ {
+  "id": "item_smoke",
+  "name": "Smoke Bottle",
+  "desc": "A cloud that blinds enemies and hides you.",
+  "fx": {
+   "t": "aoe",
+   "at": "self",
+   "radius": 6,
+   "dmg": 0,
+   "delay": 0.1,
+   "sts": [
+    {
+     "id": "blind",
+     "dur": 3
+    }
+   ],
+   "sts_self": [
+    {
+     "id": "invisible",
+     "dur": 2
+    }
+   ]
+  }
+ },
+ {
+  "id": "item_revive",
+  "name": "Revive Token",
+  "desc": "Come back with 50% health once.",
+  "fx": {
+   "revive": 0.5
+  }
+ }
+]

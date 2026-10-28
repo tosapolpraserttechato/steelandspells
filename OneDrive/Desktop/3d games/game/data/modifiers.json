@@ -1,0 +1,479 @@
+{
+ "modifiers": {
+  "weapon": {
+   "common": [
+    [
+     "Swift",
+     {
+      "fire_rate": {
+       "mult": 0.02
+      }
+     },
+     "+2% attack speed"
+    ],
+    [
+     "Sharpened",
+     {
+      "weapon_damage": {
+       "mult": 0.02
+      }
+     },
+     "+2% damage"
+    ],
+    [
+     "Nimble",
+     {
+      "move_speed": {
+       "mult": 0.02
+      }
+     },
+     "+2% move speed"
+    ]
+   ],
+   "uncommon": [
+    [
+     "Keen",
+     {
+      "crit_chance": {
+       "add": 0.03
+      }
+     },
+     "+3% crit chance"
+    ],
+    [
+     "Balanced",
+     {
+      "fire_rate": {
+       "mult": 0.04
+      }
+     },
+     "+4% attack speed"
+    ],
+    [
+     "Heavy",
+     {
+      "weapon_damage": {
+       "mult": 0.04
+      }
+     },
+     "+4% damage"
+    ]
+   ],
+   "rare": [
+    [
+     "Vampiric",
+     {
+      "lifesteal": {
+       "add": 0.03
+      }
+     },
+     "Heal 3% of damage dealt"
+    ],
+    [
+     "Piercing",
+     {
+      "armor_pierce": {
+       "add": 0.1
+      }
+     },
+     "Ignore 10% armor"
+    ],
+    [
+     "Quickdraw",
+     {
+      "reload_speed": {
+       "mult": 0.12
+      }
+     },
+     "+12% reload and draw speed"
+    ]
+   ],
+   "epic": [
+    [
+     "Burning",
+     {
+      "_on_hit": {
+       "id": "burn",
+       "dur": 3,
+       "p": 0.2
+      }
+     },
+     "20% chance to burn"
+    ],
+    [
+     "Frozen",
+     {
+      "_on_hit": {
+       "id": "chill",
+       "dur": 3,
+       "p": 0.2
+      }
+     },
+     "20% chance to chill"
+    ],
+    [
+     "Venomous",
+     {
+      "_on_hit": {
+       "id": "poison",
+       "dur": 4,
+       "p": 0.2
+      }
+     },
+     "20% chance to poison"
+    ]
+   ],
+   "legendary": [
+    [
+     "Executioner",
+     {
+      "damage_vs_low": {
+       "add": 0.25
+      }
+     },
+     "+25% damage to enemies under 30% health"
+    ],
+    [
+     "Stormtouched",
+     {
+      "_on_hit": {
+       "id": "shock",
+       "dur": 3,
+       "p": 0.25
+      }
+     },
+     "25% chance to shock"
+    ],
+    [
+     "Soulbound",
+     {
+      "heal_on_kill": {
+       "add": 20
+      }
+     },
+     "Heal 20 on kill"
+    ]
+   ],
+   "mythic": [
+    [
+     "Dragonfire",
+     {
+      "_on_hit": {
+       "id": "burn",
+       "dur": 4,
+       "p": 0.5
+      },
+      "weapon_damage": {
+       "mult": 0.1
+      }
+     },
+     "Fire damage: 50% to burn, +10% damage"
+    ],
+    [
+     "Starfall",
+     {
+      "_on_hit": {
+       "id": "marked",
+       "dur": 4,
+       "p": 0.3
+      },
+      "crit_chance": {
+       "add": 0.1
+      }
+     },
+     "Stars mark enemies, +10% crit"
+    ],
+    [
+     "Void Edge",
+     {
+      "_on_hit": {
+       "id": "vulnerable",
+       "dur": 4,
+       "p": 0.5
+      },
+      "weapon_damage": {
+       "mult": 0.1
+      }
+     },
+     "Hits tear reality: 50% to make the target vulnerable"
+    ]
+   ]
+  },
+  "armor": {
+   "common": [
+    [
+     "Light",
+     {
+      "move_speed": {
+       "mult": 0.02
+      }
+     },
+     "+2% move speed"
+    ],
+    [
+     "Padded",
+     {
+      "max_health": {
+       "mult": 0.02
+      }
+     },
+     "+2% max health"
+    ],
+    [
+     "Snug",
+     {
+      "armor": {
+       "add": 0.02
+      }
+     },
+     "+2% armor"
+    ]
+   ],
+   "uncommon": [
+    [
+     "Sturdy",
+     {
+      "max_health": {
+       "mult": 0.03
+      }
+     },
+     "+3% max health"
+    ],
+    [
+     "Springy",
+     {
+      "jump_height": {
+       "mult": 0.06
+      }
+     },
+     "+6% jump height"
+    ],
+    [
+     "Calm",
+     {
+      "mana_regen": {
+       "mult": 0.08
+      }
+     },
+     "+8% mana regeneration"
+    ]
+   ],
+   "rare": [
+    [
+     "Reinforced",
+     {
+      "armor": {
+       "add": 0.04
+      }
+     },
+     "+4% armor"
+    ],
+    [
+     "Lively",
+     {
+      "health_regen": {
+       "add": 1.0
+      }
+     },
+     "Regenerate 1 health per second"
+    ],
+    [
+     "Spellproof",
+     {
+      "spell_res": {
+       "add": 0.05
+      }
+     },
+     "+5% spell resistance"
+    ]
+   ],
+   "epic": [
+    [
+     "Fireproof",
+     {
+      "_resist": {
+       "burn": 0.4
+      }
+     },
+     "Resist burning by 40%"
+    ],
+    [
+     "Frostproof",
+     {
+      "_resist": {
+       "chill": 0.4,
+       "freeze": 0.3
+      }
+     },
+     "Resist chill by 40%"
+    ],
+    [
+     "Venomproof",
+     {
+      "_resist": {
+       "poison": 0.4
+      }
+     },
+     "Resist poison by 40%"
+    ]
+   ],
+   "legendary": [
+    [
+     "Thorny",
+     {
+      "reflect": {
+       "add": 0.12
+      }
+     },
+     "Reflect 12% of damage"
+    ],
+    [
+     "Stalwart",
+     {
+      "knockback_resist": {
+       "add": 0.35
+      },
+      "max_health": {
+       "mult": 0.05
+      }
+     },
+     "Hard to push, +5% health"
+    ],
+    [
+     "Bright",
+     {
+      "cooldown_reduction": {
+       "add": 0.05
+      }
+     },
+     "-5% cooldowns"
+    ]
+   ],
+   "mythic": [
+    [
+     "Flame Nova",
+     {
+      "_when_hit": {
+       "nova": {
+        "radius": 5,
+        "dmg": 40,
+        "sts": [
+         {
+          "id": "burn",
+          "dur": 3
+         }
+        ]
+       },
+       "cooldown": 12
+      }
+     },
+     "A fire nova bursts when you are hit (every 12 s)"
+    ],
+    [
+     "Aurora",
+     {
+      "_when_hit": {
+       "barrier": 60,
+       "cooldown": 25
+      },
+      "mana_regen": {
+       "mult": 0.2
+      }
+     },
+     "A barrier shields you when hit (every 25 s)"
+    ],
+    [
+     "Grave Mantle",
+     {
+      "heal_on_kill": {
+       "add": 30
+      },
+      "max_health": {
+       "mult": 0.08
+      }
+     },
+     "Heal 30 on kill, +8% health"
+    ]
+   ]
+  }
+ },
+ "auras": {
+  "legendary": {
+   "id": "gold",
+   "name": "Gold Aura",
+   "color": [
+    1.0,
+    0.8,
+    0.25
+   ]
+  },
+  "Dragonfire": {
+   "id": "flames",
+   "name": "Flames",
+   "color": [
+    1.0,
+    0.4,
+    0.1
+   ]
+  },
+  "Starfall": {
+   "id": "stars",
+   "name": "Stars",
+   "color": [
+    0.7,
+    0.8,
+    1.0
+   ]
+  },
+  "Void Edge": {
+   "id": "void",
+   "name": "Void",
+   "color": [
+    0.45,
+    0.2,
+    0.7
+   ]
+  },
+  "Flame Nova": {
+   "id": "embers",
+   "name": "Embers",
+   "color": [
+    1.0,
+    0.5,
+    0.2
+   ]
+  },
+  "Aurora": {
+   "id": "aurora",
+   "name": "Aurora",
+   "color": [
+    0.4,
+    1.0,
+    0.8
+   ]
+  },
+  "Grave Mantle": {
+   "id": "mist",
+   "name": "Grave Mist",
+   "color": [
+    0.5,
+    0.9,
+    0.6
+   ]
+  }
+ },
+ "skins": [
+  "Ivory",
+  "Obsidian",
+  "Crimson",
+  "Azure",
+  "Verdant",
+  "Gilded",
+  "Rustic",
+  "Frostwork",
+  "Emberglass",
+  "Moonlit",
+  "Sunforged",
+  "Voidtouched"
+ ]
+}

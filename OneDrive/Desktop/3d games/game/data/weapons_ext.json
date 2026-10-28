@@ -1,0 +1,544 @@
+[
+ {
+  "arc": 100,
+  "desc": "Drinks what it cuts: heals you for 12% of the damage it deals.",
+  "dmg": 46,
+  "family": "sword",
+  "fire": "melee",
+  "id": "bloodletter",
+  "magic": false,
+  "mech": {
+   "lifesteal": 0.12
+  },
+  "name": "Bloodletter",
+  "on_hit": {
+   "dur": 3,
+   "id": "bleed",
+   "p": 0.2
+  },
+  "range": 3.2,
+  "rate": 1.9
+ },
+ {
+  "arc": 110,
+  "desc": "Finishes the wounded: x1.8 damage to anything under 35% health.",
+  "dmg": 88,
+  "family": "heavy",
+  "fire": "melee",
+  "id": "executioner",
+  "magic": false,
+  "mech": {
+   "execute": [
+    0.35,
+    1.8
+   ]
+  },
+  "name": "Executioner",
+  "range": 3.5,
+  "rate": 0.85
+ },
+ {
+  "arc": 360,
+  "desc": "Twin scimitars that spin in a full circle.",
+  "dmg": 34,
+  "family": "sword",
+  "fire": "melee",
+  "id": "dervish_blades",
+  "magic": false,
+  "name": "Dervish Blades",
+  "range": 2.9,
+  "rate": 1.7
+ },
+ {
+  "arc": 30,
+  "desc": "Every thrust lunges you forward.",
+  "dmg": 74,
+  "family": "polearm",
+  "fire": "melee",
+  "id": "lancers_pike",
+  "magic": false,
+  "mech": {
+   "lunge": 5.0
+  },
+  "name": "Lancer's Pike",
+  "range": 4.4,
+  "rate": 1.0
+ },
+ {
+  "arc": 50,
+  "desc": "A boarding hook that drags enemies toward you.",
+  "dmg": 50,
+  "family": "polearm",
+  "fire": "melee",
+  "id": "reaver_hook",
+  "magic": false,
+  "mech": {
+   "pull": 7.0
+  },
+  "name": "Reaver Hook",
+  "range": 4.2,
+  "rate": 1.3
+ },
+ {
+  "arc": 60,
+  "desc": "Two quick bites per swing, and the wounds keep bleeding.",
+  "dmg": 22,
+  "family": "dagger",
+  "fire": "melee",
+  "id": "twin_fangs",
+  "magic": false,
+  "mech": {
+   "double": 0.6
+  },
+  "name": "Twin Fangs",
+  "on_hit": {
+   "dur": 3,
+   "id": "bleed",
+   "p": 0.35
+  },
+  "range": 2.6,
+  "rate": 3.4
+ },
+ {
+  "arc": 100,
+  "desc": "Slow, enormous, and it throws enemies across the room.",
+  "dmg": 108,
+  "family": "mace",
+  "fire": "melee",
+  "id": "siege_maul",
+  "magic": false,
+  "mech": {
+   "knock": 9.0
+  },
+  "name": "Siege Maul",
+  "range": 3.5,
+  "rate": 0.65,
+  "shockwave": 3.5,
+  "stun": 0.35
+ },
+ {
+  "arc": 110,
+  "desc": "Each hit throws lightning at two more enemies nearby.",
+  "dmg": 60,
+  "family": "axe",
+  "fire": "melee",
+  "id": "tempest_axe",
+  "magic": false,
+  "mech": {
+   "chain": [
+    2,
+    0.5
+   ]
+  },
+  "name": "Tempest Axe",
+  "range": 3.1,
+  "rate": 1.2
+ },
+ {
+  "ammo": 8,
+  "desc": "Thrown hard: it drags whoever it hits toward you.",
+  "dmg": 46,
+  "family": "thrown",
+  "fire": "thrown",
+  "id": "harpoon",
+  "magic": false,
+  "mech": {
+   "pull": 8.0
+  },
+  "name": "Harpoon",
+  "range": 45,
+  "rate": 0.9,
+  "speed": 50
+ },
+ {
+  "ammo": 6,
+  "count": 8,
+  "desc": "A scattergun of thorn bolts: eight at once, close range.",
+  "dmg": 13,
+  "family": "crossbow",
+  "fire": "projectile",
+  "id": "thornspray_crossbow",
+  "magic": false,
+  "name": "Thornspray Crossbow",
+  "range": 26,
+  "rate": 0.8,
+  "speed": 60,
+  "spread": 34
+ },
+ {
+  "ammo": 28,
+  "desc": "The longer you keep firing, the faster it shoots.",
+  "dmg": 15,
+  "family": "crossbow",
+  "fire": "projectile",
+  "id": "gale_repeater",
+  "magic": false,
+  "mech": {
+   "ramp": [
+    0.07,
+    6
+   ]
+  },
+  "name": "Gale Repeater",
+  "range": 70,
+  "rate": 2.2,
+  "speed": 85
+ },
+ {
+  "ammo": 14,
+  "charge": 1.0,
+  "desc": "A long, charged shot that goes through three enemies.",
+  "dmg": 84,
+  "family": "bow",
+  "fire": "projectile",
+  "id": "eagle_piercer",
+  "magic": false,
+  "mech": {
+   "pierce": 3
+  },
+  "name": "Eagle Piercer",
+  "range": 120,
+  "rate": 0.8,
+  "speed": 100
+ },
+ {
+  "arc": 40,
+  "desc": "A barbed whip that reaches far and makes enemies bleed.",
+  "dmg": 32,
+  "family": "whip",
+  "fire": "melee",
+  "id": "thornlash_whip",
+  "magic": false,
+  "name": "Thornlash Whip",
+  "on_hit": {
+   "dur": 4,
+   "id": "bleed",
+   "p": 0.5
+  },
+  "range": 6.0,
+  "rate": 1.8
+ },
+ {
+  "arc": 80,
+  "desc": "Slashes in a short lunge and leaves bleeding gashes.",
+  "dmg": 27,
+  "family": "claws",
+  "fire": "melee",
+  "id": "shadowrend_claws",
+  "magic": false,
+  "mech": {
+   "lunge": 3.0
+  },
+  "name": "Shadowrend Claws",
+  "on_hit": {
+   "dur": 3,
+   "id": "bleed",
+   "p": 0.3
+  },
+  "range": 2.5,
+  "rate": 2.9
+ },
+ {
+  "desc": "Sparks arc from the target to three more enemies.",
+  "dmg": 15,
+  "family": "wand",
+  "fire": "projectile",
+  "id": "stormspark_wand",
+  "magic": true,
+  "mana": 4,
+  "mech": {
+   "chain": [
+    3,
+    0.55
+   ]
+  },
+  "name": "Stormspark Wand",
+  "on_hit": {
+   "dur": 2,
+   "id": "shock",
+   "p": 0.2
+  },
+  "range": 50,
+  "rate": 4.2,
+  "speed": 80
+ },
+ {
+  "desc": "Hexes that curve toward the nearest enemy and weaken them.",
+  "dmg": 18,
+  "family": "wand",
+  "fire": "projectile",
+  "id": "hex_wand",
+  "magic": true,
+  "mana": 5,
+  "mech": {
+   "homing": 4.0
+  },
+  "name": "Hexwand",
+  "on_hit": {
+   "dur": 3,
+   "id": "weaken",
+   "p": 0.4
+  },
+  "range": 55,
+  "rate": 2.6,
+  "speed": 60
+ },
+ {
+  "desc": "A slow comet that explodes in a wide blast.",
+  "dmg": 92,
+  "family": "staff",
+  "fire": "projectile",
+  "id": "cometfall_staff",
+  "magic": true,
+  "mana": 16,
+  "name": "Cometfall Staff",
+  "on_hit": {
+   "dur": 3,
+   "id": "burn",
+   "p": 0.5
+  },
+  "radius": 3.8,
+  "range": 80,
+  "rate": 0.7,
+  "speed": 38
+ },
+ {
+  "desc": "Rays of dawn that heal you for 22% of the damage they deal.",
+  "dmg": 30,
+  "family": "staff",
+  "fire": "projectile",
+  "id": "dawn_scepter",
+  "magic": true,
+  "mana": 8,
+  "mech": {
+   "lifesteal": 0.22
+  },
+  "name": "Dawn Scepter",
+  "range": 60,
+  "rate": 1.7,
+  "speed": 65
+ },
+ {
+  "desc": "A slow black sphere that pulls everything near it inward.",
+  "dmg": 40,
+  "family": "orb",
+  "fire": "projectile",
+  "id": "singularity_orb",
+  "magic": true,
+  "mana": 14,
+  "mech": {
+   "pull": 8.0
+  },
+  "name": "Singularity Orb",
+  "radius": 3.0,
+  "range": 45,
+  "rate": 0.9,
+  "speed": 30
+ },
+ {
+  "desc": "Seeking pages that give back mana with every hit.",
+  "dmg": 20,
+  "family": "tome",
+  "fire": "projectile",
+  "id": "siphon_codex",
+  "magic": true,
+  "mana": 3,
+  "mech": {
+   "homing": 3.0,
+   "mana_hit": 3.0
+  },
+  "name": "Siphon Codex",
+  "range": 40,
+  "rate": 2.0,
+  "speed": 55
+ },
+ {
+  "desc": "Three bolts in quick succession with every cast.",
+  "dmg": 22,
+  "family": "staff",
+  "fire": "projectile",
+  "id": "trinity_rod",
+  "magic": true,
+  "mana": 9,
+  "mech": {
+   "burst": [
+    3,
+    0.09
+   ]
+  },
+  "name": "Trinity Rod",
+  "range": 65,
+  "rate": 1.4,
+  "speed": 75
+ },
+ {
+  "count": 2,
+  "desc": "Two orbs that hunt down the nearest enemy.",
+  "dmg": 24,
+  "family": "orb",
+  "fire": "projectile",
+  "id": "seeker_orbs",
+  "magic": true,
+  "mana": 7,
+  "mech": {
+   "homing": 6.0
+  },
+  "name": "Seeker Orbs",
+  "range": 55,
+  "rate": 1.8,
+  "speed": 40,
+  "spread": 12
+ },
+ {
+  "count": 5,
+  "desc": "A cone of flames: five fireballs, short range.",
+  "dmg": 9,
+  "family": "tome",
+  "fire": "projectile",
+  "id": "dragonbreath_grimoire",
+  "magic": true,
+  "mana": 4,
+  "name": "Dragonbreath Grimoire",
+  "on_hit": {
+   "dur": 3,
+   "id": "burn",
+   "p": 0.3
+  },
+  "range": 15,
+  "rate": 3.2,
+  "speed": 35,
+  "spread": 30
+ },
+ {
+  "desc": "A lance of ice that pierces two enemies and chills them.",
+  "dmg": 36,
+  "family": "wand",
+  "fire": "projectile",
+  "id": "rimelance_wand",
+  "magic": true,
+  "mana": 7,
+  "mech": {
+   "pierce": 2
+  },
+  "name": "Rimelance Wand",
+  "on_hit": {
+   "dur": 3,
+   "id": "chill",
+   "p": 0.5
+  },
+  "range": 80,
+  "rate": 1.5,
+  "speed": 95
+ },
+ {
+  "arc": 170,
+  "desc": "Reaps the weak (x1.5 under 30% health) and steals a tenth of the damage as health.",
+  "dmg": 66,
+  "family": "scythe",
+  "fire": "melee",
+  "id": "soul_reaper",
+  "magic": true,
+  "mana": 5,
+  "mech": {
+   "execute": [
+    0.3,
+    1.5
+   ],
+   "lifesteal": 0.1
+  },
+  "name": "Soul Reaper",
+  "range": 4.3,
+  "rate": 1.1
+ },
+ {
+  "desc": "A burst of three stars that bend toward their target.",
+  "dmg": 28,
+  "family": "spiritbow",
+  "fire": "projectile",
+  "id": "starfall_bow",
+  "magic": true,
+  "mana": 8,
+  "mech": {
+   "burst": [
+    3,
+    0.1
+   ],
+   "homing": 2.0
+  },
+  "name": "Starfall Bow",
+  "range": 90,
+  "rate": 1.1,
+  "speed": 85
+ },
+ {
+  "charge": 1.2,
+  "desc": "A slow, charged shot of the void that goes through four enemies.",
+  "dmg": 110,
+  "family": "spiritbow",
+  "fire": "projectile",
+  "id": "void_piercer",
+  "magic": true,
+  "mana": 14,
+  "mech": {
+   "pierce": 4
+  },
+  "name": "Void Piercer",
+  "range": 130,
+  "rate": 0.55,
+  "speed": 120
+ },
+ {
+  "arc": 90,
+  "desc": "A ghost blade: lunges at the foe and strikes twice.",
+  "dmg": 44,
+  "family": "enchblade",
+  "fire": "melee",
+  "id": "phantom_edge",
+  "magic": true,
+  "mana": 4,
+  "mech": {
+   "double": 0.5,
+   "lunge": 6.0
+  },
+  "name": "Phantom Edge",
+  "range": 3.3,
+  "rate": 1.9
+ },
+ {
+  "arc": 90,
+  "desc": "Punches that tear a hole in the air and pull enemies in.",
+  "dmg": 38,
+  "family": "gauntlet",
+  "fire": "melee",
+  "id": "voidfist",
+  "magic": true,
+  "mana": 4,
+  "mech": {
+   "pull": 6.0
+  },
+  "name": "Voidfist",
+  "range": 2.5,
+  "rate": 2.2,
+  "shockwave": 3.0
+ },
+ {
+  "charge": 0.8,
+  "desc": "A slow charge, then a meteor with a huge blast.",
+  "dmg": 118,
+  "family": "tome",
+  "fire": "projectile",
+  "id": "meteor_tome",
+  "magic": true,
+  "mana": 20,
+  "name": "Meteor Tome",
+  "on_hit": {
+   "dur": 3,
+   "id": "burn",
+   "p": 0.6
+  },
+  "radius": 4.4,
+  "range": 70,
+  "rate": 0.5,
+  "speed": 30
+ }
+]

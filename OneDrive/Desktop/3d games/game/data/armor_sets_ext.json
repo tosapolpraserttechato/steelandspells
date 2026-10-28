@@ -1,0 +1,2851 @@
+[
+ {
+  "id": "set_51_bloodmoon_plate",
+  "magic": false,
+  "name": "Bloodmoon Plate",
+  "pieces": [
+   {
+    "name": "Bloodmoon Plate Helm",
+    "passive": {
+     "mods": {
+      "cooldown_reduction": {
+       "add": 0.027
+      }
+     },
+     "name": "Bloodmoon Focus"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Bloodmoon Plate Cuirass",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.136
+      }
+     },
+     "name": "Bloodmoon Mantle"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Bloodmoon Plate Shield",
+    "passive": {
+     "mods": {
+      "block_stun": {
+       "add": 0.082
+      }
+     },
+     "name": "Bloodmoon Guard"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Bloodmoon Plate Greaves",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.109
+      }
+     },
+     "name": "Bloodmoon Footing"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Bloodmoon Plate Boots",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.136
+      }
+     },
+     "name": "Bloodmoon Grip"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Bloodthirst: you heal 7% of the damage you deal and hit the wounded harder.",
+   "mods": {
+    "damage_vs_low": {
+     "add": 0.1
+    },
+    "lifesteal": {
+     "add": 0.07
+    }
+   }
+  },
+  "theme": "blood"
+ },
+ {
+  "id": "set_52_headsman_s_regalia",
+  "magic": false,
+  "name": "Headsman's Regalia",
+  "pieces": [
+   {
+    "name": "Headsman's Regalia Helm",
+    "passive": {
+     "mods": {
+      "mana": {
+       "mult": 0.141
+      }
+     },
+     "name": "Headsman Mind"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Headsman's Regalia Cuirass",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.07
+      }
+     },
+     "name": "Headsman Plating"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Headsman's Regalia Shield",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.088
+      }
+     },
+     "name": "Headsman Rampart"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Headsman's Regalia Greaves",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.035
+      }
+     },
+     "name": "Headsman Tread"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Headsman's Regalia Boots",
+    "passive": {
+     "mods": {
+      "sprint_speed": {
+       "mult": 0.088
+      }
+     },
+     "name": "Headsman Dash"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "epic",
+  "set_bonus": {
+   "desc": "Executioner: +25% damage to anything under 30% health, and a kill heals you.",
+   "heal_on_kill": 0.08,
+   "mods": {
+    "damage_vs_low": {
+     "add": 0.25
+    }
+   }
+  },
+  "theme": "blood"
+ },
+ {
+  "id": "set_53_dervish_silks",
+  "magic": false,
+  "name": "Dervish Silks",
+  "pieces": [
+   {
+    "name": "Dervish Silks Helm",
+    "passive": {
+     "mods": {
+      "headshot_resist": {
+       "add": 0.052
+      }
+     },
+     "name": "Dervish Resolve"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Dervish Silks Cuirass",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.042
+      }
+     },
+     "name": "Dervish Ward"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Dervish Silks Shield",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.052
+      }
+     },
+     "name": "Dervish Aegis"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Dervish Silks Greaves",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.083
+      }
+     },
+     "name": "Dervish Footing"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Dervish Silks Boots",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.104
+      }
+     },
+     "name": "Dervish Grip"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "uncommon",
+  "set_bonus": {
+   "desc": "Whirl: faster, longer slides and +8% movement speed.",
+   "mods": {
+    "move_speed": {
+     "mult": 0.08
+    },
+    "slide_distance": {
+     "mult": 0.3
+    }
+   }
+  },
+  "theme": "swift"
+ },
+ {
+  "id": "set_54_lancer_s_barding",
+  "magic": false,
+  "name": "Lancer's Barding",
+  "pieces": [
+   {
+    "name": "Lancer's Barding Helm",
+    "passive": {
+     "mods": {
+      "crit_chance": {
+       "add": 0.027
+      }
+     },
+     "name": "Lancer Gaze"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Lancer's Barding Cuirass",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.054
+      }
+     },
+     "name": "Lancer Plating"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Lancer's Barding Shield",
+    "passive": {
+     "mods": {
+      "projectile_resist": {
+       "add": 0.068
+      }
+     },
+     "name": "Lancer Bulwark"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Lancer's Barding Greaves",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.109
+      }
+     },
+     "name": "Lancer Footing"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Lancer's Barding Boots",
+    "passive": {
+     "mods": {
+      "jump_height": {
+       "mult": 0.095
+      }
+     },
+     "name": "Lancer Leap"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Steadfast: you are hard to knock back and take 10% less damage from projectiles.",
+   "mods": {
+    "knockback_resist": {
+     "add": 0.4
+    },
+    "projectile_resist": {
+     "add": 0.1
+    }
+   }
+  },
+  "theme": "guard"
+ },
+ {
+  "id": "set_55_reaver_s_hide",
+  "magic": false,
+  "name": "Reaver's Hide",
+  "pieces": [
+   {
+    "name": "Reaver's Hide Helm",
+    "passive": {
+     "mods": {
+      "spell_damage": {
+       "mult": 0.031
+      }
+     },
+     "name": "Reaver Insight"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Reaver's Hide Cuirass",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.042
+      }
+     },
+     "name": "Reaver Ward"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Reaver's Hide Shield",
+    "passive": {
+     "mods": {
+      "block_stun": {
+       "add": 0.062
+      }
+     },
+     "name": "Reaver Guard"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Reaver's Hide Greaves",
+    "passive": {
+     "mods": {
+      "slide_distance": {
+       "mult": 0.062
+      }
+     },
+     "name": "Reaver Stride"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Reaver's Hide Boots",
+    "passive": {
+     "mods": {
+      "jump_height": {
+       "mult": 0.073
+      }
+     },
+     "name": "Reaver Leap"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "uncommon",
+  "set_bonus": {
+   "desc": "Boarding party: your hits slow enemies and you run faster for a moment after taking a hit.",
+   "mods": {
+    "speed_after_hit": {
+     "add": 0.25
+    }
+   },
+   "on_hit": {
+    "dur": 2,
+    "id": "slow",
+    "p": 0.2
+   }
+  },
+  "theme": "pirate"
+ },
+ {
+  "id": "set_56_fangweave",
+  "magic": false,
+  "name": "Fangweave",
+  "pieces": [
+   {
+    "name": "Fangweave Helm",
+    "passive": {
+     "mods": {
+      "crit_chance": {
+       "add": 0.027
+      }
+     },
+     "name": "Fangweave Gaze"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Fangweave Cuirass",
+    "passive": {
+     "mods": {
+      "max_health": {
+       "mult": 0.054
+      }
+     },
+     "name": "Fangweave Heart"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Fangweave Shield",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.068
+      }
+     },
+     "name": "Fangweave Rampart"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Fangweave Greaves",
+    "passive": {
+     "mods": {
+      "stamina": {
+       "mult": 0.109
+      }
+     },
+     "name": "Fangweave Stamina"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Fangweave Boots",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.034
+      }
+     },
+     "name": "Fangweave Pace"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Venomous: your hits poison and you resist poison.",
+   "mods": {
+    "weapon_damage": {
+     "mult": 0.06
+    }
+   },
+   "on_hit": {
+    "dur": 3,
+    "id": "poison",
+    "p": 0.25
+   },
+   "resist": {
+    "poison": 0.6
+   }
+  },
+  "theme": "venom"
+ },
+ {
+  "id": "set_57_siegebreaker_plate",
+  "magic": false,
+  "name": "Siegebreaker Plate",
+  "pieces": [
+   {
+    "name": "Siegebreaker Plate Helm",
+    "passive": {
+     "mods": {
+      "headshot_resist": {
+       "add": 0.088
+      }
+     },
+     "name": "Siegebreaker Resolve"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Siegebreaker Plate Cuirass",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.07
+      }
+     },
+     "name": "Siegebreaker Ward"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Siegebreaker Plate Shield",
+    "passive": {
+     "mods": {
+      "knockback_resist": {
+       "add": 0.106
+      }
+     },
+     "name": "Siegebreaker Anchor"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Siegebreaker Plate Greaves",
+    "passive": {
+     "mods": {
+      "stamina": {
+       "mult": 0.141
+      }
+     },
+     "name": "Siegebreaker Stamina"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Siegebreaker Plate Boots",
+    "passive": {
+     "mods": {
+      "jump_height": {
+       "mult": 0.123
+      }
+     },
+     "name": "Siegebreaker Leap"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "epic",
+  "set_bonus": {
+   "desc": "Siegebreaker: +15% armor, +10% health and you cannot be stunned for long.",
+   "mods": {
+    "armor": {
+     "add": 0.15
+    },
+    "max_health": {
+     "mult": 0.1
+    }
+   },
+   "resist": {
+    "stun": 0.5
+   }
+  },
+  "theme": "gear"
+ },
+ {
+  "id": "set_58_tempest_mail",
+  "magic": false,
+  "name": "Tempest Mail",
+  "pieces": [
+   {
+    "name": "Tempest Mail Helm",
+    "passive": {
+     "mods": {
+      "crit_chance": {
+       "add": 0.035
+      }
+     },
+     "name": "Tempest Gaze"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Tempest Mail Cuirass",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.07
+      }
+     },
+     "name": "Tempest Plating"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Tempest Mail Shield",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.211
+      }
+     },
+     "name": "Tempest Barrier"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Tempest Mail Greaves",
+    "passive": {
+     "mods": {
+      "jump_height": {
+       "mult": 0.106
+      }
+     },
+     "name": "Tempest Spring"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Tempest Mail Boots",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.176
+      }
+     },
+     "name": "Tempest Grip"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "epic",
+  "set_bonus": {
+   "aura": {
+    "radius": 4,
+    "sts": [
+     {
+      "dur": 2,
+      "id": "slow",
+      "n": 1
+     }
+    ]
+   },
+   "desc": "Tempest: your hits shock enemies and a stormy aura slows those who come close.",
+   "mods": {
+    "move_speed": {
+     "mult": 0.05
+    }
+   },
+   "on_hit": {
+    "dur": 3,
+    "id": "shock",
+    "p": 0.2
+   }
+  },
+  "theme": "storm"
+ },
+ {
+  "id": "set_59_harpooner_s_oilskins",
+  "magic": false,
+  "name": "Harpooner's Oilskins",
+  "pieces": [
+   {
+    "name": "Harpooner's Oilskins Helm",
+    "passive": {
+     "mods": {
+      "spell_damage": {
+       "mult": 0.024
+      }
+     },
+     "name": "Harpooner Insight"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Harpooner's Oilskins Cuirass",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.08
+      }
+     },
+     "name": "Harpooner Mantle"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Harpooner's Oilskins Shield",
+    "passive": {
+     "mods": {
+      "knockback_resist": {
+       "add": 0.048
+      }
+     },
+     "name": "Harpooner Anchor"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Harpooner's Oilskins Greaves",
+    "passive": {
+     "mods": {
+      "stamina": {
+       "mult": 0.064
+      }
+     },
+     "name": "Harpooner Stamina"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Harpooner's Oilskins Boots",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.08
+      }
+     },
+     "name": "Harpooner Grip"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "common",
+  "set_bonus": {
+   "desc": "Sea legs: +10% health and a clean slide.",
+   "mods": {
+    "max_health": {
+     "mult": 0.1
+    },
+    "slide_distance": {
+     "mult": 0.15
+    }
+   }
+  },
+  "theme": "tide"
+ },
+ {
+  "id": "set_60_thornbriar_hide",
+  "magic": false,
+  "name": "Thornbriar Hide",
+  "pieces": [
+   {
+    "name": "Thornbriar Hide Helm",
+    "passive": {
+     "mods": {
+      "mana": {
+       "mult": 0.083
+      }
+     },
+     "name": "Thornbriar Mind"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Thornbriar Hide Cuirass",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.042
+      }
+     },
+     "name": "Thornbriar Plating"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Thornbriar Hide Shield",
+    "passive": {
+     "mods": {
+      "projectile_resist": {
+       "add": 0.052
+      }
+     },
+     "name": "Thornbriar Bulwark"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Thornbriar Hide Greaves",
+    "passive": {
+     "mods": {
+      "slide_distance": {
+       "mult": 0.062
+      }
+     },
+     "name": "Thornbriar Stride"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Thornbriar Hide Boots",
+    "passive": {
+     "mods": {
+      "sprint_speed": {
+       "mult": 0.052
+      }
+     },
+     "name": "Thornbriar Dash"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "uncommon",
+  "set_bonus": {
+   "desc": "Thorns: attackers take 12% of the damage they deal.",
+   "mods": {
+    "armor": {
+     "add": 0.08
+    }
+   },
+   "reflect": 0.12
+  },
+  "theme": "nature"
+ },
+ {
+  "id": "set_61_gale_runner_gear",
+  "magic": false,
+  "name": "Gale Runner Gear",
+  "pieces": [
+   {
+    "name": "Gale Runner Gear Helm",
+    "passive": {
+     "mods": {
+      "headshot_resist": {
+       "add": 0.068
+      }
+     },
+     "name": "Gale Resolve"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Gale Runner Gear Cuirass",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.054
+      }
+     },
+     "name": "Gale Ward"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Gale Runner Gear Shield",
+    "passive": {
+     "mods": {
+      "block_stun": {
+       "add": 0.082
+      }
+     },
+     "name": "Gale Guard"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Gale Runner Gear Greaves",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.109
+      }
+     },
+     "name": "Gale Footing"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Gale Runner Gear Boots",
+    "passive": {
+     "mods": {
+      "sound": {
+       "mult": -0.136
+      }
+     },
+     "name": "Gale Hush"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Gale: +12% sprint speed and a faster reload.",
+   "mods": {
+    "reload_speed": {
+     "mult": 0.2
+    },
+    "sprint_speed": {
+     "mult": 0.12
+    }
+   }
+  },
+  "theme": "storm"
+ },
+ {
+  "id": "set_62_eaglesight_leathers",
+  "magic": false,
+  "name": "Eaglesight Leathers",
+  "pieces": [
+   {
+    "name": "Eaglesight Leathers Helm",
+    "passive": {
+     "mods": {
+      "sight": {
+       "mult": 0.082
+      }
+     },
+     "name": "Eaglesight Sight"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Eaglesight Leathers Cuirass",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.054
+      }
+     },
+     "name": "Eaglesight Plating"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Eaglesight Leathers Shield",
+    "passive": {
+     "mods": {
+      "projectile_resist": {
+       "add": 0.068
+      }
+     },
+     "name": "Eaglesight Bulwark"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Eaglesight Leathers Greaves",
+    "passive": {
+     "mods": {
+      "stamina": {
+       "mult": 0.109
+      }
+     },
+     "name": "Eaglesight Stamina"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Eaglesight Leathers Boots",
+    "passive": {
+     "mods": {
+      "sprint_speed": {
+       "mult": 0.068
+      }
+     },
+     "name": "Eaglesight Dash"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Eagle eye: you see 20% farther and crit 8% more often.",
+   "mods": {
+    "crit_chance": {
+     "add": 0.08
+    },
+    "sight": {
+     "mult": 0.2
+    }
+   }
+  },
+  "theme": "swift"
+ },
+ {
+  "id": "set_63_thornlash_harness",
+  "magic": false,
+  "name": "Thornlash Harness",
+  "pieces": [
+   {
+    "name": "Thornlash Harness Helm",
+    "passive": {
+     "mods": {
+      "headshot_resist": {
+       "add": 0.04
+      }
+     },
+     "name": "Thornlash Resolve"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Thornlash Harness Cuirass",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.032
+      }
+     },
+     "name": "Thornlash Ward"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Thornlash Harness Shield",
+    "passive": {
+     "mods": {
+      "block_stun": {
+       "add": 0.048
+      }
+     },
+     "name": "Thornlash Guard"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Thornlash Harness Greaves",
+    "passive": {
+     "mods": {
+      "slide_distance": {
+       "mult": 0.048
+      }
+     },
+     "name": "Thornlash Stride"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Thornlash Harness Boots",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.08
+      }
+     },
+     "name": "Thornlash Grip"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "common",
+  "set_bonus": {
+   "desc": "Lash: your hits make enemies bleed.",
+   "mods": {
+    "weapon_damage": {
+     "mult": 0.05
+    }
+   },
+   "on_hit": {
+    "dur": 3,
+    "id": "bleed",
+    "p": 0.2
+   }
+  },
+  "theme": "venom"
+ },
+ {
+  "id": "set_64_shadowrend_garb",
+  "magic": false,
+  "name": "Shadowrend Garb",
+  "pieces": [
+   {
+    "name": "Shadowrend Garb Helm",
+    "passive": {
+     "mods": {
+      "mana": {
+       "mult": 0.141
+      }
+     },
+     "name": "Shadowrend Mind"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Shadowrend Garb Cuirass",
+    "passive": {
+     "mods": {
+      "max_health": {
+       "mult": 0.07
+      }
+     },
+     "name": "Shadowrend Heart"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Shadowrend Garb Shield",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.211
+      }
+     },
+     "name": "Shadowrend Barrier"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Shadowrend Garb Greaves",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.035
+      }
+     },
+     "name": "Shadowrend Tread"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Shadowrend Garb Boots",
+    "passive": {
+     "mods": {
+      "sound": {
+       "mult": -0.176
+      }
+     },
+     "name": "Shadowrend Hush"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "epic",
+  "set_bonus": {
+   "desc": "Shadowstep: 12% to dodge a hit completely and +10% movement speed.",
+   "dodge": 0.12,
+   "mods": {
+    "move_speed": {
+     "mult": 0.1
+    }
+   }
+  },
+  "theme": "grave"
+ },
+ {
+  "id": "set_65_tigerhide_wraps",
+  "magic": false,
+  "name": "Tigerhide Wraps",
+  "pieces": [
+   {
+    "name": "Tigerhide Wraps Helm",
+    "passive": {
+     "mods": {
+      "cooldown_reduction": {
+       "add": 0.021
+      }
+     },
+     "name": "Tigerhide Focus"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Tigerhide Wraps Cuirass",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.104
+      }
+     },
+     "name": "Tigerhide Mantle"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Tigerhide Wraps Shield",
+    "passive": {
+     "mods": {
+      "knockback_resist": {
+       "add": 0.062
+      }
+     },
+     "name": "Tigerhide Anchor"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Tigerhide Wraps Greaves",
+    "passive": {
+     "mods": {
+      "slide_distance": {
+       "mult": 0.062
+      }
+     },
+     "name": "Tigerhide Stride"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Tigerhide Wraps Boots",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.026
+      }
+     },
+     "name": "Tigerhide Pace"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "uncommon",
+  "set_bonus": {
+   "desc": "Prowl: +15% jump height and +6% damage.",
+   "mods": {
+    "jump_height": {
+     "mult": 0.15
+    },
+    "weapon_damage": {
+     "mult": 0.06
+    }
+   }
+  },
+  "theme": "desert"
+ },
+ {
+  "id": "set_66_ironlink_mail",
+  "magic": false,
+  "name": "Ironlink Mail",
+  "pieces": [
+   {
+    "name": "Ironlink Mail Helm",
+    "passive": {
+     "mods": {
+      "mana": {
+       "mult": 0.083
+      }
+     },
+     "name": "Ironlink Mind"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Ironlink Mail Cuirass",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.042
+      }
+     },
+     "name": "Ironlink Plating"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Ironlink Mail Shield",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.125
+      }
+     },
+     "name": "Ironlink Barrier"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Ironlink Mail Greaves",
+    "passive": {
+     "mods": {
+      "stamina": {
+       "mult": 0.083
+      }
+     },
+     "name": "Ironlink Stamina"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Ironlink Mail Boots",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.026
+      }
+     },
+     "name": "Ironlink Pace"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "uncommon",
+  "set_bonus": {
+   "desc": "Linked: +12% armor and you shrug off slows.",
+   "mods": {
+    "armor": {
+     "add": 0.12
+    }
+   },
+   "resist": {
+    "slow": 0.6
+   }
+  },
+  "theme": "gear"
+ },
+ {
+  "id": "set_67_stormspark_vestments",
+  "magic": true,
+  "name": "Stormspark Vestments",
+  "pieces": [
+   {
+    "name": "Stormspark Vestments Hood",
+    "passive": {
+     "mods": {
+      "spell_damage": {
+       "mult": 0.041
+      }
+     },
+     "name": "Stormspark Insight"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Stormspark Vestments Robe",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.054
+      }
+     },
+     "name": "Stormspark Ward"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Stormspark Vestments Ward",
+    "passive": {
+     "mods": {
+      "block_stun": {
+       "add": 0.082
+      }
+     },
+     "name": "Stormspark Guard"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Stormspark Vestments Leggings",
+    "passive": {
+     "mods": {
+      "stamina": {
+       "mult": 0.109
+      }
+     },
+     "name": "Stormspark Stamina"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Stormspark Vestments Slippers",
+    "passive": {
+     "mods": {
+      "sound": {
+       "mult": -0.136
+      }
+     },
+     "name": "Stormspark Hush"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Static: spells shock and you cast 10% faster.",
+   "mods": {
+    "cast_speed": {
+     "mult": 0.1
+    }
+   },
+   "on_hit": {
+    "dur": 3,
+    "id": "shock",
+    "p": 0.2
+   }
+  },
+  "theme": "storm"
+ },
+ {
+  "id": "set_68_hexweaver_robes",
+  "magic": true,
+  "name": "Hexweaver Robes",
+  "pieces": [
+   {
+    "name": "Hexweaver Robes Hood",
+    "passive": {
+     "mods": {
+      "mana": {
+       "mult": 0.109
+      }
+     },
+     "name": "Hexweaver Mind"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Hexweaver Robes Robe",
+    "passive": {
+     "mods": {
+      "reflect": {
+       "add": 0.041
+      }
+     },
+     "name": "Hexweaver Barbs"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Hexweaver Robes Ward",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.068
+      }
+     },
+     "name": "Hexweaver Rampart"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Hexweaver Robes Leggings",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.109
+      }
+     },
+     "name": "Hexweaver Footing"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Hexweaver Robes Slippers",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.136
+      }
+     },
+     "name": "Hexweaver Grip"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Hexed: your spells weaken enemies and deal +8% damage.",
+   "mods": {
+    "spell_damage": {
+     "mult": 0.08
+    }
+   },
+   "on_hit": {
+    "dur": 3,
+    "id": "weaken",
+    "p": 0.25
+   }
+  },
+  "theme": "arcane"
+ },
+ {
+  "id": "set_69_cometfall_regalia",
+  "magic": true,
+  "name": "Cometfall Regalia",
+  "pieces": [
+   {
+    "name": "Cometfall Regalia Hood",
+    "passive": {
+     "mods": {
+      "headshot_resist": {
+       "add": 0.12
+      }
+     },
+     "name": "Cometfall Resolve"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Cometfall Regalia Robe",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.24
+      }
+     },
+     "name": "Cometfall Mantle"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Cometfall Regalia Ward",
+    "passive": {
+     "mods": {
+      "block_stun": {
+       "add": 0.144
+      }
+     },
+     "name": "Cometfall Guard"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Cometfall Regalia Leggings",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.048
+      }
+     },
+     "name": "Cometfall Tread"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Cometfall Regalia Slippers",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.24
+      }
+     },
+     "name": "Cometfall Grip"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "legendary",
+  "set_bonus": {
+   "desc": "Cometfall: +20% area size on your spells and +12% spell damage.",
+   "mods": {
+    "aoe_radius": {
+     "mult": 0.2
+    },
+    "spell_damage": {
+     "mult": 0.12
+    }
+   },
+   "on_hit": {
+    "dur": 3,
+    "id": "burn",
+    "p": 0.25
+   }
+  },
+  "theme": "fire"
+ },
+ {
+  "id": "set_70_dawnbringer_vestments",
+  "magic": true,
+  "name": "Dawnbringer Vestments",
+  "pieces": [
+   {
+    "name": "Dawnbringer Vestments Hood",
+    "passive": {
+     "mods": {
+      "mana": {
+       "mult": 0.192
+      }
+     },
+     "name": "Dawnbringer Mind"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Dawnbringer Vestments Robe",
+    "passive": {
+     "mods": {
+      "reflect": {
+       "add": 0.072
+      }
+     },
+     "name": "Dawnbringer Barbs"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Dawnbringer Vestments Ward",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.288
+      }
+     },
+     "name": "Dawnbringer Barrier"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Dawnbringer Vestments Leggings",
+    "passive": {
+     "mods": {
+      "slide_distance": {
+       "mult": 0.144
+      }
+     },
+     "name": "Dawnbringer Stride"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Dawnbringer Vestments Slippers",
+    "passive": {
+     "mods": {
+      "sprint_speed": {
+       "mult": 0.12
+      }
+     },
+     "name": "Dawnbringer Dash"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "legendary",
+  "set_bonus": {
+   "desc": "Dawn: you regenerate health and 10% of your damage heals you.",
+   "mods": {
+    "health_regen": {
+     "add": 3.0
+    },
+    "lifesteal": {
+     "add": 0.1
+    }
+   }
+  },
+  "theme": "moon"
+ },
+ {
+  "id": "set_71_singularity_shroud",
+  "magic": true,
+  "name": "Singularity Shroud",
+  "pieces": [
+   {
+    "name": "Singularity Shroud Hood",
+    "passive": {
+     "mods": {
+      "cooldown_reduction": {
+       "add": 0.064
+      }
+     },
+     "name": "Singularity Focus"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Singularity Shroud Robe",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.32
+      }
+     },
+     "name": "Singularity Mantle"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Singularity Shroud Ward",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.16
+      }
+     },
+     "name": "Singularity Aegis"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Singularity Shroud Leggings",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.256
+      }
+     },
+     "name": "Singularity Footing"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Singularity Shroud Slippers",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.08
+      }
+     },
+     "name": "Singularity Pace"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "mythic",
+  "set_bonus": {
+   "aura": {
+    "radius": 5,
+    "sts": [
+     {
+      "dur": 2,
+      "id": "slow",
+      "n": 1
+     }
+    ]
+   },
+   "desc": "Event horizon: enemies near you are slowed and your spells deal +18% damage.",
+   "mods": {
+    "spell_damage": {
+     "mult": 0.18
+    }
+   }
+  },
+  "theme": "arcane"
+ },
+ {
+  "id": "set_72_siphon_scholar_s_garb",
+  "magic": true,
+  "name": "Siphon Scholar's Garb",
+  "pieces": [
+   {
+    "name": "Siphon Scholar's Garb Hood",
+    "passive": {
+     "mods": {
+      "sight": {
+       "mult": 0.062
+      }
+     },
+     "name": "Siphon Sight"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Siphon Scholar's Garb Robe",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.042
+      }
+     },
+     "name": "Siphon Plating"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Siphon Scholar's Garb Ward",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.052
+      }
+     },
+     "name": "Siphon Rampart"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Siphon Scholar's Garb Leggings",
+    "passive": {
+     "mods": {
+      "stamina": {
+       "mult": 0.083
+      }
+     },
+     "name": "Siphon Stamina"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Siphon Scholar's Garb Slippers",
+    "passive": {
+     "mods": {
+      "sound": {
+       "mult": -0.104
+      }
+     },
+     "name": "Siphon Hush"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "uncommon",
+  "set_bonus": {
+   "desc": "Studious: +20% mana and faster mana regeneration.",
+   "mods": {
+    "mana": {
+     "mult": 0.2
+    },
+    "mana_regen": {
+     "mult": 0.25
+    }
+   }
+  },
+  "theme": "arcane"
+ },
+ {
+  "id": "set_73_trinity_priest_robes",
+  "magic": true,
+  "name": "Trinity Priest Robes",
+  "pieces": [
+   {
+    "name": "Trinity Priest Robes Hood",
+    "passive": {
+     "mods": {
+      "headshot_resist": {
+       "add": 0.068
+      }
+     },
+     "name": "Trinity Resolve"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Trinity Priest Robes Robe",
+    "passive": {
+     "mods": {
+      "health_regen": {
+       "add": 0.952
+      }
+     },
+     "name": "Trinity Vigor"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Trinity Priest Robes Ward",
+    "passive": {
+     "mods": {
+      "block_stun": {
+       "add": 0.082
+      }
+     },
+     "name": "Trinity Guard"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Trinity Priest Robes Leggings",
+    "passive": {
+     "mods": {
+      "jump_height": {
+       "mult": 0.082
+      }
+     },
+     "name": "Trinity Spring"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Trinity Priest Robes Slippers",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.034
+      }
+     },
+     "name": "Trinity Pace"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Trinity: spells cost 12% less mana and skills recharge 8% faster.",
+   "mods": {
+    "cooldown_reduction": {
+     "add": 0.08
+    },
+    "mana_cost": {
+     "mult": -0.12
+    }
+   }
+  },
+  "theme": "moon"
+ },
+ {
+  "id": "set_74_seeker_s_mantle",
+  "magic": true,
+  "name": "Seeker's Mantle",
+  "pieces": [
+   {
+    "name": "Seeker's Mantle Hood",
+    "passive": {
+     "mods": {
+      "mana": {
+       "mult": 0.109
+      }
+     },
+     "name": "Seeker Mind"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Seeker's Mantle Robe",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.054
+      }
+     },
+     "name": "Seeker Plating"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Seeker's Mantle Ward",
+    "passive": {
+     "mods": {
+      "projectile_resist": {
+       "add": 0.068
+      }
+     },
+     "name": "Seeker Bulwark"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Seeker's Mantle Leggings",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.109
+      }
+     },
+     "name": "Seeker Footing"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Seeker's Mantle Slippers",
+    "passive": {
+     "mods": {
+      "jump_height": {
+       "mult": 0.095
+      }
+     },
+     "name": "Seeker Leap"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Farsight: +25% sight and your crits land 6% more often.",
+   "mods": {
+    "crit_chance": {
+     "add": 0.06
+    },
+    "sight": {
+     "mult": 0.25
+    }
+   }
+  },
+  "theme": "arcane"
+ },
+ {
+  "id": "set_75_dragonbreath_robes",
+  "magic": true,
+  "name": "Dragonbreath Robes",
+  "pieces": [
+   {
+    "name": "Dragonbreath Robes Hood",
+    "passive": {
+     "mods": {
+      "cooldown_reduction": {
+       "add": 0.035
+      }
+     },
+     "name": "Dragonbreath Focus"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Dragonbreath Robes Robe",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.176
+      }
+     },
+     "name": "Dragonbreath Mantle"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Dragonbreath Robes Ward",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.088
+      }
+     },
+     "name": "Dragonbreath Aegis"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Dragonbreath Robes Leggings",
+    "passive": {
+     "mods": {
+      "jump_height": {
+       "mult": 0.106
+      }
+     },
+     "name": "Dragonbreath Spring"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Dragonbreath Robes Slippers",
+    "passive": {
+     "mods": {
+      "sprint_speed": {
+       "mult": 0.088
+      }
+     },
+     "name": "Dragonbreath Dash"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "epic",
+  "set_bonus": {
+   "desc": "Dragonblood: your spells burn and you resist fire.",
+   "mods": {
+    "spell_damage": {
+     "mult": 0.1
+    }
+   },
+   "on_hit": {
+    "dur": 3,
+    "id": "burn",
+    "p": 0.3
+   },
+   "resist": {
+    "burn": 0.7
+   }
+  },
+  "theme": "fire"
+ },
+ {
+  "id": "set_76_rimelance_raiment",
+  "magic": true,
+  "name": "Rimelance Raiment",
+  "pieces": [
+   {
+    "name": "Rimelance Raiment Hood",
+    "passive": {
+     "mods": {
+      "sight": {
+       "mult": 0.082
+      }
+     },
+     "name": "Rimelance Sight"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Rimelance Raiment Robe",
+    "passive": {
+     "mods": {
+      "reflect": {
+       "add": 0.041
+      }
+     },
+     "name": "Rimelance Barbs"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Rimelance Raiment Ward",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.068
+      }
+     },
+     "name": "Rimelance Rampart"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Rimelance Raiment Leggings",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.109
+      }
+     },
+     "name": "Rimelance Footing"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Rimelance Raiment Slippers",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.136
+      }
+     },
+     "name": "Rimelance Grip"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Rime: your spells chill and you resist cold.",
+   "mods": {
+    "spell_damage": {
+     "mult": 0.07
+    }
+   },
+   "on_hit": {
+    "dur": 3,
+    "id": "chill",
+    "p": 0.25
+   },
+   "resist": {
+    "chill": 0.6
+   }
+  },
+  "theme": "frost"
+ },
+ {
+  "id": "set_77_soul_reaper_s_shroud",
+  "magic": true,
+  "name": "Soul Reaper's Shroud",
+  "pieces": [
+   {
+    "name": "Soul Reaper's Shroud Hood",
+    "passive": {
+     "mods": {
+      "headshot_resist": {
+       "add": 0.12
+      }
+     },
+     "name": "Soul Resolve"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Soul Reaper's Shroud Robe",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.24
+      }
+     },
+     "name": "Soul Mantle"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Soul Reaper's Shroud Ward",
+    "passive": {
+     "mods": {
+      "knockback_resist": {
+       "add": 0.144
+      }
+     },
+     "name": "Soul Anchor"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Soul Reaper's Shroud Leggings",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.048
+      }
+     },
+     "name": "Soul Tread"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Soul Reaper's Shroud Slippers",
+    "passive": {
+     "mods": {
+      "sprint_speed": {
+       "mult": 0.12
+      }
+     },
+     "name": "Soul Dash"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "legendary",
+  "set_bonus": {
+   "desc": "Harvest: a kill heals you for 12% of your health and you hit the wounded harder.",
+   "heal_on_kill": 0.12,
+   "mods": {
+    "damage_vs_low": {
+     "add": 0.2
+    }
+   }
+  },
+  "theme": "grave"
+ },
+ {
+  "id": "set_78_starfall_regalia",
+  "magic": true,
+  "name": "Starfall Regalia",
+  "pieces": [
+   {
+    "name": "Starfall Regalia Hood",
+    "passive": {
+     "mods": {
+      "crit_chance": {
+       "add": 0.035
+      }
+     },
+     "name": "Starfall Gaze"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Starfall Regalia Robe",
+    "passive": {
+     "mods": {
+      "reflect": {
+       "add": 0.053
+      }
+     },
+     "name": "Starfall Barbs"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Starfall Regalia Ward",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.088
+      }
+     },
+     "name": "Starfall Rampart"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Starfall Regalia Leggings",
+    "passive": {
+     "mods": {
+      "slide_distance": {
+       "mult": 0.106
+      }
+     },
+     "name": "Starfall Stride"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Starfall Regalia Slippers",
+    "passive": {
+     "mods": {
+      "sprint_speed": {
+       "mult": 0.088
+      }
+     },
+     "name": "Starfall Dash"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "epic",
+  "set_bonus": {
+   "desc": "Starlight: +10% spell damage and 10% faster casting.",
+   "mods": {
+    "cast_speed": {
+     "mult": 0.1
+    },
+    "spell_damage": {
+     "mult": 0.1
+    }
+   }
+  },
+  "theme": "moon"
+ },
+ {
+  "id": "set_79_voidpiercer_s_veil",
+  "magic": true,
+  "name": "Voidpiercer's Veil",
+  "pieces": [
+   {
+    "name": "Voidpiercer's Veil Hood",
+    "passive": {
+     "mods": {
+      "headshot_resist": {
+       "add": 0.16
+      }
+     },
+     "name": "Voidpiercer Resolve"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Voidpiercer's Veil Robe",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.128
+      }
+     },
+     "name": "Voidpiercer Ward"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Voidpiercer's Veil Ward",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.16
+      }
+     },
+     "name": "Voidpiercer Aegis"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Voidpiercer's Veil Leggings",
+    "passive": {
+     "mods": {
+      "stamina": {
+       "mult": 0.256
+      }
+     },
+     "name": "Voidpiercer Stamina"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Voidpiercer's Veil Slippers",
+    "passive": {
+     "mods": {
+      "jump_height": {
+       "mult": 0.224
+      }
+     },
+     "name": "Voidpiercer Leap"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "mythic",
+  "set_bonus": {
+   "desc": "Voidstep: 15% to dodge a hit, +15% spell damage, and a barrier when you are nearly dead.",
+   "dodge": 0.15,
+   "low_health_barrier": 60,
+   "mods": {
+    "spell_damage": {
+     "mult": 0.15
+    }
+   }
+  },
+  "theme": "arcane"
+ },
+ {
+  "id": "set_80_phantom_dancer_silks",
+  "magic": true,
+  "name": "Phantom Dancer Silks",
+  "pieces": [
+   {
+    "name": "Phantom Dancer Silks Hood",
+    "passive": {
+     "mods": {
+      "mana": {
+       "mult": 0.141
+      }
+     },
+     "name": "Phantom Mind"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Phantom Dancer Silks Robe",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.07
+      }
+     },
+     "name": "Phantom Plating"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Phantom Dancer Silks Ward",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.211
+      }
+     },
+     "name": "Phantom Barrier"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Phantom Dancer Silks Leggings",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.035
+      }
+     },
+     "name": "Phantom Tread"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Phantom Dancer Silks Slippers",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.044
+      }
+     },
+     "name": "Phantom Pace"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "epic",
+  "set_bonus": {
+   "desc": "Phantom: 12% to dodge and +10% movement speed.",
+   "dodge": 0.12,
+   "mods": {
+    "move_speed": {
+     "mult": 0.1
+    }
+   }
+  },
+  "theme": "grave"
+ },
+ {
+  "id": "set_81_voidfist_vestments",
+  "magic": true,
+  "name": "Voidfist Vestments",
+  "pieces": [
+   {
+    "name": "Voidfist Vestments Hood",
+    "passive": {
+     "mods": {
+      "headshot_resist": {
+       "add": 0.068
+      }
+     },
+     "name": "Voidfist Resolve"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Voidfist Vestments Robe",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.054
+      }
+     },
+     "name": "Voidfist Ward"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Voidfist Vestments Ward",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.068
+      }
+     },
+     "name": "Voidfist Aegis"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Voidfist Vestments Leggings",
+    "passive": {
+     "mods": {
+      "slide_distance": {
+       "mult": 0.082
+      }
+     },
+     "name": "Voidfist Stride"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Voidfist Vestments Slippers",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.136
+      }
+     },
+     "name": "Voidfist Grip"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Rift: +12% damage up close and +10% health.",
+   "mods": {
+    "damage_near": {
+     "mult": 0.12
+    },
+    "max_health": {
+     "mult": 0.1
+    }
+   }
+  },
+  "theme": "arcane"
+ },
+ {
+  "id": "set_82_meteor_magus_regalia",
+  "magic": true,
+  "name": "Meteor Magus Regalia",
+  "pieces": [
+   {
+    "name": "Meteor Magus Regalia Hood",
+    "passive": {
+     "mods": {
+      "sight": {
+       "mult": 0.192
+      }
+     },
+     "name": "Meteor Sight"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Meteor Magus Regalia Robe",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.128
+      }
+     },
+     "name": "Meteor Plating"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Meteor Magus Regalia Ward",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.384
+      }
+     },
+     "name": "Meteor Barrier"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Meteor Magus Regalia Leggings",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.064
+      }
+     },
+     "name": "Meteor Tread"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Meteor Magus Regalia Slippers",
+    "passive": {
+     "mods": {
+      "jump_height": {
+       "mult": 0.224
+      }
+     },
+     "name": "Meteor Leap"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "mythic",
+  "set_bonus": {
+   "desc": "Impact: +25% area size and +20% spell damage; your spells burn.",
+   "mods": {
+    "aoe_radius": {
+     "mult": 0.25
+    },
+    "spell_damage": {
+     "mult": 0.2
+    }
+   },
+   "on_hit": {
+    "dur": 4,
+    "id": "burn",
+    "p": 0.35
+   }
+  },
+  "theme": "fire"
+ },
+ {
+  "id": "set_83_flamebearer_armor",
+  "magic": true,
+  "name": "Flamebearer Armor",
+  "pieces": [
+   {
+    "name": "Flamebearer Armor Hood",
+    "passive": {
+     "mods": {
+      "spell_damage": {
+       "mult": 0.041
+      }
+     },
+     "name": "Flamebearer Insight"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Flamebearer Armor Robe",
+    "passive": {
+     "mods": {
+      "shield_strength": {
+       "mult": 0.136
+      }
+     },
+     "name": "Flamebearer Mantle"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Flamebearer Armor Ward",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.068
+      }
+     },
+     "name": "Flamebearer Aegis"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Flamebearer Armor Leggings",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.109
+      }
+     },
+     "name": "Flamebearer Footing"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Flamebearer Armor Slippers",
+    "passive": {
+     "mods": {
+      "slow_resist": {
+       "add": 0.136
+      }
+     },
+     "name": "Flamebearer Grip"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Flamebearer: your hits burn and you resist fire.",
+   "mods": {
+    "weapon_damage": {
+     "mult": 0.08
+    }
+   },
+   "on_hit": {
+    "dur": 3,
+    "id": "burn",
+    "p": 0.25
+   },
+   "resist": {
+    "burn": 0.6
+   }
+  },
+  "theme": "fire"
+ },
+ {
+  "id": "set_84_thunderfist_wraps",
+  "magic": true,
+  "name": "Thunderfist Wraps",
+  "pieces": [
+   {
+    "name": "Thunderfist Wraps Hood",
+    "passive": {
+     "mods": {
+      "mana": {
+       "mult": 0.109
+      }
+     },
+     "name": "Thunderfist Mind"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Thunderfist Wraps Robe",
+    "passive": {
+     "mods": {
+      "max_health": {
+       "mult": 0.054
+      }
+     },
+     "name": "Thunderfist Heart"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Thunderfist Wraps Ward",
+    "passive": {
+     "mods": {
+      "armor": {
+       "add": 0.068
+      }
+     },
+     "name": "Thunderfist Rampart"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Thunderfist Wraps Leggings",
+    "passive": {
+     "mods": {
+      "move_speed": {
+       "mult": 0.027
+      }
+     },
+     "name": "Thunderfist Tread"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Thunderfist Wraps Slippers",
+    "passive": {
+     "mods": {
+      "jump_height": {
+       "mult": 0.095
+      }
+     },
+     "name": "Thunderfist Leap"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "rare",
+  "set_bonus": {
+   "desc": "Thunderfist: your hits shock and you move 8% faster.",
+   "mods": {
+    "move_speed": {
+     "mult": 0.08
+    }
+   },
+   "on_hit": {
+    "dur": 3,
+    "id": "shock",
+    "p": 0.3
+   }
+  },
+  "theme": "storm"
+ },
+ {
+  "id": "set_85_briar_witch_robes",
+  "magic": true,
+  "name": "Briar Witch Robes",
+  "pieces": [
+   {
+    "name": "Briar Witch Robes Hood",
+    "passive": {
+     "mods": {
+      "spell_damage": {
+       "mult": 0.024
+      }
+     },
+     "name": "Briar Insight"
+    },
+    "slot": "helmet"
+   },
+   {
+    "name": "Briar Witch Robes Robe",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.032
+      }
+     },
+     "name": "Briar Ward"
+    },
+    "slot": "chestplate"
+   },
+   {
+    "name": "Briar Witch Robes Ward",
+    "passive": {
+     "mods": {
+      "spell_res": {
+       "add": 0.04
+      }
+     },
+     "name": "Briar Aegis"
+    },
+    "slot": "shield"
+   },
+   {
+    "name": "Briar Witch Robes Leggings",
+    "passive": {
+     "mods": {
+      "slide_distance": {
+       "mult": 0.048
+      }
+     },
+     "name": "Briar Stride"
+    },
+    "slot": "leggings"
+   },
+   {
+    "name": "Briar Witch Robes Slippers",
+    "passive": {
+     "mods": {
+      "sprint_speed": {
+       "mult": 0.04
+      }
+     },
+     "name": "Briar Dash"
+    },
+    "slot": "boots"
+   }
+  ],
+  "rarity": "common",
+  "set_bonus": {
+   "desc": "Briar: thorns hurt attackers for 10% of their damage.",
+   "mods": {
+    "spell_res": {
+     "add": 0.08
+    }
+   },
+   "reflect": 0.1
+  },
+  "theme": "nature"
+ }
+]

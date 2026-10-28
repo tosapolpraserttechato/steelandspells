@@ -1,0 +1,609 @@
+{
+ "outfit_necromancer": {
+  "c1": "#1a1424",
+  "c2": "#b8b09a",
+  "glow": "#7affc0",
+  "helm": "hood",
+  "shield": "ward",
+  "shoulder": "skull",
+  "skirt": "tabard",
+  "sleeve": "bracer",
+  "style": "bone",
+  "weapon": "bone_staff"
+ },
+ "set_01_squire_s_plate": {
+  "c1": "#9aa0aa",
+  "c2": "#6a3a2a",
+  "glow": "#ffd070",
+  "style": "plate",
+  "weapon": "longsword"
+ },
+ "set_02_knight_s_bastion": {
+  "c1": "#c0c4cc",
+  "c2": "#2a3f8a",
+  "glow": "#8ab4ff",
+  "style": "plate",
+  "weapon": "claymore"
+ },
+ "set_03_ranger_s_leathers": {
+  "c1": "#5a6a3a",
+  "c2": "#8a6a3a",
+  "glow": "#c8e070",
+  "style": "leather",
+  "weapon": "wayfarers_bow"
+ },
+ "set_04_pathfinder_s_mail": {
+  "c1": "#7a8a6a",
+  "c2": "#5a4a2a",
+  "glow": "#d8e8a0",
+  "style": "chain",
+  "weapon": "hunters_recurve"
+ },
+ "set_05_dwarven_forgeplate": {
+  "c1": "#6a5a50",
+  "c2": "#d0782a",
+  "glow": "#ff9a3a",
+  "style": "mech",
+  "weapon": "war_hammer"
+ },
+ "set_06_pirate_captain_s_regalia": {
+  "c1": "#1a2f6a",
+  "c2": "#d8b048",
+  "glow": "#ffd870",
+  "style": "royal",
+  "weapon": "scimitar"
+ },
+ "set_07_corsair_s_leather": {
+  "c1": "#4a2a2a",
+  "c2": "#c8a060",
+  "glow": "#ffb060",
+  "style": "leather",
+  "weapon": "rapier"
+ },
+ "set_08_desert_nomad_wraps": {
+  "c1": "#d8c090",
+  "c2": "#a0522d",
+  "glow": "#ffd890",
+  "style": "desert",
+  "weapon": "kukri"
+ },
+ "set_09_sandstalker_leathers": {
+  "c1": "#b8903a",
+  "c2": "#6a4a2a",
+  "glow": "#ffcf70",
+  "style": "desert",
+  "weapon": "rangers_shortbow"
+ },
+ "set_10_tomb_guardian_s_bronze": {
+  "c1": "#b0803a",
+  "c2": "#3a8a8a",
+  "glow": "#5ae6d0",
+  "style": "desert",
+  "weapon": "boar_spear"
+ },
+ "set_11_mountain_warden_s_furs": {
+  "c1": "#c8c0b0",
+  "c2": "#6a5a4a",
+  "glow": "#e8f0ff",
+  "style": "organic",
+  "weapon": "hatchet"
+ },
+ "set_12_iceplate_bastion": {
+  "c1": "#b8dcf0",
+  "c2": "#5a8ac0",
+  "glow": "#aeeaff",
+  "style": "ice",
+  "weapon": "battle_axe"
+ },
+ "set_13_gravewarden_s_mail": {
+  "c1": "#4a4a50",
+  "c2": "#b8b09a",
+  "glow": "#7aff9a",
+  "style": "bone",
+  "weapon": "harvest_scythe"
+ },
+ "set_14_foreman_s_gear": {
+  "c1": "#8a6a3a",
+  "c2": "#e0b030",
+  "glow": "#ffe070",
+  "style": "mech",
+  "weapon": "flanged_mace"
+ },
+ "set_15_clockwork_brigandine": {
+  "c1": "#5a4a3a",
+  "c2": "#c8a050",
+  "glow": "#ffd070",
+  "style": "mech",
+  "weapon": "heavy_crossbow"
+ },
+ "set_16_swamp_hunter_s_hides": {
+  "c1": "#3a4a2a",
+  "c2": "#6a7a3a",
+  "glow": "#b0ff50",
+  "style": "organic",
+  "weapon": "hand_crossbow"
+ },
+ "set_17_mangrove_scale": {
+  "c1": "#3a5a3a",
+  "c2": "#7a9a4a",
+  "glow": "#b8ff80",
+  "style": "scale",
+  "weapon": "javelins"
+ },
+ "set_18_sea_wolf_chainmail": {
+  "c1": "#5a7a8a",
+  "c2": "#c8c8c0",
+  "glow": "#a0e0ff",
+  "style": "chain",
+  "weapon": "throwing_axes"
+ },
+ "set_19_coral_shell_armor": {
+  "c1": "#e07a6a",
+  "c2": "#5ac8c0",
+  "glow": "#7affe0",
+  "style": "ocean",
+  "weapon": "glaive"
+ },
+ "set_20_forgemaster_s_plate": {
+  "c1": "#3a3a40",
+  "c2": "#ff6a1a",
+  "glow": "#ff8a2a",
+  "style": "flame",
+  "weapon": "greataxe"
+ },
+ "set_21_obsidian_lamellar": {
+  "c1": "#14141a",
+  "c2": "#c03a2a",
+  "glow": "#ff4a2a",
+  "style": "scale",
+  "weapon": "katana"
+ },
+ "set_22_skyguard_scale": {
+  "c1": "#4a7ab0",
+  "c2": "#e8e8f0",
+  "glow": "#bde0ff",
+  "style": "storm",
+  "weapon": "halberd"
+ },
+ "set_23_windrider_s_leather": {
+  "c1": "#7aaa9a",
+  "c2": "#e0e8c8",
+  "glow": "#c8fff0",
+  "style": "leather",
+  "weapon": "gilded_longbow"
+ },
+ "set_24_gladiator_s_harness": {
+  "c1": "#a07a3a",
+  "c2": "#6a1a1a",
+  "glow": "#ffc040",
+  "style": "royal",
+  "weapon": "morning_star"
+ },
+ "set_25_chessmaster_s_formal_plate": {
+  "c1": "#e8e4d8",
+  "c2": "#15151a",
+  "glow": "#ffe08a",
+  "style": "royal",
+  "weapon": "chess_staff"
+ },
+ "set_26_verdant_robes": {
+  "c1": "#4a8a3a",
+  "c2": "#d8e8a0",
+  "glow": "#9aff6a",
+  "style": "robe",
+  "weapon": "nature_staff"
+ },
+ "set_27_tide_regalia": {
+  "c1": "#2a5a8a",
+  "c2": "#a0e0e0",
+  "glow": "#6ae0ff",
+  "style": "ocean",
+  "weapon": "trident_staff"
+ },
+ "set_28_emberweave": {
+  "c1": "#8a2a1a",
+  "c2": "#ffb040",
+  "glow": "#ff7a2a",
+  "style": "robe",
+  "weapon": "ember_staff"
+ },
+ "set_29_rimecloth": {
+  "c1": "#8ab8d8",
+  "c2": "#f0f8ff",
+  "glow": "#bff0ff",
+  "style": "robe",
+  "weapon": "frost_staff"
+ },
+ "set_30_stormweave": {
+  "c1": "#3a4a7a",
+  "c2": "#f0e060",
+  "glow": "#ffee70",
+  "style": "robe",
+  "weapon": "storm_staff"
+ },
+ "set_31_mirage_shroud": {
+  "c1": "#c8a868",
+  "c2": "#4a8a9a",
+  "glow": "#ffe6a0",
+  "style": "robe",
+  "weapon": "arcane_wand"
+ },
+ "set_32_shroud_robes": {
+  "c1": "#2a2430",
+  "c2": "#7a5a9a",
+  "glow": "#b07aff",
+  "style": "robe",
+  "weapon": "bone_staff"
+ },
+ "set_33_prism_vestments": {
+  "c1": "#c0a0e0",
+  "c2": "#60d0ff",
+  "glow": "#ffffff",
+  "style": "crystal",
+  "weapon": "crystal_orb"
+ },
+ "set_34_alchemist_garb": {
+  "c1": "#3a5a3a",
+  "c2": "#c8a030",
+  "glow": "#9aff4a",
+  "style": "robe",
+  "weapon": "venom_wand"
+ },
+ "set_35_chrono_vestments": {
+  "c1": "#e8e0c0",
+  "c2": "#2a2a3a",
+  "glow": "#ffe08a",
+  "style": "moon",
+  "weapon": "chrono_orb"
+ },
+ "set_36_moonsilk": {
+  "c1": "#c8d0e8",
+  "c2": "#6a7ac0",
+  "glow": "#bcd0ff",
+  "style": "moon",
+  "weapon": "moonlight_bow"
+ },
+ "set_37_grandmaster_s_suit": {
+  "c1": "#14141a",
+  "c2": "#e8e4d8",
+  "glow": "#ffe08a",
+  "style": "royal",
+  "weapon": "star_orb"
+ },
+ "set_38_sun_priest_vestments": {
+  "c1": "#f0d890",
+  "c2": "#c04a1a",
+  "glow": "#ffd04a",
+  "style": "royal",
+  "weapon": "wisp_bow"
+ },
+ "set_39_starweaver_robes": {
+  "c1": "#1a1a4a",
+  "c2": "#ffe8a0",
+  "glow": "#ffe890",
+  "style": "moon",
+  "weapon": "codex_of_stars"
+ },
+ "set_40_voidwalker_raiment": {
+  "c1": "#0e0a1c",
+  "c2": "#8a3aff",
+  "glow": "#a45aff",
+  "style": "crystal",
+  "weapon": "void_orb"
+ },
+ "set_41_runesmith_robes": {
+  "c1": "#4a4a5a",
+  "c2": "#4ac0ff",
+  "glow": "#6adaff",
+  "style": "robe",
+  "weapon": "embers_spellbook"
+ },
+ "set_42_spiritcaller_mantle": {
+  "c1": "#5a6a6a",
+  "c2": "#a8ffe0",
+  "glow": "#7affd0",
+  "style": "bone",
+  "weapon": "grimoire_of_shadows"
+ },
+ "set_43_witchwood_robes": {
+  "c1": "#3a2a3a",
+  "c2": "#7aa04a",
+  "glow": "#a0ff6a",
+  "style": "organic",
+  "weapon": "shadow_wand"
+ },
+ "set_44_dreamweaver_silks": {
+  "c1": "#8a6ab0",
+  "c2": "#f0d0ff",
+  "glow": "#e0b0ff",
+  "style": "moon",
+  "weapon": "tome_of_frost"
+ },
+ "set_45_seer_s_regalia": {
+  "c1": "#3a3a6a",
+  "c2": "#e0c070",
+  "glow": "#ffe090",
+  "style": "robe",
+  "weapon": "ember_orb"
+ },
+ "set_46_phoenix_plumage": {
+  "c1": "#c0301a",
+  "c2": "#ffc040",
+  "glow": "#ff8030",
+  "style": "flame",
+  "weapon": "phoenix_bow"
+ },
+ "set_47_frostbound_vestments": {
+  "c1": "#7aa8d0",
+  "c2": "#e8f4ff",
+  "glow": "#9ae0ff",
+  "style": "ice",
+  "weapon": "frostbrand"
+ },
+ "set_48_stormcaller_mantle": {
+  "c1": "#2a3060",
+  "c2": "#fff070",
+  "glow": "#fff090",
+  "style": "storm",
+  "weapon": "stormcaller"
+ },
+ "set_49_shadowdancer_veils": {
+  "c1": "#1a1a28",
+  "c2": "#7a7ac0",
+  "glow": "#9a9aff",
+  "style": "moon",
+  "weapon": "twin_daggers"
+ },
+ "set_50_crystal_mail": {
+  "c1": "#6a9ac8",
+  "c2": "#e0f4ff",
+  "glow": "#a0e0ff",
+  "style": "crystal",
+  "weapon": "stone_fist"
+ },
+ "set_51_bloodmoon_plate": {
+  "c1": "#7a1f2b",
+  "c2": "#c9a24a",
+  "glow": "#ff3355",
+  "style": "plate",
+  "weapon": "bloodletter"
+ },
+ "set_52_headsman_s_regalia": {
+  "c1": "#2b2b30",
+  "c2": "#8a1c1c",
+  "glow": "#ff5533",
+  "style": "leather",
+  "weapon": "executioner"
+ },
+ "set_53_dervish_silks": {
+  "c1": "#d9b36a",
+  "c2": "#3b7a8a",
+  "glow": "#ffe08a",
+  "style": "desert",
+  "weapon": "dervish_blades"
+ },
+ "set_54_lancer_s_barding": {
+  "c1": "#b9bcc6",
+  "c2": "#2a4aa0",
+  "glow": "#9ac0ff",
+  "style": "plate",
+  "weapon": "lancers_pike"
+ },
+ "set_55_reaver_s_hide": {
+  "c1": "#5a4630",
+  "c2": "#9a2a2a",
+  "glow": "#ff8a5a",
+  "style": "organic",
+  "weapon": "reaver_hook"
+ },
+ "set_56_fangweave": {
+  "c1": "#2f3a2a",
+  "c2": "#9acd32",
+  "glow": "#b6ff3c",
+  "style": "leather",
+  "weapon": "twin_fangs"
+ },
+ "set_57_siegebreaker_plate": {
+  "c1": "#5a5f6a",
+  "c2": "#d08a28",
+  "glow": "#ffb040",
+  "style": "mech",
+  "weapon": "siege_maul"
+ },
+ "set_58_tempest_mail": {
+  "c1": "#4a5e8a",
+  "c2": "#f0e060",
+  "glow": "#bde0ff",
+  "style": "storm",
+  "weapon": "tempest_axe"
+ },
+ "set_59_harpooner_s_oilskins": {
+  "c1": "#2e5a6a",
+  "c2": "#d8c890",
+  "glow": "#a0e8ff",
+  "style": "ocean",
+  "weapon": "harpoon"
+ },
+ "set_60_thornbriar_hide": {
+  "c1": "#3e5a2a",
+  "c2": "#8a6a3a",
+  "glow": "#ffd23c",
+  "style": "organic",
+  "weapon": "thornspray_crossbow"
+ },
+ "set_61_gale_runner_gear": {
+  "c1": "#7a8a9a",
+  "c2": "#4aa0c0",
+  "glow": "#c8f0ff",
+  "style": "storm",
+  "weapon": "gale_repeater"
+ },
+ "set_62_eaglesight_leathers": {
+  "c1": "#6a5a3a",
+  "c2": "#e6e0c0",
+  "glow": "#fff0b0",
+  "style": "leather",
+  "weapon": "eagle_piercer"
+ },
+ "set_63_thornlash_harness": {
+  "c1": "#4a3a2a",
+  "c2": "#7a9a3a",
+  "glow": "#c0ff60",
+  "style": "leather",
+  "weapon": "thornlash_whip"
+ },
+ "set_64_shadowrend_garb": {
+  "c1": "#1e1e28",
+  "c2": "#6a3a8a",
+  "glow": "#a05cff",
+  "style": "leather",
+  "weapon": "shadowrend_claws"
+ },
+ "set_65_tigerhide_wraps": {
+  "c1": "#c88a3a",
+  "c2": "#2a2a2a",
+  "glow": "#ffcc66",
+  "style": "desert",
+  "weapon": "tiger_claws"
+ },
+ "set_66_ironlink_mail": {
+  "c1": "#8a8f98",
+  "c2": "#5a4a3a",
+  "glow": "#e0e0e8",
+  "style": "chain",
+  "weapon": "chain_whip"
+ },
+ "set_67_stormspark_vestments": {
+  "c1": "#3a4a8a",
+  "c2": "#ffe04a",
+  "glow": "#ffee66",
+  "style": "robe",
+  "weapon": "stormspark_wand"
+ },
+ "set_68_hexweaver_robes": {
+  "c1": "#4a2a5a",
+  "c2": "#8aff5a",
+  "glow": "#9dff6a",
+  "style": "robe",
+  "weapon": "hex_wand"
+ },
+ "set_69_cometfall_regalia": {
+  "c1": "#1a1a3a",
+  "c2": "#ff7a2a",
+  "glow": "#ffa040",
+  "style": "robe",
+  "weapon": "cometfall_staff"
+ },
+ "set_70_dawnbringer_vestments": {
+  "c1": "#f2e8c8",
+  "c2": "#e0a020",
+  "glow": "#fff0a0",
+  "style": "royal",
+  "weapon": "dawn_scepter"
+ },
+ "set_71_singularity_shroud": {
+  "c1": "#0a0a14",
+  "c2": "#6a2aff",
+  "glow": "#8a4aff",
+  "style": "crystal",
+  "weapon": "singularity_orb"
+ },
+ "set_72_siphon_scholar_s_garb": {
+  "c1": "#2a4a6a",
+  "c2": "#6ac0ff",
+  "glow": "#8ad4ff",
+  "style": "robe",
+  "weapon": "siphon_codex"
+ },
+ "set_73_trinity_priest_robes": {
+  "c1": "#e0e4f0",
+  "c2": "#5a6ac0",
+  "glow": "#a0b0ff",
+  "style": "moon",
+  "weapon": "trinity_rod"
+ },
+ "set_74_seeker_s_mantle": {
+  "c1": "#4a6a8a",
+  "c2": "#e0f0ff",
+  "glow": "#c0e8ff",
+  "style": "moon",
+  "weapon": "seeker_orbs"
+ },
+ "set_75_dragonbreath_robes": {
+  "c1": "#7a1a10",
+  "c2": "#ffb02a",
+  "glow": "#ff6a1a",
+  "style": "flame",
+  "weapon": "dragonbreath_grimoire"
+ },
+ "set_76_rimelance_raiment": {
+  "c1": "#a8d4f0",
+  "c2": "#ffffff",
+  "glow": "#aef0ff",
+  "style": "ice",
+  "weapon": "rimelance_wand"
+ },
+ "set_77_soul_reaper_s_shroud": {
+  "c1": "#1e1a24",
+  "c2": "#c8d0c0",
+  "glow": "#5affb0",
+  "style": "bone",
+  "weapon": "soul_reaper"
+ },
+ "set_78_starfall_regalia": {
+  "c1": "#1a2a5a",
+  "c2": "#c8d8ff",
+  "glow": "#a0c0ff",
+  "style": "moon",
+  "weapon": "starfall_bow"
+ },
+ "set_79_voidpiercer_s_veil": {
+  "c1": "#120a24",
+  "c2": "#a04aff",
+  "glow": "#c07aff",
+  "style": "crystal",
+  "weapon": "void_piercer"
+ },
+ "set_80_phantom_dancer_silks": {
+  "c1": "#3a3a5a",
+  "c2": "#aaccff",
+  "glow": "#cfe4ff",
+  "style": "moon",
+  "weapon": "phantom_edge"
+ },
+ "set_81_voidfist_vestments": {
+  "c1": "#2a1a4a",
+  "c2": "#9a6aff",
+  "glow": "#b890ff",
+  "style": "crystal",
+  "weapon": "voidfist"
+ },
+ "set_82_meteor_magus_regalia": {
+  "c1": "#2a1010",
+  "c2": "#ff5a1a",
+  "glow": "#ff8a3a",
+  "style": "flame",
+  "weapon": "meteor_tome"
+ },
+ "set_83_flamebearer_armor": {
+  "c1": "#8a2a1a",
+  "c2": "#f0b030",
+  "glow": "#ff9a30",
+  "style": "flame",
+  "weapon": "flameblade"
+ },
+ "set_84_thunderfist_wraps": {
+  "c1": "#3a3a50",
+  "c2": "#ffe040",
+  "glow": "#fff080",
+  "style": "storm",
+  "weapon": "thunder_gauntlet"
+ },
+ "set_85_briar_witch_robes": {
+  "c1": "#2e4a2a",
+  "c2": "#8a3a5a",
+  "glow": "#d070a0",
+  "style": "organic",
+  "weapon": "book_of_thorns"
+ }
+}

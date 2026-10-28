@@ -1,0 +1,101 @@
+[
+ {
+  "id": "potion_health",
+  "name": "Health Potion",
+  "desc": "Heal 60 health.",
+  "fx": {
+   "heal": 60
+  },
+  "color": [
+   0.9,
+   0.2,
+   0.25
+  ]
+ },
+ {
+  "id": "potion_mana",
+  "name": "Mana Potion",
+  "desc": "Restore 60 mana.",
+  "fx": {
+   "mana": 60
+  },
+  "color": [
+   0.25,
+   0.4,
+   1.0
+  ]
+ },
+ {
+  "id": "potion_speed",
+  "name": "Speed Potion",
+  "desc": "Haste for 6 seconds.",
+  "fx": {
+   "sts": [
+    {
+     "id": "haste",
+     "dur": 6
+    }
+   ]
+  },
+  "color": [
+   0.9,
+   0.9,
+   0.3
+  ]
+ },
+ {
+  "id": "potion_shield",
+  "name": "Shield Potion",
+  "desc": "A barrier for 6 seconds.",
+  "fx": {
+   "sts": [
+    {
+     "id": "barrier",
+     "dur": 6
+    }
+   ]
+  },
+  "color": [
+   0.5,
+   0.8,
+   1.0
+  ]
+ },
+ {
+  "id": "potion_cleanse",
+  "name": "Cleanse Potion",
+  "desc": "Remove debuffs and ignore new ones for 3 seconds.",
+  "fx": {
+   "cleanse": true,
+   "sts": [
+    {
+     "id": "cleanse_shield",
+     "dur": 3
+    }
+   ]
+  },
+  "color": [
+   1.0,
+   1.0,
+   1.0
+  ]
+ },
+ {
+  "id": "potion_rage",
+  "name": "Rage Potion",
+  "desc": "+25% damage for 8 seconds.",
+  "fx": {
+   "sts": [
+    {
+     "id": "empower",
+     "dur": 8
+    }
+   ]
+  },
+  "color": [
+   1.0,
+   0.45,
+   0.1
+  ]
+ }
+]

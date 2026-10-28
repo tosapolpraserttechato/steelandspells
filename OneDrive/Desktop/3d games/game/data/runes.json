@@ -1,0 +1,369 @@
+[
+ {
+  "id": "rune_01",
+  "name": "Rune of Haste",
+  "rarity": "common",
+  "mods": {
+   "move_speed": {
+    "mult": 0.02
+   }
+  },
+  "desc": "+2% move speed"
+ },
+ {
+  "id": "rune_02",
+  "name": "Rune of Grit",
+  "rarity": "common",
+  "mods": {
+   "max_health": {
+    "mult": 0.03
+   }
+  },
+  "desc": "+3% max health"
+ },
+ {
+  "id": "rune_03",
+  "name": "Rune of Edge",
+  "rarity": "common",
+  "mods": {
+   "weapon_damage": {
+    "mult": 0.03
+   }
+  },
+  "desc": "+3% weapon damage"
+ },
+ {
+  "id": "rune_04",
+  "name": "Rune of Focus",
+  "rarity": "common",
+  "mods": {
+   "spell_damage": {
+    "mult": 0.03
+   }
+  },
+  "desc": "+3% spell damage"
+ },
+ {
+  "id": "rune_05",
+  "name": "Rune of Swift Hands",
+  "rarity": "common",
+  "mods": {
+   "reload_speed": {
+    "mult": 0.05
+   }
+  },
+  "desc": "+5% reload and draw speed"
+ },
+ {
+  "id": "rune_06",
+  "name": "Rune of Ward",
+  "rarity": "uncommon",
+  "mods": {
+   "armor": {
+    "add": 0.04
+   }
+  },
+  "desc": "+4% armor"
+ },
+ {
+  "id": "rune_07",
+  "name": "Rune of Flow",
+  "rarity": "uncommon",
+  "mods": {
+   "mana_regen": {
+    "mult": 0.1
+   }
+  },
+  "desc": "+10% mana regeneration"
+ },
+ {
+  "id": "rune_08",
+  "name": "Rune of the Hawk",
+  "rarity": "uncommon",
+  "mods": {
+   "crit_chance": {
+    "add": 0.04
+   }
+  },
+  "desc": "+4% crit chance"
+ },
+ {
+  "id": "rune_09",
+  "name": "Rune of Bounty",
+  "rarity": "uncommon",
+  "mods": {
+   "xp_gain": {
+    "mult": 0.06
+   }
+  },
+  "desc": "+6% XP from kills"
+ },
+ {
+  "id": "rune_10",
+  "name": "Rune of Mending",
+  "rarity": "uncommon",
+  "mods": {
+   "health_regen": {
+    "add": 1.0
+   }
+  },
+  "desc": "Regenerate 1 health per second"
+ },
+ {
+  "id": "rune_11",
+  "name": "Rune of Frost Trail",
+  "rarity": "rare",
+  "mods": {},
+  "desc": "Your skill 2 leaves a frost patch",
+  "trigger": {
+   "trigger": "skill_2",
+   "zone": {
+    "radius": 2.5,
+    "dur": 3,
+    "sts": [
+     {
+      "id": "chill",
+      "dur": 2
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "rune_12",
+  "name": "Rune of Leeching",
+  "rarity": "rare",
+  "mods": {},
+  "desc": "Heal 3% of the damage you deal",
+  "trigger": {
+   "lifesteal": 0.03
+  }
+ },
+ {
+  "id": "rune_13",
+  "name": "Rune of Thorns",
+  "rarity": "rare",
+  "mods": {
+   "reflect": {
+    "add": 0.06
+   }
+  },
+  "desc": "Reflect 6% of the damage you take"
+ },
+ {
+  "id": "rune_14",
+  "name": "Rune of the Gale",
+  "rarity": "rare",
+  "mods": {
+   "jump_height": {
+    "mult": 0.1
+   },
+   "move_speed": {
+    "mult": 0.02
+   }
+  },
+  "desc": "+10% jump height"
+ },
+ {
+  "id": "rune_15",
+  "name": "Rune of Echoes",
+  "rarity": "rare",
+  "mods": {
+   "cooldown_reduction": {
+    "add": 0.05
+   }
+  },
+  "desc": "-5% skill cooldowns"
+ },
+ {
+  "id": "rune_16",
+  "name": "Rune of Venom",
+  "rarity": "epic",
+  "mods": {},
+  "desc": "10% chance to poison on hit",
+  "trigger": {
+   "on_hit": {
+    "id": "poison",
+    "dur": 4,
+    "p": 0.1
+   }
+  }
+ },
+ {
+  "id": "rune_17",
+  "name": "Rune of Embers",
+  "rarity": "epic",
+  "mods": {},
+  "desc": "10% chance to burn on hit",
+  "trigger": {
+   "on_hit": {
+    "id": "burn",
+    "dur": 3,
+    "p": 0.1
+   }
+  }
+ },
+ {
+  "id": "rune_18",
+  "name": "Rune of the Hunt",
+  "rarity": "epic",
+  "mods": {},
+  "desc": "Heal 20 on a kill",
+  "trigger": {
+   "heal_on_kill": 20
+  }
+ },
+ {
+  "id": "rune_19",
+  "name": "Rune of Barrier",
+  "rarity": "epic",
+  "mods": {},
+  "desc": "Gain a barrier when you drop below 30% health (once per 40 s)",
+  "trigger": {
+   "low_health_barrier": 50
+  }
+ },
+ {
+  "id": "rune_20",
+  "name": "Rune of Momentum",
+  "rarity": "epic",
+  "mods": {
+   "move_speed": {
+    "mult": 0.04
+   },
+   "sprint_speed": {
+    "mult": 0.1
+   }
+  },
+  "desc": "+4% speed and +10% sprint speed"
+ },
+ {
+  "id": "rune_21",
+  "name": "Rune of Storms",
+  "rarity": "legendary",
+  "mods": {},
+  "desc": "Hits have 12% chance to shock the target and a nearby enemy",
+  "trigger": {
+   "on_hit": {
+    "id": "shock",
+    "dur": 3,
+    "p": 0.12
+   },
+   "chain": 1
+  }
+ },
+ {
+  "id": "rune_22",
+  "name": "Rune of the Phoenix",
+  "rarity": "legendary",
+  "mods": {},
+  "desc": "Once per match, survive a killing blow with 30% health",
+  "trigger": {
+   "second_life": 0.3
+  }
+ },
+ {
+  "id": "rune_23",
+  "name": "Rune of the Reaper",
+  "rarity": "legendary",
+  "mods": {},
+  "desc": "Kills reset your skill 1 cooldown",
+  "trigger": {
+   "kill_reset": "skill_1"
+  }
+ },
+ {
+  "id": "rune_24",
+  "name": "Rune of Ruin",
+  "rarity": "legendary",
+  "mods": {
+   "weapon_damage": {
+    "mult": 0.08
+   },
+   "spell_damage": {
+    "mult": 0.08
+   }
+  },
+  "desc": "+8% weapon and spell damage"
+ },
+ {
+  "id": "rune_25",
+  "name": "Rune of the Titan",
+  "rarity": "legendary",
+  "mods": {
+   "max_health": {
+    "mult": 0.1
+   },
+   "knockback_resist": {
+    "add": 0.3
+   }
+  },
+  "desc": "+10% health, hard to push"
+ },
+ {
+  "id": "rune_26",
+  "name": "Rune of Time",
+  "rarity": "mythic",
+  "mods": {
+   "cooldown_reduction": {
+    "add": 0.1
+   }
+  },
+  "desc": "-10% cooldowns and your ultimate charges 20% faster",
+  "trigger": {
+   "ultimate_charge": {
+    "mult": 0.2
+   }
+  }
+ },
+ {
+  "id": "rune_27",
+  "name": "Rune of the Void",
+  "rarity": "mythic",
+  "mods": {},
+  "desc": "Hits have 8% chance to vanish the target for 2 seconds",
+  "trigger": {
+   "on_hit": {
+    "id": "stun",
+    "dur": 2,
+    "p": 0.08
+   }
+  }
+ },
+ {
+  "id": "rune_28",
+  "name": "Rune of Dawn",
+  "rarity": "mythic",
+  "mods": {
+   "crit_chance": {
+    "add": 0.1
+   }
+  },
+  "desc": "+10% crit chance and crits heal 10"
+ },
+ {
+  "id": "rune_29",
+  "name": "Rune of Dusk",
+  "rarity": "mythic",
+  "mods": {
+   "damage_dealt": {
+    "mult": 0.1
+   }
+  },
+  "desc": "+10% damage while no enemy sees you"
+ },
+ {
+  "id": "rune_30",
+  "name": "Rune of Kings",
+  "rarity": "mythic",
+  "mods": {
+   "xp_gain": {
+    "mult": 0.2
+   },
+   "max_health": {
+    "mult": 0.08
+   }
+  },
+  "desc": "+20% XP and +8% health"
+ }
+]

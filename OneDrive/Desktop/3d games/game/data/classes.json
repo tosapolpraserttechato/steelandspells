@@ -80,7 +80,7 @@
    "crit": 0.06
   },
   "model": "res://models/classes/class_druid.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.3, "arms": 0.55, "spine": 0.45}
+  "run_calm": {"cloth": 0.45, "cloth_all": 0.5}
  },
  {
   "id": "sea_king",
@@ -160,7 +160,7 @@
    "crit": 0.05
   },
   "model": "res://models/classes/class_sea_king.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.3, "arms": 0.55, "spine": 0.45}
+  "run_calm": {"cloth": 0.0, "legs": 0.8, "arms": 0.9, "spine": 0.75, "cloth_all": 0.15}
  },
  {
   "id": "flame_lord",
@@ -250,7 +250,7 @@
    "crit": 0.08
   },
   "model": "res://models/classes/class_flame_lord.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.5, "arms": 0.7, "spine": 0.6}
+  "run_calm": {"cloth": 0.45, "cloth_all": 0.5}
  },
  {
   "id": "frost_mage",
@@ -338,7 +338,7 @@
    "crit": 0.07
   },
   "model": "res://models/classes/class_frost_mage.glb",
-  "run_calm": {"cloth": 0.0, "hair": 0.0, "legs": 0.3, "arms": 0.55, "spine": 0.45}
+  "run_calm": {"cloth": 0.0, "hair": 0.0, "legs": 0.8, "arms": 0.9, "spine": 0.75, "cloth_all": 0.15}
  },
  {
   "id": "thunder_god",
@@ -425,7 +425,7 @@
    "crit": 0.08
   },
   "model": "res://models/classes/class_thunder_god.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.3, "arms": 0.55, "spine": 0.45}
+  "run_calm": {"cloth": 0.2, "cloth_all": 0.5}
  },
  {
   "id": "necromancer",
@@ -508,7 +508,7 @@
    "crit": 0.06
   },
   "model": "res://models/classes/class_necromancer.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.3, "arms": 0.55, "spine": 0.45}
+  "run_calm": {"cloth": 0.45, "cloth_all": 0.5}
  },
  {
   "id": "arcanist",
@@ -584,7 +584,7 @@
    "crit": 0.07
   },
   "model": "res://models/classes/class_arcanist.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.3, "arms": 0.55, "spine": 0.45}
+  "run_calm": {"cloth": 0.0, "legs": 0.8, "arms": 0.9, "spine": 0.75, "cloth_all": 0.15}
  },
  {
   "id": "poison_brewer",
@@ -668,7 +668,7 @@
    "crit": 0.06
   },
   "model": "res://models/classes/class_poison_brewer.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.3, "arms": 0.55, "spine": 0.45}
+  "run_calm": {"cloth": 0.45, "cloth_all": 0.5}
  },
  {
   "id": "pirate_captain",
@@ -754,7 +754,7 @@
    "crit": 0.09
   },
   "model": "res://models/classes/class_pirate_captain.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.5, "arms": 0.7, "spine": 0.6}
+  "run_calm": {"cloth": 0.45, "cloth_all": 0.5}
  },
  {
   "id": "time_mage",
@@ -836,7 +836,7 @@
    "crit": 0.07
   },
   "model": "res://models/classes/class_time_mage.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.3, "arms": 0.55, "spine": 0.45}
+  "run_calm": {"cloth": 0.0, "legs": 0.8, "arms": 0.9, "spine": 0.75, "cloth_all": 0.15}
  },
  {
   "id": "celestial_mage",
@@ -918,7 +918,7 @@
    "crit": 0.06
   },
   "model": "res://models/classes/class_celestial_mage.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.3, "arms": 0.55, "spine": 0.45}
+  "run_calm": {"cloth": 0.0, "wing": 0.2, "hair": 0.3, "legs": 0.8, "arms": 0.9, "spine": 0.75, "cloth_all": 0.15}
  },
  {
   "id": "gm_ravn",
@@ -1076,6 +1076,6 @@
    "crit": 0.14
   },
   "model": "res://models/classes/class_desert_assassin.glb",
-  "run_calm": {"cloth": 0.0, "legs": 0.3, "arms": 0.55, "spine": 0.45}
+  "run_calm": {"cloth": 0.45, "cloth_all": 0.5}
  }
 ]

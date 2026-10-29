@@ -25,7 +25,7 @@ func _roll_new(bonus: float = 0.0) -> void:
 	is_open = false
 	if _beam != null:
 		_beam.queue_free()
-	_beam = Fx.crate_beam("legendary" if gold else rarity, 7.0 if gold else 5.0)
+	_beam = Fx.crate_beam("epic" if gold else rarity, 7.0 if gold else 5.0)
 	add_child(_beam)
 	if gold:
 		var t := Fx.particles({"tex": "star", "amount": 14, "life": 1.6, "shape": "sphere", "radius": 0.8, "vel": [0.2, 0.8], "size": [0.14, 0.3],
@@ -48,7 +48,7 @@ func interact(player: Node) -> void:
 	is_open = true
 	if _beam != null:
 		_beam.visible = false
-	var result := Loot.roll_crate(("legendary" if gold and Data.rarity_index(rarity) < 3 else rarity), gold, float(player.stats.add_sum("crate_gear_bonus")))
+	var result := Loot.roll_crate(("epic" if gold and Data.rarity_index(rarity) < 3 else rarity), gold, float(player.stats.add_sum("crate_gear_bonus")))
 	result["crate_rarity"] = rarity
 	_timer = respawn_seconds
 	opened.emit(self, result)

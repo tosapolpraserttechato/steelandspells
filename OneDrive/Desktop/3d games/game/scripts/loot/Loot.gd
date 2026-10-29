@@ -4,6 +4,8 @@ extends RefCounted
 ## Result: {"type": "weapon"|"armor"|"shield"|"rune"|"reroll"|"xp", "item": {...}, "rarity": r, "reroll": n, "xp": n, "steps": [...]}
 ## `steps` is what the crate-open screen reveals, one beat at a time.
 
+## Extra factor on the crate rarity weights, common .. mythic: legendary crates turn up four times less often than the table says, mythic ten times less.
+const RARE_DAMP := [1.0, 1.0, 1.0, 1.0, 0.25, 0.1]
 const NEW_CHANCE := {"common": 0.15, "uncommon": 0.30, "rare": 0.50, "epic": 0.70, "legendary": 0.90, "mythic": 1.0}
 const TYPE_WEIGHTS := {"weapon": 28.0, "armor": 32.0, "shield": 10.0, "rune": 18.0, "reroll": 8.0, "xp": 4.0}
 const SLOT_NAMES := ["helmet", "chestplate", "leggings", "boots"]
@@ -17,6 +19,7 @@ static func roll_crate_rarity(bonus: float = 0.0, gold: bool = false) -> String:
 	for i in ids.size():
 		var w: float = float(Data.rarity(ids[i])["weight"])
 		w *= (1.0 + bonus * float(i))                 # a bonus shifts weight toward rarer tiers
+		w *= RARE_DAMP[mini(i, RARE_DAMP.size() - 1)]  # legendary and mythic crates are rare: a quarter and a tenth of the weight they had
 		if gold and i < 3:
 			w = 0.0                                    # a gold crate is at least epic
 		weights.append(w)

@@ -50,3 +50,4 @@ func _physics_process(delta: float) -> void:
 	model.rotation.y = lerp_angle(model.rotation.y, target_yaw, clampf(delta * 16.0, 0.0, 1.0))
 	facing = Vector3(-sin(model.rotation.y), 0.0, -cos(model.rotation.y))
 	model.play_state(net_state)
+	model.set_loco_speed(Vector2(velocity.x, velocity.z).length())

@@ -289,7 +289,7 @@ func _register(c: Combatant) -> void:
 	ids[nid] = c
 	c.died.connect(func(killer: Node) -> void: _ev_died(c, killer))
 	c.respawned.connect(func() -> void: _ev_respawned(c))
-	c.damaged.connect(func(amount: float, _src: Node, info: Dictionary) -> void: _ev_damage(c, amount, info))
+	c.damaged.connect(func(amount: float, src: Node, info: Dictionary) -> void: _ev_damage(c, amount, src, info))
 	c.attacked.connect(func() -> void: _ev_attack(c, "w"))
 	c.skill_used.connect(func(slot: String, _sk: Dictionary) -> void: _ev_attack(c, slot))
 	for p in _ready_peers():
@@ -303,11 +303,12 @@ func _ev_attack(c: Combatant, slot: String) -> void:
 		cl_attack.rpc_id(p, int(c.get_meta("net_id")), slot, c.aim_dir, c.aim_point)
 
 
-func _ev_damage(c: Combatant, amount: float, info: Dictionary) -> void:
+func _ev_damage(c: Combatant, amount: float, src: Node, info: Dictionary) -> void:
 	var col: Array = info.get("color", [])
 	var dot := String(info.get("dot", "")) != ""
+	var sid := int(src.get_meta("net_id", -1)) if src != null and is_instance_valid(src) else -1
 	for p in _ready_peers():
-		cl_damage.rpc_id(p, int(c.get_meta("net_id")), amount, bool(info.get("crit", false)), col, dot)
+		cl_damage.rpc_id(p, int(c.get_meta("net_id")), amount, bool(info.get("crit", false)), col, dot, sid)
 
 
 func _ev_died(c: Combatant, killer: Node) -> void:
@@ -513,7 +514,7 @@ func replay(c: Combatant, slot: String, aim_dir: Vector3, aim_point: Vector3) ->
 
 
 @rpc("authority", "call_remote", "reliable")
-func cl_damage(nid: int, amount: float, crit: bool, col: Array, dot: bool) -> void:
+func cl_damage(nid: int, amount: float, crit: bool, col: Array, dot: bool, src_id: int) -> void:
 	var c = ids.get(nid)
 	if c == null or not is_instance_valid(c) or _m == null:
 		return
@@ -527,6 +528,8 @@ func cl_damage(nid: int, amount: float, crit: bool, col: Array, dot: bool) -> vo
 			c.model.play_once("HitChest", 1.2, true)
 	if c == pl:
 		pl.damaged.emit(amount, null, {"dot": "net" if dot else ""})
+	if src_id >= 0 and src_id == my_net_id and c != pl:
+		pl.dealt.emit(c, amount, {"crit": crit})                 # the crosshair's hit marker and the quests count it
 
 
 @rpc("authority", "call_remote", "reliable")

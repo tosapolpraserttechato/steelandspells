@@ -542,7 +542,7 @@ func give_starter_crates() -> void:
 ## The chances for one crate roll at the end of a match, from the worst case (a loss without scoring: 60% common, 20% uncommon, 10% rare, 5% epic, 5% nothing)
 ## to the best (a win with many kills on a winning streak). `shift` goes from 0 to 1.
 const REWARD_WORST := {"nothing": 5.0, "common": 60.0, "uncommon": 20.0, "rare": 10.0, "epic": 5.0, "legendary": 0.0, "mythic": 0.0}
-const REWARD_BEST := {"nothing": 0.0, "common": 4.0, "uncommon": 14.0, "rare": 26.0, "epic": 30.0, "legendary": 18.0, "mythic": 8.0}
+const REWARD_BEST := {"nothing": 0.0, "common": 4.0, "uncommon": 16.0, "rare": 32.0, "epic": 40.0, "legendary": 7.0, "mythic": 1.0}
 var win_streak := 0
 
 

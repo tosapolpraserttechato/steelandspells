@@ -142,3 +142,22 @@ Everything you have asked for, in one place (updated 2026-10-21). Details for ea
 - Title screen: LAN GAME. HOST starts a server (port 24565) and shows the address friends type; START opens the map vote and begins the match for everyone. JOIN takes the host's address.
 - The host runs the real match (bots, points, pickups, damage, deaths); joined players move their own character and the host does the fighting for them with their own gear and skills. Everyone sees the same fighters, attacks, damage numbers, kill feed, score and clock.
 - Not shared yet: capture the flag (host falls back to domination), loot crates, NPC missions, air drops (these stay local to each machine). Internet play (outside the local network) is not built.
+
+## Human-like running (not floating)
+- The running clips are played at a speed that matches how fast the fighter really moves (no foot skating), and the model is lowered while running so the lowest foot rests on the ground instead of hovering. Robed classes keep a slightly shorter stride (legs 80%) so capes and skirts do not tear; the other classes use the natural stride.
+- Known limit: there is no walk clip, so very slow movement (1-3 m/s) plays the run clip slowly.
+
+## Crosshair and animation transitions
+- Crosshair in the middle of the screen (the old one was drawn off-screen, so it never showed): four ticks and a dot with a dark outline, the gap opens when you move, sprint, jump or fire and closes when you aim, it turns red on an enemy, a ring fills while a ranged weapon charges a sniper shot, a cross flashes on every hit (red on a kill). Hidden while dead or in a menu. Works in LAN games too.
+- Every pair of the 30 animation clips has its own fade time (attacks and hits 0.04-0.06 s, idle/run/sprint 0.16-0.22 s, landing, slides, death, revive, emotes in between), so nothing pops between animations.
+
+## Session of 2026-10-28 (evening): fixes and polish
+- Name: the game is now **Steel and Spells** (title screen, project name).
+- Walking and jumping: a Walk clip (shorter stride, less bounce) for speeds under 3.3 m/s, a leaping air stride (Air clip) while moving fast through the air, a dedicated Climb clip for ladders (arms reach up and take turns, knees come up one after the other), the feet kept apart so the boots no longer pass through each other. The run clip already swings the arms (measured: hands move about 0.4 m front to back, opposite to the legs).
+- Attacks: capes and skirts are held back in every clip, not only running (`run_calm.cloth_all`), so they no longer tear when arms and legs swing wide; the Celestial Mage's wings are calmed in all clips; Arcanist and Celestial Mage weights re-smoothed (`tools/fix_body.gd`). Worst stretch while attacking dropped from x11-x23 to x2.6-x6.6.
+- Death is a ragdoll (`scripts/core/Ragdoll.gd`): every main bone becomes a rigid body with joint limits, the killing hit pushes the body away from the attacker; undone on respawn. Setting `ragdoll` (default true) turns it off.
+- Lighting: the point lights in the map files had energies of 100 000 and burned the Crystal Caves, Shadow Crypt and Moon Sanctuary to white; they now get a soft strength and fade out with distance. Glowing materials are tinted and capped, dark maps get an ambient floor.
+- Maps: pedestals, altars, fountains, statues and chests now collide (they had no hitbox); floating water (the oasis of the Desert Tomb) is lowered onto the ground; loot crates and air drops are moved out of walls and rocks.
+- Crates: legendary crates are four times rarer and mythic ten times rarer (and a gold crate is epic or better, no longer always legendary); end-of-match crate odds lowered at the top.
+- Crosshair now visible (see above), hexagon ground rings no longer cut off at the corners.
+- Performance: adaptive render scale (55-100%) when the frame rate is low, fighters far away stop casting shadows, map lights fade with distance, the minimap redraws at ~11 Hz. Honest limit: this PC was at 100% CPU with under 1 GB free memory while testing, so the real gain could not be measured.

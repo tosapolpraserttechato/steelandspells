@@ -14,14 +14,19 @@ static func apply(skel: Skeleton3D, player: AnimationPlayer, cfg: Dictionary) ->
 		for kv in env.split(","):
 			cfg[kv.get_slice("=", 0)] = float(kv.get_slice("=", 1))
 	damp(skel, player, RUN_CLIPS, float(cfg.get("cloth", 0.45)))
+	# the other clips (attacks, casts, jumps, slides...): capes and skirts are held back too, or they tear when the arms and legs swing wide (cloth_all: strength kept; 1 = untouched)
+	if cfg.has("cloth_all"):
+		damp(skel, player, Array(player.get_animation_list()), float(cfg["cloth_all"]))
 	if cfg.has("hair"):
 		damp(skel, player, RUN_CLIPS, float(cfg["hair"]), ["hair"])
+	if cfg.has("wing"):
+		damp(skel, player, Array(player.get_animation_list()), float(cfg["wing"]), ["wing"])            # wings are calmed in every clip, not only while running
 	var legs := float(cfg.get("legs", 1.0))
 	var arms := float(cfg.get("arms", 1.0))
 	var spine := float(cfg.get("spine", 1.0))
 	var feet := float(cfg.get("feet", legs))
 	if legs < 1.0 or arms < 1.0 or spine < 1.0 or feet < 1.0:
-		calm(player, RUN_CLIPS, {"DEF-thigh": legs, "DEF-shin": legs, "DEF-foot": feet, "DEF-toe": feet, "DEF-upper_arm": arms, "DEF-forearm": arms, "DEF-hand": arms, "DEF-spine": spine})
+		calm(player, RUN_CLIPS, {"DEF-thigh": legs, "DEF-shin": legs, "DEF-foot": feet, "DEF-toe": feet, "DEF-upper_arm": arms, "DEF-forearm": arms, "DEF-hand": arms, "DEF-spine": spine, "DEF-hips": spine})
 
 
 static func damp(skel: Skeleton3D, player: AnimationPlayer, clips: Array, strength: float, prefixes: Array = ["cloth_cape", "cloth_skirt"]) -> void:
@@ -63,6 +68,16 @@ static func calm(player: AnimationPlayer, clips: Array, factors: Dictionary) -> 
 			continue
 		an.set_meta("calmed", true)
 		for t in an.get_track_count():
+			if an.track_get_type(t) == Animation.TYPE_POSITION_3D and factors.has("hips_pos") and String(an.track_get_path(t)).get_slice(":", 1) == "DEF-hips":
+				# the up-and-down bounce (and sway) of the hips: every key is pulled towards the mean position
+				var sum_p := Vector3.ZERO
+				for k in an.track_get_key_count(t):
+					sum_p += an.track_get_key_value(t, k)
+				var mean_p: Vector3 = sum_p / float(an.track_get_key_count(t))
+				for k in an.track_get_key_count(t):
+					var v: Vector3 = an.track_get_key_value(t, k)
+					an.track_set_key_value(t, k, mean_p + (v - mean_p) * float(factors["hips_pos"]))
+				continue
 			if an.track_get_type(t) != Animation.TYPE_ROTATION_3D:
 				continue
 			var bone := String(an.track_get_path(t)).get_slice(":", 1)

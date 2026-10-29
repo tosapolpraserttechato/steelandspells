@@ -87,6 +87,12 @@ func start(id: String, class_id: String) -> void:
 		Decor.scatter(self, id, built["root"], map_size)
 		Border.dress(self, id, built["root"], map_size)
 	Perch.build(self, built["root"], map_size)
+	var gov := PerfGovernor.new()
+	gov.name = "PerfGovernor"
+	add_child(gov)
+	gov.setup(self)
+	_settle_water()
+	_settle_crates()
 	if OS.get_environment("NO_CRITTERS") == "":
 		Critters.attach(self, id, map_size, markers)
 	quests = Quests.new()
@@ -764,6 +770,8 @@ func _tick_airdrops(delta: float) -> void:
 		var r := space.intersect_ray(q)
 		if r.is_empty() or not (r["collider"] as Node).has_meta("ground") or (r["normal"] as Vector3).y < 0.9:
 			continue
+		if not spot_is_clear(r["position"], 2.2):                    # not against a cliff, wall or rock
+			continue
 		var drop := AirDropNode.new()
 		drop.name = "AirDrop"
 		add_child(drop)
@@ -803,3 +811,87 @@ func bot_goal(b: Bot) -> Vector3:
 		pool = capture_points
 	var pick: CapturePoint = pool[randi() % pool.size()]
 	return pick.global_position + Vector3(randf_range(-4, 4), 0, randf_range(-4, 4))
+
+
+## Water in a map file sometimes hangs above the ground (the oasis of the Desert Tomb is a flat disc 45 cm over flat sand). When the ground just outside its edge is lower than its
+## surface, nothing holds the water up: it is lowered to rest just above the ground under it. A real pool (a bank around it) is left alone.
+func _settle_water() -> void:
+	await get_tree().physics_frame
+	await get_tree().physics_frame
+	var root := get_node_or_null("Map")
+	if root == null:
+		return
+	var space := get_world_3d().direct_space_state
+	for c in root.find_children("*", "MeshInstance3D", false, false):
+		var mi := c as MeshInstance3D
+		var base := MapLoader._base_name(String(mi.name))
+		if mi.mesh == null or not base.contains("water") or base.contains("waterfall"):
+			continue
+		var bb := mi.global_transform * mi.get_aabb()
+		if bb.size.y > 0.5 or bb.size.x < 2.0:
+			continue
+		var inside_max := -1e9
+		for i in 5:
+			for j in 5:
+				var x := bb.position.x + bb.size.x * (float(i) + 0.5) / 5.0
+				var z := bb.position.z + bb.size.z * (float(j) + 0.5) / 5.0
+				var hit := space.intersect_ray(PhysicsRayQueryParameters3D.create(Vector3(x, bb.end.y + 40.0, z), Vector3(x, bb.position.y - 40.0, z), 1))
+				if not hit.is_empty():
+					inside_max = maxf(inside_max, hit["position"].y)
+		var rim_max := -1e9
+		for k in 16:
+			var ang := TAU * float(k) / 16.0
+			var rx := bb.get_center().x + cos(ang) * (bb.size.x * 0.5 + 1.2)
+			var rz := bb.get_center().z + sin(ang) * (bb.size.z * 0.5 + 1.2)
+			var rh := space.intersect_ray(PhysicsRayQueryParameters3D.create(Vector3(rx, bb.end.y + 40.0, rz), Vector3(rx, bb.position.y - 40.0, rz), 1))
+			if not rh.is_empty():
+				rim_max = maxf(rim_max, rh["position"].y)
+		if inside_max < -1e8 or rim_max < -1e8:
+			continue
+		if bb.position.y > rim_max + 0.15 and bb.position.y > inside_max + 0.15:
+			mi.global_position.y += (inside_max + 0.05) - bb.position.y
+
+
+## Is there room for a crate (about 1.6 m radius) at this point of the ground, with no wall, rock or building touching it?
+func spot_is_clear(p: Vector3, radius: float = 1.7) -> bool:
+	var space := get_world_3d().direct_space_state
+	for h in [0.4, 1.1]:
+		for k in 8:
+			var a := TAU * float(k) / 8.0
+			var from := p + Vector3(0, h, 0)
+			var hit := space.intersect_ray(PhysicsRayQueryParameters3D.create(from, from + Vector3(cos(a), 0, sin(a)) * radius, 1))
+			if not hit.is_empty():
+				return false
+	# not inside something solid: a ray straight up from the ground must not hit anything within 2 m
+	var up := space.intersect_ray(PhysicsRayQueryParameters3D.create(p + Vector3(0, 0.1, 0), p + Vector3(0, 2.2, 0), 1))
+	return up.is_empty()
+
+
+## The nearest clear piece of ground to `p` (a spiral of rays from above), or `p` itself when it is already clear or nothing better is found within 10 m.
+func find_clear_ground(p: Vector3, radius: float = 1.7) -> Vector3:
+	var space := get_world_3d().direct_space_state
+	for ring in range(0, 11):
+		var n := 1 if ring == 0 else ring * 6
+		for k in n:
+			var a := TAU * float(k) / float(n)
+			var xz := Vector3(p.x + cos(a) * float(ring), 0, p.z + sin(a) * float(ring))
+			var hit := space.intersect_ray(PhysicsRayQueryParameters3D.create(Vector3(xz.x, p.y + 6.0, xz.z), Vector3(xz.x, p.y - 8.0, xz.z), 1))
+			if hit.is_empty() or float((hit["normal"] as Vector3).y) < 0.85:
+				continue
+			var q: Vector3 = hit["position"]
+			if spot_is_clear(q, radius):
+				return q
+	return p
+
+
+## Loot crates from the map's markers are moved out of walls and rocks.
+func _settle_crates() -> void:
+	await get_tree().physics_frame
+	await get_tree().physics_frame
+	for cr in crates:
+		if not is_instance_valid(cr):
+			continue
+		if not spot_is_clear(cr.global_position, 1.4):
+			var q := find_clear_ground(cr.global_position, 1.4)
+			if q != cr.global_position:
+				cr.global_position = q

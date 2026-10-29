@@ -11,7 +11,8 @@ const NO_COLLISION := ["fern", "flower", "kelp", "anemone", "grass", "glow_mushr
 const TRUNK := ["leafy_tree", "snow_pine", "dead_tree", "swamp_tree", "mangrove", "palm_tree", "charred_tree", "tree"]
 const TRIMESH := ["terrain", "door_", "hall_", "lookout", "court_", "tower", "gallery", "bridge_", "rope_bridge", "bulwark", "pilaster", "wall", "floating_island", "floating_islet", "sky_pillar",
 	"arch", "gate", "tunnel", "cathedral", "mausoleum", "pyramid", "castle", "temple", "pavilion", "colonnade", "fort", "hall", "smithy", "hut", "house", "cabin", "forge", "galleon",
-	"pinnace", "pier", "shipwreck", "rotunda", "sphinx", "stairs", "chess_board", "cliff", "tower", "smelter", "headframe", "cannon", "cart", "stall", "well"]
+	"pinnace", "pier", "shipwreck", "rotunda", "sphinx", "stairs", "chess_board", "cliff", "tower", "smelter", "headframe", "cannon", "cart", "stall", "well",
+	"altar", "fountain", "statue", "chest", "pedestal", "plinth", "monolith", "chess_king", "chess_queen", "chess_rook", "chess_bishop", "chess_knight", "chess_pawn"]
 const SMALL_PLANTS := ["fern", "flower", "anemone", "kelp", "glow_mushroom", "grass", "spore"]
 
 
@@ -47,6 +48,7 @@ static func build(parent: Node3D, map_id: String) -> Dictionary:
 		d["pos"] = blender_to_godot(m["position"])
 		markers.append(d)
 	_remove_marker_nodes(root, markers)
+	_tame_lights(root)
 	keep_names.clear()
 	for mk in markers:
 		if String(mk.get("kind", "")) == "moving_cover":
@@ -101,9 +103,15 @@ static func _process(root: Node3D) -> Dictionary:
 	var own_meshes := {}                       # prop kind -> up to four of its meshes
 	var door_parts := {}                       # gate name -> [its mesh, its collision body, decorations that move with it...]
 	var mushroom_pads: Array = []              # bounce pads for the giant mushrooms (Match.gd makes them into hazards)
+	var tamed := {}
 	for mi in meshes:
 		var node := mi as MeshInstance3D
 		var base := _base_name(String(node.name))
+		for si in node.mesh.get_surface_count():
+			var sm := node.mesh.surface_get_material(si)
+			if sm is BaseMaterial3D and not tamed.has(sm):
+				tamed[sm] = true
+				_tame_emission(sm as BaseMaterial3D)
 		if base.begins_with("path_"):
 			_stamp_path(node, path_cells)
 			_soften_path(node, soft_cache)
@@ -399,6 +407,8 @@ static func _noise_texture() -> ImageTexture:
 
 
 ## Maps with pale ground (sand, snow, marble) are turned down a little so the ground keeps its colour instead of burning out to white.
+## Dark maps get a floor under their ambient light, so shadowed ground and characters are not pitch black next to bright glowing things (that was the harsh contrast).
+const AMBIENT_FLOOR := {"crystal_caves": 0.62, "shadow_crypt": 0.5, "moon_sanctuary": 0.55, "volcano_forge": 0.5}
 const EXPOSURE := {"pirate_cove": 0.66, "desert_tomb": 0.74, "frozen_peaks": 0.84, "underwater_ocean": 0.78, "sky_islands": 0.88, "chess_arena": 0.86, "shadow_crypt": 0.82,
 	"moon_sanctuary": 0.9, "flora_forest": 0.94}
 
@@ -439,7 +449,7 @@ static func apply_environment(parent: Node3D, map_id: String) -> void:
 	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
 	var amb := sky_col.lerp(Color.WHITE, 0.45)
 	env.ambient_light_color = amb
-	env.ambient_light_energy = float(env_data.get("ambient", 1.0)) * 0.9
+	env.ambient_light_energy = maxf(float(env_data.get("ambient", 1.0)) * 0.9, float(AMBIENT_FLOOR.get(map_id, 0.0)))
 	env.tonemap_mode = Environment.TONE_MAPPER_FILMIC
 	env.tonemap_exposure = float(OS.get_environment("EXPOSURE")) if OS.get_environment("EXPOSURE") != "" else float(EXPOSURE.get(map_id, 1.0))
 	# a soft glow around bright things and a slightly richer, more saturated picture
@@ -484,6 +494,26 @@ static func apply_environment(parent: Node3D, map_id: String) -> void:
 
 
 
+## Glowing materials in the map files are very strong with a white glow colour (the crystal pads of the Crystal Caves burn out to flat white, and so do the jump pad discs).
+## Their glow is tinted by the colour in their name, kept under 1.0 and, when the surface itself is very bright, reduced further.
+const GLOW_TINT := {"violet": Color(0.62, 0.38, 1.0), "cyan": Color(0.25, 0.9, 1.0), "magenta": Color(1.0, 0.3, 0.85), "lime": Color(0.6, 1.0, 0.3), "orange": Color(1.0, 0.55, 0.2),
+	"blue": Color(0.3, 0.5, 1.0), "pink": Color(1.0, 0.5, 0.75), "amber": Color(1.0, 0.7, 0.25), "teal": Color(0.2, 0.85, 0.75), "green": Color(0.4, 1.0, 0.5), "red": Color(1.0, 0.35, 0.3)}
+
+
+static func _tame_emission(m: BaseMaterial3D) -> void:
+	if not m.emission_enabled:
+		return
+	var name := String(m.resource_name).to_lower()
+	var white := m.emission.get_luminance() > 0.8 and (m.emission.s < 0.2)
+	if white:
+		for k in GLOW_TINT:
+			if name.contains(k):
+				m.emission = GLOW_TINT[k]
+				m.albedo_color = m.albedo_color.lerp(GLOW_TINT[k], 0.55)
+				break
+	m.emission_energy_multiplier = minf(m.emission_energy_multiplier, 0.85 if white else 1.2)
+
+
 ## The dirt of the paths has a strong ridged normal map that looks like stripes of shadow in low sun: it is turned down (once per material).
 static func _soften_path(node: MeshInstance3D, cache: Dictionary) -> void:
 	node.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF          # a path lies a few centimetres above the ground: its own shadow on itself made stripes
@@ -499,3 +529,24 @@ static func _soften_path(node: MeshInstance3D, cache: Dictionary) -> void:
 				d.albedo_color = d.albedo_color * Color(0.78, 0.76, 0.74, 1.0)
 				cache[m] = d
 			node.mesh.surface_set_material(s, cache[m])
+
+
+## The point lights in the map files carry the unscaled values of the modelling program (energies of 100 000 and more), which burn everything within their range to flat white
+## (the Crystal Caves, Shadow Crypt and Moon Sanctuary). Here they get a soft, sensible strength; the colour and range from the file are kept.
+const LIGHT_ENERGY := 2.2
+
+
+static func _tame_lights(root: Node) -> void:
+	for n in root.find_children("*", "Light3D", true, false):
+		if n is OmniLight3D:
+			var l := n as OmniLight3D
+			if l.light_energy > 8.0:
+				l.light_energy = LIGHT_ENERGY
+			l.light_specular = 0.3
+			l.omni_attenuation = 1.3
+			l.distance_fade_enabled = true                          # lights far from the camera are switched off (a map has up to 35 of them)
+			l.distance_fade_begin = 36.0
+			l.distance_fade_length = 14.0
+			l.shadow_enabled = false
+		elif n is SpotLight3D and (n as SpotLight3D).light_energy > 8.0:
+			(n as SpotLight3D).light_energy = LIGHT_ENERGY

@@ -5,7 +5,7 @@ extends Node3D
 
 ## Classes whose models came out too shiny: their materials are made rougher and less metallic (the number is how matte, 0..1).
 const MATTE := {"thunder_god": 1.0}
-const LOOPING := ["Idle", "Run", "Sprint", "JumpLoop", "CastIdle", "SlideLoop"]
+const LOOPING := ["Idle", "Run", "Sprint", "Walk", "Air", "JumpLoop", "CastIdle", "SlideLoop"]
 const HAND_BONE := "DEF-hand.R"
 
 var anim: AnimationPlayer
@@ -29,6 +29,14 @@ var _flash_mat: StandardMaterial3D
 var _ghost := false
 var _ghost_mats: Dictionary = {}
 var _clock := 0.0
+var _loco_speed := 0.0
+var climb_vy := 0.0                     # set by the fighter while it is on a ladder: the vertical speed
+const GROUND_MAX := 0.26                # most the model is lowered to plant a foot, metres
+var _inst: Node3D
+var _skel_to_inst := Transform3D.IDENTITY
+var _foot_bones: Array = []
+var _idle_low := 0.0
+var _ground_off := 0.0
 
 
 func setup(cls: String, scale_factor: float, team: String, display_name: String, is_local: bool) -> void:
@@ -66,12 +74,15 @@ func setup(cls: String, scale_factor: float, team: String, display_name: String,
 		anim.playback_default_blend_time = 0.12
 		if skeleton != null:
 			ClothDamp.apply(skeleton, anim, Data.classes[cls].get("run_calm", {}))
+		_make_variants()                                   # Walk and Air (copies of the calmed run), then the fade times for all clips
+		_setup_blends()
 	_flash_mat = StandardMaterial3D.new()
 	_flash_mat.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	_flash_mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
 	_flash_mat.albedo_color = Color(1, 1, 1, 0.0)
 	_flash_mat.blend_mode = BaseMaterial3D.BLEND_MODE_ADD
 	_center_on_hips(inst)
+	_init_grounding(inst)
 	if Data.classes[cls].has("outfit"):
 		dress({})
 	var armor_test := OS.get_environment("ARMOR_TEST")                    # test hook: ARMOR_TEST=<set id> dresses everybody in that whole set
@@ -365,14 +376,113 @@ func play_state(state: String, force: bool = false) -> void:
 		"idle": name = "Idle"
 		"run": name = "Run"
 		"sprint": name = "Sprint"
+		"walk": name = "Walk" if _has("Walk") else "Run"
+		"air": name = "Air" if _has("Air") else "JumpLoop"
+		"climb": name = "Climb" if _has("Climb") else "Idle"
 		"jump": name = "JumpStart"
 		"fall": name = "JumpLoop"
 		"land": name = "JumpLand"
 		"slide": name = "SlideLoop"
 		"cast_idle": name = "CastIdle"
 		"death": name = "Death"
+	if state != "run" and state != "sprint" and state != "walk" and state != "air":
+		anim.speed_scale = 1.0
 	if _has(name) and anim.current_animation != name:
 		anim.play(name, -1.0, speed)
+
+
+## Transitions: every clip fades into every other clip over a time that suits the pair, so nothing pops. Quick for attacks and hits (they must feel instant), a little longer
+## for locomotion (idle <-> run <-> sprint, back from an attack, landing) and for the slow clips (death, revive, emotes, drinking, opening a chest).
+const KIND := {
+	"Idle": "loco", "CastIdle": "loco", "Climb": "air", "Run": "run", "Sprint": "run", "Walk": "run", "Air": "air", "JumpLoop": "air", "SlideLoop": "slide",
+	"MeleeA": "strike", "MeleeB": "strike", "MeleeC": "strike", "MeleeCombo": "strike", "Attack": "strike", "CastShoot": "strike", "Throw": "strike", "Hook": "strike", "CastEnter": "strike",
+	"HitChest": "react", "HitHead": "react", "Knockback": "react", "Block": "react",
+	"CastExit": "soft", "Consume": "soft", "ChestOpen": "soft", "EmoteYes": "soft", "EmoteNo": "soft",
+	"Revive": "revive", "Death": "death", "JumpStart": "jump", "JumpLand": "land", "SlideStart": "slide_in", "SlideExit": "slide_out",
+}
+
+
+func _blend_time(from: String, to: String) -> float:
+	var a: String = KIND.get(from, "loco")
+	var b: String = KIND.get(to, "loco")
+	match b:
+		"death": return 0.12
+		"revive": return 0.2
+		"strike": return 0.04 if a == "strike" else 0.06
+		"react": return 0.04
+		"jump": return 0.06
+		"air": return 0.12 if a == "jump" else 0.16
+		"land": return 0.05
+		"slide_in": return 0.08
+		"slide": return 0.1
+		"slide_out": return 0.1
+		"soft": return 0.14
+		"run":
+			if a == "loco" or a == "run":
+				return 0.22
+			return 0.16 if a in ["strike", "react", "soft", "slide_out"] else 0.14           # back from an attack, a hit, a landing, a slide
+		"loco":
+			if a == "run":
+				return 0.2
+			return 0.2 if a in ["death", "revive", "land", "soft"] else 0.16
+	return 0.12
+
+
+func _setup_blends() -> void:
+	var names: Array = Array(anim.get_animation_list())
+	for a in names:
+		for b in names:
+			if a != b:
+				anim.set_blend_time(a, b, _blend_time(String(a), String(b)))
+
+
+## The running clips show feet planted at about RUN_REF / SPRINT_REF metres per second (measured with tests/clip_speed.gd). Played at that speed while the body moves faster or slower,
+## the feet skate over the ground and the body seems to float; so the clip is played faster or slower in step with the real speed.
+const RUN_REF := 4.7
+const SPRINT_REF := 5.9
+const WALK_REF := 2.6                   # (measured with tests/clip_speed.gd)
+const WALK_MAX := 3.3                   # below this speed (m/s) a fighter walks instead of running
+
+
+## "Walk" and "Air" are made from the run clip: Walk with a shorter stride, a quieter body and less bounce (the game has no walk clip), Air with the legs gently striding for the time
+## in the air instead of the one frozen pose of the jump-loop clip. They are made once per class model and shared by its fighters.
+func _make_variants() -> void:
+	if anim == null or not anim.has_animation("Run"):
+		return
+	var lib_name := anim.find_animation_library(anim.get_animation("Run"))
+	var lib := anim.get_animation_library(lib_name)
+	if lib == null:
+		return
+	if not lib.has_animation("Walk"):
+		var walk: Animation = anim.get_animation("Run").duplicate()
+		walk.remove_meta("calmed")
+		lib.add_animation("Walk", walk)
+		ClothDamp.calm(anim, ["Walk"], {"DEF-thigh": 0.55, "DEF-shin": 0.6, "DEF-foot": 0.6, "DEF-toe": 0.6, "DEF-upper_arm": 0.4, "DEF-forearm": 0.4, "DEF-hand": 0.4, "DEF-spine": 0.35, "DEF-hips": 0.35, "hips_pos": 0.45})
+	if not lib.has_animation("Air"):
+		var air: Animation = anim.get_animation("Run").duplicate()
+		air.remove_meta("calmed")
+		lib.add_animation("Air", air)
+		ClothDamp.calm(anim, ["Air"], {"DEF-thigh": 0.6, "DEF-shin": 0.7, "DEF-foot": 0.6, "DEF-toe": 0.6, "DEF-upper_arm": 0.7, "DEF-forearm": 0.7, "DEF-spine": 0.5, "DEF-hips": 0.4, "hips_pos": 0.0})
+	_make_climb()
+	_widen_stance(float(Data.classes[class_id].get("stance_widen", 0.085)))
+	for a in ["Walk", "Air"]:
+		anim.get_animation(a).loop_mode = Animation.LOOP_LINEAR
+
+
+func set_loco_speed(ground_speed: float) -> void:
+	if anim == null:
+		return
+	_loco_speed = ground_speed
+	if _state == "walk":
+		anim.speed_scale = clampf(ground_speed / (WALK_REF * float(scale.y)), 0.45, 1.8)
+	elif _state == "air":
+		anim.speed_scale = clampf(ground_speed / (RUN_REF * float(scale.y)) * 0.8, 0.45, 1.3)
+	elif _state == "run":
+		anim.speed_scale = clampf(ground_speed / (RUN_REF * float(scale.y)), 0.35, 2.2)
+	elif _state == "sprint":
+		anim.speed_scale = clampf(ground_speed / (SPRINT_REF * float(scale.y)), 0.6, 2.2)
+	else:
+		anim.speed_scale = 1.0
 
 
 ## One-shot clips: attack styles ("MeleeA", "MeleeB", "MeleeC", "Attack", "CastShoot", "Throw", "Hook", "HitChest", "HitHead", "Knockback", "Block",
@@ -380,14 +490,60 @@ func play_state(state: String, force: bool = false) -> void:
 func play_once(name: String, speed: float = 1.0, lock: bool = true) -> void:
 	if not _has(name):
 		return
-	anim.play(name, 0.06, speed)
+	anim.speed_scale = 1.0
+	anim.play(name, -1.0, speed)                              # -1: the fade time of this pair of clips (_setup_blends)
 	if lock:
 		_busy_until = _clock + anim.get_animation(name).length / maxf(speed, 0.1) * 0.85
 	_state = ""
 
 
+## Running clips bounce the body up and down more than a person does, so the lowest foot hovers above the ground for most of the stride. While running, the whole model is moved
+## down so that its lowest foot rests on the ground (smoothed), the way an animator plants a foot.
+func _init_grounding(inst: Node3D) -> void:
+	if skeleton == null or anim == null or not anim.has_animation("Idle"):
+		return
+	var t := Transform3D.IDENTITY
+	var cur: Node = skeleton
+	while cur != null and cur != inst:
+		if cur is Node3D:
+			t = (cur as Node3D).transform * t
+		cur = cur.get_parent()
+	_skel_to_inst = t
+	for nm in ["DEF-foot.L", "DEF-foot.R", "DEF-toe.L", "DEF-toe.R"]:
+		var i := skeleton.find_bone(nm)
+		if i >= 0:
+			_foot_bones.append(i)
+	if _foot_bones.is_empty():
+		return
+	_inst = inst
+	anim.play("Idle")
+	anim.seek(0.0, true)
+	_idle_low = _lowest_foot()
+	anim.stop()
+
+
+func _lowest_foot() -> float:
+	var low := 1e9
+	for i in _foot_bones:
+		low = minf(low, (_skel_to_inst * skeleton.get_bone_global_pose(i).origin).y)
+	return low
+
+
+func _update_grounding(delta: float) -> void:
+	if _inst == null:
+		return
+	var want := 0.0
+	if _state == "run" or _state == "sprint":
+		want = clampf(-(_lowest_foot() - _idle_low), -GROUND_MAX, 0.08)
+	_ground_off = lerpf(_ground_off, want, clampf(delta * 24.0, 0.0, 1.0))
+	_inst.position.y = _ground_off
+
+
 func _process(delta: float) -> void:
 	_clock += delta
+	_update_grounding(delta)
+	if _state == "climb" and anim != null:
+		anim.speed_scale = clampf(absf(climb_vy) / 4.6 * 1.8, 0.0, 1.8)           # one cycle = two rungs; standing still on the ladder holds the pose
 	if _flash_mat != null and _flash_mat.albedo_color.a > 0.0:
 		_flash_mat.albedo_color.a = maxf(0.0, _flash_mat.albedo_color.a - delta * 6.0)
 		if _flash_mat.albedo_color.a <= 0.0:
@@ -481,10 +637,10 @@ func play_recipe(clips: Array, poses: Array, glow: Color = Color(0, 0, 0, 0), gl
 			continue
 		var dur: float = hold if hold > 0.0 else anim.get_animation(clip).length / maxf(spd, 0.1) * 0.9
 		if first:
-			anim.play(clip, 0.06, spd)
+			anim.play(clip, -1.0, spd)
 			first = false
 		else:
-			_recipe_tween.tween_callback(func() -> void: anim.play(clip, 0.06, spd))
+			_recipe_tween.tween_callback(func() -> void: anim.play(clip, -1.0, spd))
 		_recipe_tween.tween_interval(dur)
 		total += dur
 	_state = ""
@@ -616,3 +772,114 @@ func _make_matte(mi: MeshInstance3D, amount: float) -> void:
 			m.metallic_specular = lerpf(m.metallic_specular, 0.12, amount)
 			m.rim_enabled = false
 			mi.set_surface_override_material(s, m)
+
+
+## Climbing a ladder: a looping clip made from the idle clip with the arms, legs and spine keyed by hand, in the character's own frame (sideways and forward axes taken from the rest
+## pose, so it fits every class model). The arms reach up and take turns, the knees come up one after the other, the body leans into the ladder. One cycle = two rungs.
+func _make_climb() -> void:
+	if anim == null or skeleton == null or not anim.has_animation("Idle"):
+		return
+	var lib := anim.get_animation_library(anim.find_animation_library(anim.get_animation("Idle")))
+	if lib == null or lib.has_animation("Climb"):
+		return
+	var sk := skeleton
+	var b := {}
+	for nm in ["upper_arm.L", "upper_arm.R", "forearm.L", "forearm.R", "thigh.L", "thigh.R", "shin.L", "shin.R", "foot.L", "toe.L", "spine.001"]:
+		b[nm] = sk.find_bone("DEF-" + nm)
+		if int(b[nm]) < 0:
+			return
+	var lat: Vector3 = sk.get_bone_global_rest(int(b["thigh.R"])).origin - sk.get_bone_global_rest(int(b["thigh.L"])).origin
+	lat.y = 0.0
+	lat = lat.normalized()
+	var fwd: Vector3 = sk.get_bone_global_rest(int(b["toe.L"])).origin - sk.get_bone_global_rest(int(b["foot.L"])).origin
+	fwd.y = 0.0
+	fwd = fwd.normalized()
+	if lat.length() < 0.5 or fwd.length() < 0.5:
+		return
+	# the axis around which a positive angle swings a hanging limb forward (and keeps turning the same way when the limb is raised)
+	var axis := lat * (signf(lat.cross(Vector3.DOWN).dot(fwd)) if lat.cross(Vector3.DOWN).dot(fwd) != 0.0 else 1.0)
+	var lean_axis := lat * (signf(lat.cross(Vector3.UP).dot(fwd)) if lat.cross(Vector3.UP).dot(fwd) != 0.0 else 1.0)
+	var clip: Animation = anim.get_animation("Idle").duplicate()
+	clip.length = 1.0
+	clip.loop_mode = Animation.LOOP_LINEAR
+	lib.add_animation("Climb", clip)
+	var track := {}
+	for t in clip.get_track_count():
+		if clip.track_get_type(t) == Animation.TYPE_ROTATION_3D:
+			track[String(clip.track_get_path(t)).get_slice(":", 1)] = t
+	var steps := 16
+	var last := {}
+	for key in steps + 1:
+		var ph := TAU * float(key % steps) / float(steps)
+		var s := sin(ph)
+		var c := cos(ph)
+		var wanted := {
+			"upper_arm.L": [axis, 2.15 + 0.4 * s], "upper_arm.R": [axis, 2.15 - 0.4 * s],
+			"forearm.L": [axis, 0.7 + 0.45 * s], "forearm.R": [axis, 0.7 - 0.45 * s],
+			"thigh.L": [axis, 0.25 + 0.75 * maxf(0.0, c)], "thigh.R": [axis, 0.25 + 0.75 * maxf(0.0, -c)],
+			"shin.L": [axis, -(0.25 + 0.95 * maxf(0.0, c))], "shin.R": [axis, -(0.25 + 0.95 * maxf(0.0, -c))],
+			"spine.001": [lean_axis, 0.12],
+		}
+		for nm in wanted:
+			var t: int = track.get("DEF-" + nm, -1)
+			if t < 0:
+				continue
+			if key == 0:
+				while clip.track_get_key_count(t) > 0:
+					clip.track_remove_key(t, 0)
+			var bone: int = int(b[nm])
+			var parent := sk.get_bone_parent(bone)
+			var pb: Basis = sk.get_bone_global_rest(parent).basis if parent >= 0 else Basis.IDENTITY
+			var q: Quaternion = (pb.inverse() * Basis(wanted[nm][0], float(wanted[nm][1])) * sk.get_bone_global_rest(bone).basis).get_rotation_quaternion()
+			if last.has(nm) and (last[nm] as Quaternion).dot(q) < 0.0:
+				q = -q
+			last[nm] = q
+			clip.rotation_track_insert_key(t, float(key) / float(steps), q)
+
+
+## The running clips bring the feet onto one line, so the boots pass through each other. Both thighs are turned outward by a small angle in every key of the walking and running
+## clips (done once per class model): a few centimetres more room between the feet.
+func _widen_stance(angle: float) -> void:
+	if anim == null or skeleton == null:
+		return
+	var sk := skeleton
+	var tl := sk.find_bone("DEF-thigh.L")
+	var tr := sk.find_bone("DEF-thigh.R")
+	var foot := sk.find_bone("DEF-foot.L")
+	var toe := sk.find_bone("DEF-toe.L")
+	if tl < 0 or tr < 0 or foot < 0 or toe < 0:
+		return
+	var lat: Vector3 = sk.get_bone_global_rest(tr).origin - sk.get_bone_global_rest(tl).origin
+	lat.y = 0.0
+	lat = lat.normalized()
+	var fwd: Vector3 = sk.get_bone_global_rest(toe).origin - sk.get_bone_global_rest(foot).origin
+	fwd.y = 0.0
+	fwd = fwd.normalized()
+	for clip_name in ["Run", "Sprint", "Walk", "Air"]:
+		if not anim.has_animation(clip_name):
+			continue
+		var clip := anim.get_animation(clip_name)
+		if clip.has_meta("widened"):
+			continue
+		clip.set_meta("widened", true)
+		for side in ["L", "R"]:
+			var bone := sk.find_bone("DEF-thigh." + side)
+			var out_dir := -lat if side == "L" else lat
+			var sg := signf(fwd.cross(Vector3.DOWN).dot(out_dir))
+			var parent := sk.get_bone_parent(bone)
+			var pb: Basis = sk.get_bone_global_rest(parent).basis if parent >= 0 else Basis.IDENTITY
+			var axis_local: Vector3 = (pb.inverse() * (fwd * (sg if sg != 0.0 else 1.0))).normalized()
+			var rq := Quaternion(axis_local, angle)
+			for t in clip.get_track_count():
+				if clip.track_get_type(t) == Animation.TYPE_ROTATION_3D and String(clip.track_get_path(t)).get_slice(":", 1) == "DEF-thigh." + side:
+					for k in clip.track_get_key_count(t):
+						clip.track_set_key_value(t, k, rq * (clip.track_get_key_value(t, k) as Quaternion))
+
+
+## Death as a ragdoll (see Ragdoll.gd). `push` is the velocity the whole body is given. Returns false when the ragdoll could not be made (the death clip is played instead).
+func start_ragdoll(push: Vector3) -> bool:
+	return Ragdoll.start(self, push)
+
+
+func stop_ragdoll() -> void:
+	Ragdoll.stop(self)

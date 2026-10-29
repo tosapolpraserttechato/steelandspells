@@ -45,7 +45,7 @@ func _make_textures() -> void:
 		var d := Vector2(x * 1.8, y).length()
 		return smoothstep(0.8, 0.55, d) * (1.0 - 0.4 * absf(x)))
 	TEX["hex"] = _tex(96, func(x: float, y: float) -> float:
-		var p := Vector2(absf(x), absf(y))
+		var p := Vector2(absf(x), absf(y)) * 1.16               # the pointed left and right corners of the hexagon used to reach past the edge of the picture and were cut off
 		var d := maxf(p.x * 0.866 + p.y * 0.5, p.y)
 		return smoothstep(0.95, 0.85, d) * smoothstep(0.55, 0.85, d))
 	TEX["arrow"] = _tex(64, func(x: float, y: float) -> float:

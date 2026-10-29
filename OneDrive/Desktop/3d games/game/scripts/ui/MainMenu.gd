@@ -207,15 +207,15 @@ func _logo() -> Control:
 		c.draw_arc(mid + Vector2(0, 20), 17.0, 0.0, TAU, 32, gold, 3.0, true)
 		var diamond := PackedVector2Array([mid + Vector2(0, 8), mid + Vector2(10, 20), mid + Vector2(0, 32), mid + Vector2(-10, 20)])
 		c.draw_colored_polygon(diamond, gold)
-		var t1 := "FANTASY"
-		var t2 := "TEAM SHOOTER"
-		var w1 := f.get_string_size(t1, HORIZONTAL_ALIGNMENT_LEFT, -1, 54).x
-		var w2 := f.get_string_size(t2, HORIZONTAL_ALIGNMENT_LEFT, -1, 40).x
+		var t1 := "STEEL AND"
+		var t2 := "SPELLS"
+		var w1 := f.get_string_size(t1, HORIZONTAL_ALIGNMENT_LEFT, -1, 40).x
+		var w2 := f.get_string_size(t2, HORIZONTAL_ALIGNMENT_LEFT, -1, 62).x
 		for off in [Vector2(3, 4), Vector2(-1, 2), Vector2(2, 0)]:
-			c.draw_string(f, Vector2(210 - w1 * 0.5, 100) + off, t1, HORIZONTAL_ALIGNMENT_LEFT, -1, 54, Color(0, 0, 0, 0.8))
-			c.draw_string(f, Vector2(210 - w2 * 0.5, 140) + off, t2, HORIZONTAL_ALIGNMENT_LEFT, -1, 40, Color(0, 0, 0, 0.8))
-		c.draw_string(f, Vector2(210 - w1 * 0.5, 100), t1, HORIZONTAL_ALIGNMENT_LEFT, -1, 54, Color(1.0, 0.93, 0.62))
-		c.draw_string(f, Vector2(210 - w2 * 0.5, 140), t2, HORIZONTAL_ALIGNMENT_LEFT, -1, 40, gold))
+			c.draw_string(f, Vector2(210 - w1 * 0.5, 92) + off, t1, HORIZONTAL_ALIGNMENT_LEFT, -1, 40, Color(0, 0, 0, 0.8))
+			c.draw_string(f, Vector2(210 - w2 * 0.5, 146) + off, t2, HORIZONTAL_ALIGNMENT_LEFT, -1, 62, Color(0, 0, 0, 0.8))
+		c.draw_string(f, Vector2(210 - w1 * 0.5, 92), t1, HORIZONTAL_ALIGNMENT_LEFT, -1, 40, Color(1.0, 0.93, 0.62))
+		c.draw_string(f, Vector2(210 - w2 * 0.5, 146), t2, HORIZONTAL_ALIGNMENT_LEFT, -1, 62, gold))
 	return c
 
 

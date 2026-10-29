@@ -523,12 +523,15 @@ func _animate(hv: Vector3, delta: float) -> void:
 		return
 	if climbing:
 		air_time = 0.0
-		model.play_state("run" if absf(velocity.y) > 0.5 else "idle")
+		model.climb_vy = velocity.y
+		model.play_state("climb")                          # the arms reach up and take turns, the knees come up (CharacterModel._make_climb)
 		return
 	if not is_on_floor():
 		air_time += delta
 		if air_time > 0.12:
-			model.play_state("fall")
+			# moving fast through the air: a leaping stride; otherwise the falling pose
+			model.play_state("air" if hv.length() > 2.4 else "fall")
+			model.set_loco_speed(hv.length())
 	else:
 		if air_time > 0.35:
 			model.play_once("JumpLand", 1.6, true)
@@ -537,10 +540,13 @@ func _animate(hv: Vector3, delta: float) -> void:
 			model.play_state("slide")
 		elif hv.length() > current_speed() * 1.1 and hv.length() > 5.0:
 			model.play_state("sprint")
-		elif hv.length() > 0.8:
+		elif hv.length() > CharacterModel.WALK_MAX:
 			model.play_state("run")
+		elif hv.length() > 0.7:
+			model.play_state("walk")
 		else:
 			model.play_state("idle")
+		model.set_loco_speed(hv.length())                  # feet keep pace with the ground
 
 
 func add_impulse(v: Vector3) -> void:
@@ -844,8 +850,20 @@ func die(killer: Node) -> void:
 	statuses.clear_all()
 	collision_layer = 0
 	if model != null:
-		model.play_once("Death", 1.0, true)
-		model.play_state("death", true)
+		# a ragdoll: the hit that killed pushes the body away from the attacker (a random way when nobody is to blame, like a fall)
+		var pushed := false
+		if bool(Settings.v.get("ragdoll", true)):
+			var dir := Vector3(randf_range(-1.0, 1.0), 0.0, randf_range(-1.0, 1.0)).normalized()
+			if killer is Combatant and is_instance_valid(killer) and killer != self:
+				var away: Vector3 = global_position - (killer as Combatant).global_position
+				away.y = 0.0
+				if away.length() > 0.1:
+					dir = away.normalized()
+			var kick := 4.5 if dead_by_big_hit() else 3.0
+			pushed = model.start_ragdoll(dir * kick + Vector3(0, 2.0, 0) + Vector3(velocity.x, 0, velocity.z) * 0.5)
+		if not pushed:
+			model.play_once("Death", 1.0, true)
+			model.play_state("death", true)
 		model.set_plate_visible(false)
 	health_changed.emit(0.0, max_health())
 	died.emit(killer)
@@ -942,6 +960,7 @@ func respawn(pos: Vector3) -> void:
 			cooldowns[s] = 0.0
 	meter = meter * stats.add_sum("meter_keep")
 	if model != null:
+		model.stop_ragdoll()
 		model.anim.stop()
 		model.play_state("idle", true)
 		model.set_plate_visible(true)
@@ -1074,3 +1093,8 @@ func _set_sprint_dust(on: bool) -> void:
 		_sprint_dust.position = Vector3(0, 0.1, 0)
 	if _sprint_dust != null:
 		_sprint_dust.emitting = on
+
+
+## Did the hit that killed this fighter take a large part of its health in one blow (the body is then thrown harder)?
+func dead_by_big_hit() -> bool:
+	return hp_before_last > 0.0 and hp_before_last >= max_health() * 0.5 and last_damage_info.get("dot", "") == ""

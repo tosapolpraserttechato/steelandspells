@@ -50,5 +50,6 @@ func _physics_process(delta: float) -> void:
 	facing = Vector3(-sin(net_yaw), 0.0, -cos(net_yaw))
 	sprinting = net_state == "sprint"
 	model.play_state(net_state)
+	model.set_loco_speed(Vector2(net_vel.x, net_vel.z).length())
 	if attack_held:
 		WeaponRunner.attack(self)

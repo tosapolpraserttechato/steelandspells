@@ -31,6 +31,11 @@ func _ready() -> void:
 	add_child(sun)
 	var classes: PackedStringArray = String(_args.get("class", "druid")).split(",")
 	var sets: PackedStringArray = String(_args.get("sets", Data.armor_order[0])).split(",")
+	if _args.has("fracs"):
+		var fr: PackedStringArray = String(_args["fracs"]).split(",")
+		sets = PackedStringArray()
+		for i in fr.size():
+			sets.append("none")
 	var only: PackedStringArray = String(_args.get("only", "helmet,chestplate,shield,leggings,boots")).split(",")
 	var spacing := 1.9
 	var transpose := sets.size() == 1 and classes.size() > 1                 # one set on many classes: the classes go across
@@ -50,6 +55,8 @@ func _ready() -> void:
 			m.dress(pieces)
 			if _args.has("weapon"):
 				m.hold_weapon(Weapons.visual_for(Data.weapons[String(_args["weapon"])]))
+			m.rotation_degrees.y = float(_args.get("rot", "0"))                  # rot=90 turns the fighters sideways: with view=back a row of them shows the stride from the side
+			m.set_meta("frac", float(String(_args["fracs"]).split(",")[c]) if _args.has("fracs") else _frac)
 			_models.append(m)
 			var lab := Label3D.new()
 			lab.text = String(Data.armor_sets[sets[c]]["name"]) if Data.armor_sets.has(sets[c]) else sets[c]
@@ -80,8 +87,14 @@ func _process(delta: float) -> void:
 			cm.set_process(false)                              # the model's own state machine would put it back to Idle
 			cm.set_physics_process(false)
 			cm.anim.play(_pose, 0.0)                           # no blend from Idle: a paused player would stay mostly in Idle
-			cm.anim.seek(cm.anim.get_animation(_pose).length * _frac, true)
+			cm.anim.seek(cm.anim.get_animation(_pose).length * float(cm.get_meta("frac", _frac)), true)
 			cm.anim.pause()
+			cm._state = _pose.to_lower() if _pose == "Run" or _pose == "Sprint" or _pose == "Walk" else ""        # the model keeps its lowest foot on the ground while it runs
+			cm._update_grounding(1.0)
+			if _t > 2.3 and not _args.has("_d"):
+				_args["_d"] = true
+				var sk := cm.skeleton
+				print("SHEETDBG pose ", _pose, " cur ", cm.anim.current_animation, " pos ", cm.anim.current_animation_position, " upper_arm.L pose ", sk.get_bone_pose_rotation(sk.find_bone("DEF-upper_arm.L")), " hand y ", snappedf(sk.get_bone_global_pose(sk.find_bone("DEF-hand.L")).origin.y, 0.01))
 	if _t > 2.5:
 		var out := "res://shots/%s.png" % String(_args.get("out", "armor_sheet"))
 		get_viewport().get_texture().get_image().save_png(out)

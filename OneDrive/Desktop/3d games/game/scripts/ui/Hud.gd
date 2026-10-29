@@ -33,6 +33,7 @@ var _tracker_bar: UiKit.Bar
 var _respawn: Label
 var _vignette: ColorRect
 var _minimap: Control
+var _minimap_t := 0.0
 var _cards: CardPicker
 var _scoreboard: Control
 var _center_msg: Label
@@ -93,20 +94,11 @@ func _build_hud() -> void:
 	_vignette.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	root.add_child(_vignette)
 	# crosshair
-	_crosshair = Control.new()
-	_crosshair.set_anchors_preset(Control.PRESET_CENTER)
-	_crosshair.custom_minimum_size = Vector2(40, 40)
-	_crosshair.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	_crosshair.draw.connect(func() -> void:
-		var c := Vector2(20, 20)
-		var col := Color(1, 1, 1, 0.9)
-		_crosshair.draw_line(c + Vector2(-9, 0), c + Vector2(-3, 0), col, 2.0)
-		_crosshair.draw_line(c + Vector2(9, 0), c + Vector2(3, 0), col, 2.0)
-		_crosshair.draw_line(c + Vector2(0, -9), c + Vector2(0, -3), col, 2.0)
-		_crosshair.draw_line(c + Vector2(0, 9), c + Vector2(0, 3), col, 2.0)
-		_crosshair.draw_circle(c, 1.5, col))
-	root.add_child(_crosshair)
-	_crosshair.position = Vector2(-20, -20)
+	var xh := Crosshair.new()                                   # (the old one was placed at the top-left corner of the screen, so it never showed)
+	xh.name = "Crosshair"
+	root.add_child(xh)
+	xh.setup(p, m)
+	_crosshair = xh
 	# bottom-left: bars and statuses
 	var bl := VBoxContainer.new()
 	bl.set_anchors_preset(Control.PRESET_BOTTOM_LEFT)
@@ -469,7 +461,10 @@ func _process(delta: float) -> void:
 		_tracker.text = "%s: %s\n%d / %d   (%ds)" % [a["title"], a["text"], int(a["progress"]), int(a["goal"]), int(a["time_left"])]
 		_tracker_bar.visible = true
 		_tracker_bar.set_value(float(a["progress"]) / maxf(float(a["goal"]), 1.0))
-	_minimap.queue_redraw()
+	_minimap_t -= delta
+	if _minimap_t <= 0.0:
+		_minimap_t = 0.09                                       # the minimap is redrawn about eleven times a second, not every frame
+		_minimap.queue_redraw()
 	_streak.queue_redraw()
 	if _wheel != null:
 		if Input.is_action_just_pressed("weapon_wheel") and not _overlay_open and not p.dead:

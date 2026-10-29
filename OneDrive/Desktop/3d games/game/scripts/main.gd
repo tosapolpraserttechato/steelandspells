@@ -254,7 +254,7 @@ func _run_script() -> void:
 			Game.add_item(item)
 			Game.equip(item)
 		elif action == "speed":
-			print("SPEED ", snappedf(Vector3(p.velocity.x, 0, p.velocity.z).length(), 0.01), " sprinting ", p.sprinting, " stamina ", snappedf(p.stamina, 0.1), " y ", snappedf(p.global_position.y, 0.1), " vy ", snappedf(p.velocity.y, 0.1), " x ", snappedf(p.global_position.x, 0.1), " z ", snappedf(p.global_position.z, 0.1))
+			print("SPEED ", snappedf(Vector3(p.velocity.x, 0, p.velocity.z).length(), 0.01), " sprinting ", p.sprinting, " stamina ", snappedf(p.stamina, 0.1), " y ", snappedf(p.global_position.y, 0.1), " vy ", snappedf(p.velocity.y, 0.1), " x ", snappedf(p.global_position.x, 0.1), " z ", snappedf(p.global_position.z, 0.1), " clip ", p.model.anim.current_animation, " anim_speed ", snappedf(p.model.anim.speed_scale, 0.01), " ground_off ", snappedf(p.model._ground_off, 0.001))
 		elif action.begins_with("tp:"):
 			var q := action.substr(3).replace("|", ",").split(",")           # tp:x|y|z (the script itself is split at commas)
 			p.global_position = Vector3(float(q[0]), float(q[1]), float(q[2]))
@@ -268,6 +268,43 @@ func _run_script() -> void:
 			p.velocity = Vector3.ZERO
 			p.yaw = atan2(-dir.x, -dir.z)
 			p.pitch = 0.12
+		elif action == "climbtest":
+			# freeze the player in the climbing pose (as on a ladder, moving up) to look at it
+			p.set_physics_process(false)
+			p.model.play_state("climb", true)
+			p.model.climb_vy = float(_args.get("climb_vy", "1.5"))
+			p.model.rotation_degrees.y = float(_args.get("turn", "0"))         # turn=90 shows the pose from the side
+			p.yaw = 0.0
+			p.pitch = -0.05
+			p.arm.spring_length = 2.6
+			p.cam.position = Vector3(0.0, 0.0, 0.0)
+			p.cam_rig.rotation = Vector3(-0.05, 0.0, 0.0)
+		elif action == "tracks":
+			var ca: Animation = p.model.anim.get_animation(String(_args.get("clip", "Climb")))
+			var names := []
+			for t in ca.get_track_count():
+				var nm2 := String(ca.track_get_path(t))
+				if "upper_arm" in nm2 or "thigh" in nm2:
+					names.append("%s type %d keys %d" % [nm2, ca.track_get_type(t), ca.track_get_key_count(t)])
+			print("TRACKS ", ca.length, " ", names)
+			var skd := p.model.skeleton
+			var uai := skd.find_bone("DEF-upper_arm.L")
+			var idle: Animation = p.model.anim.get_animation("Idle")
+			for t in idle.get_track_count():
+				if String(idle.track_get_path(t)).ends_with("DEF-upper_arm.L") and idle.track_get_type(t) == Animation.TYPE_ROTATION_3D:
+					print("TRACKQ idle key0 ", idle.track_get_key_value(t, 0), " rest ", skd.get_bone_rest(uai).basis.get_rotation_quaternion(), " pose ", skd.get_bone_pose_rotation(uai))
+		elif action == "blends":
+			# the fade time of some pairs of clips, and any clip that has no kind in CharacterModel.KIND
+			var an := p.model.anim
+			var missing: Array = []
+			for n in an.get_animation_list():
+				if not CharacterModel.KIND.has(n):
+					missing.append(n)
+			var line := "BLENDS clips %d without a kind %s |" % [an.get_animation_list().size(), str(missing)]
+			for pair in [["Idle", "Run"], ["Run", "Sprint"], ["Sprint", "Idle"], ["Run", "MeleeA"], ["MeleeA", "Run"], ["MeleeA", "MeleeB"], ["Run", "HitChest"], ["Idle", "Death"], ["Death", "Revive"],
+					["JumpStart", "JumpLoop"], ["JumpLoop", "JumpLand"], ["JumpLand", "Run"], ["Run", "SlideStart"], ["SlideStart", "SlideLoop"], ["SlideLoop", "SlideExit"], ["Idle", "Consume"], ["CastIdle", "CastShoot"]]:
+				line += " %s>%s %.2f" % [pair[0], pair[1], an.get_blend_time(pair[0], pair[1])]
+			print(line)
 		elif action.begins_with("tpnear:"):
 			# LAN test: stand `offset` metres along z from the other human player (the host's player for a client, the first joined player for the host), at their height
 			var other: Combatant = null
